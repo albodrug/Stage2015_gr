@@ -2,44 +2,48 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{4}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Context}{4}
+\contentsline {section}{\numberline {1.1}Context}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Scaffolding}{4}
+\contentsline {section}{\numberline {1.2}Workflow}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Workflow}{5}
+\contentsline {chapter}{\numberline {2}Challenges of the scaffolding problem}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Challenges of the scaffolding problem}{6}
+\contentsline {section}{\numberline {2.1}Definition}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Definition}{6}
+\contentsline {section}{\numberline {2.2}Proposed models}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Proposed models}{6}
+\contentsline {section}{\numberline {2.3}Workflow of the genscale scaffolding tools}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Distinctive features of circular genomes}{6}
+\contentsline {section}{\numberline {2.4}Distinctive features of assembled genomes}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methods for benchmarking}{7}
+\contentsline {chapter}{\numberline {3}Methods for benchmarking}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Available scaffolding tools to benchmark against}{7}
+\contentsline {section}{\numberline {3.1}Chosen scaffolding tools to benchmark against}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Visualization}{7}
+\contentsline {section}{\numberline {3.2}Benchmarking workflow}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Comparisons}{7}
+\contentsline {section}{\numberline {3.3}Comparisons}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}QUAST}{7}
+\contentsline {subsection}{\numberline {3.3.1}QUAST}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Comparison function}{7}
+\contentsline {subsection}{\numberline {3.3.2}Comparison function}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Results}{8}
+\contentsline {section}{\numberline {3.4}Visualization}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Data sets compared}{8}
+\contentsline {subsection}{\numberline {3.4.1}MUMMER}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Visualization}{8}
+\contentsline {subsection}{\numberline {3.4.2}Visualization tool}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Comparisons}{8}
+\contentsline {chapter}{\numberline {4}Results}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}QUAST}{8}
+\contentsline {section}{\numberline {4.1}Data sets compared}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Comparison function}{8}
+\contentsline {section}{\numberline {4.2}Comparisons}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{9}
+\contentsline {subsection}{\numberline {4.2.1}QUAST and comparison function}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Visualization}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{7}
