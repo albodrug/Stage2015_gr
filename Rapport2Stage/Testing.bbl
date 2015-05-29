@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{hunt_comprehensive_2014}
+\bibinfo{author}{Hunt, M.}, \bibinfo{author}{Newbold, C.},
+  \bibinfo{author}{Berriman, M.} \& \bibinfo{author}{Otto, T.~D.}
+\newblock \bibinfo{title}{A comprehensive evaluation of assembly scaffolding
+  tools} \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{R42}
+  (\bibinfo{year}{2014}).
+
+\bibitem{earl_assemblathon_2011}
+\bibinfo{author}{Earl, D.} \emph{et~al.}
+\newblock \bibinfo{title}{Assemblathon 1: A competitive assessment of de novo
+  short read assembly methods} \textbf{\bibinfo{volume}{21}},
+  \bibinfo{pages}{2224--2241} (\bibinfo{year}{2011-12}).
+
+\bibitem{bradnam_assemblathon_2013}
+\bibinfo{author}{Bradnam, K.~R.} \emph{et~al.}
+\newblock \bibinfo{title}{Assemblathon 2: evaluating de novo methods of genome
+  assembly in three vertebrate species} \textbf{\bibinfo{volume}{2}},
+  \bibinfo{pages}{10} (\bibinfo{year}{2013-07-22}).
+
+\bibitem{pop_hierarchical_2004}
+\bibinfo{author}{Pop, M.}, \bibinfo{author}{Kosack, D.~S.} \&
+  \bibinfo{author}{Salzberg, S.~L.}
+\newblock \bibinfo{title}{Hierarchical scaffolding with bambus}
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{149--159}
+  (\bibinfo{year}{2004-01-01}).
+
+\bibitem{treangen_metamos:_2013}
+\bibinfo{author}{Treangen, T.~J.} \emph{et~al.}
+\newblock \bibinfo{title}{{MetAMOS}: a modular and open source metagenomic
+  assembly and analysis pipeline} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{R2} (\bibinfo{year}{2013-01-15}).
+
+\end{thebibliography}

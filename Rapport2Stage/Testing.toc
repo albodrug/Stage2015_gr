@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Backgroud}{1}
+\contentsline {subsection}{\numberline {1.2}Project goal}{1}
+\contentsline {section}{\numberline {2}Datasets and input data}{1}
+\contentsline {subsection}{\numberline {2.1}Features of the chloroplast genomes}{1}
+\contentsline {subsection}{\numberline {2.2}Input data}{1}
+\contentsline {section}{\numberline {3}Material and methods}{2}
+\contentsline {subsection}{\numberline {3.1}Inspecting the input data}{2}
+\contentsline {subsection}{\numberline {3.2}Benchmarking}{2}
+\contentsline {section}{\numberline {4}Results}{2}
+\contentsline {subsection}{\numberline {4.1}Data sets compared}{2}
+\contentsline {subsubsection}{\numberline {4.1.1}QUAST and comparison function}{2}
+\contentsline {subsubsection}{\numberline {4.1.2}Visualization}{2}
+\contentsline {section}{\numberline {5}Conclusion}{2}

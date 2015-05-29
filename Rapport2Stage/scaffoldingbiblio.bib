@@ -1,0 +1,135 @@
+@article{hunt_comprehensive_2014,
+	title = {A comprehensive evaluation of assembly scaffolding tools},
+	volume = {15},
+	issn = {1465-6914},
+	doi = {10.1186/gb-2014-15-3-r42},
+	abstract = {{BACKGROUND}: Genome assembly is typically a two-stage process: contig assembly followed by the use of paired sequencing reads to join contigs into scaffolds. Scaffolds are usually the focus of reported assembly statistics; longer scaffolds greatly facilitate the use of genome sequences in downstream analyses, and it is appealing to present larger numbers as metrics of assembly performance. However, scaffolds are highly prone to errors, especially when generated using short reads, which can directly result in inflated assembly statistics.
+{RESULTS}: Here we provide the first independent evaluation of scaffolding tools for second-generation sequencing data. We find large variations in the quality of results depending on the tool and dataset used. Even extremely simple test cases of perfect input, constructed to elucidate the behaviour of each algorithm, produced some surprising results. We further dissect the performance of the scaffolders using real and simulated sequencing data derived from the genomes of Staphylococcus aureus, Rhodobacter sphaeroides, Plasmodium falciparum and Homo sapiens. The results from simulated data are of high quality, with several of the tools producing perfect output. However, at least 10\% of joins remains unidentified when using real data.
+{CONCLUSIONS}: The scaffolders vary in their usability, speed and number of correct and missed joins made between contigs. Results from real data highlight opportunities for further improvements of the tools. Overall, {SGA}, {SOPRA} and {SSPACE} generally outperform the other tools on our datasets. However, the quality of the results is highly dependent on the read mapper and genome complexity.},
+	pages = {R42},
+	number = {3},
+	journaltitle = {Genome Biology},
+	shortjournal = {Genome Biol.},
+	author = {Hunt, Martin and Newbold, Chris and Berriman, Matthew and Otto, Thomas D.},
+	year = {2014},
+	pmid = {24581555},
+	pmcid = {PMC4053845},
+	keywords = {Contig Mapping, Humans, Plasmodium falciparum, Rhodobacter sphaeroides, Sequence Analysis, {DNA}, Software, Staphylococcus aureus}
+}
+
+@article{bosi_medusa:_2015,
+	title = {{MeDuSa}: a multi-draft based scaffolder},
+	issn = {1367-4811},
+	doi = {10.1093/bioinformatics/btv171},
+	shorttitle = {{MeDuSa}},
+	abstract = {{MOTIVATION}: Completing the genome sequence of an organism is an important task in comparative, functional and structural genomics. However, this remains a challenging issue from both a computational and an experimental viewpoint. Genome scaffolding (i.e. the process of ordering and orientating contigs) of de novo assemblies usually represents the first step in most genome finishing pipelines.
+{RESULTS}: In this paper, we present {MeDuSa} (Multi-Draft based Scaffolder), an algorithm for genome scaffolding. {MeDuSa} exploits information obtained from a set of (draft or closed) genomes from related organisms to determine the correct order and orientation of the contigs. {MeDuSa} formalises the scaffolding problem by means of a combinatorial optimisation formulation on graphs and implements an efficient constant factor approximation algorithm to solve it. In contrast to currently used scaffolders, it does not require either prior knowledge on the microrganisms dataset under analysis (e.g. their phylogenetic relationships) or the availability of paired end read libraries. This makes usability and running time two additional important features of our method. Moreover, benchmarks and tests on real bacterial datasets showed that {MeDuSa} is highly accurate and, in most cases, outperforms traditional scaffolders. The possibility to use {MeDuSa} on eukaryotic datasets has also been evaluated, leading to interesting results.
+{AVAILABILITY}: {MeDuSa} web server: http://combo.dbe.unifi.it/medusa A stand-alone version of the software can be downloaded from https://github.com/combogenomics/medusa/releases. All results presented in this work have been obtained with {MeDuSa} v. 1.3.
+{CONTACT}: marco.fondi@unifi.it.},
+	journaltitle = {Bioinformatics (Oxford, England)},
+	shortjournal = {Bioinformatics},
+	author = {Bosi, Emanuele and Donati, Beatrice and Galardini, Marco and Brunetti, Sara and Sagot, Marie-France and Lió, Pietro and Crescenzi, Pierluigi and Fani, Renato and Fondi, Marco},
+	year = {2015-03-25},
+	pmid = {25810435}
+}
+
+
+@article{donmez_scarpa:_2013,
+	title = {{SCARPA}: scaffolding reads with practical algorithms},
+	volume = {29},
+	issn = {1367-4811},
+	doi = {10.1093/bioinformatics/bts716},
+	shorttitle = {{SCARPA}},
+	abstract = {{MOTIVATION}: Scaffolding is the process of ordering and orienting contigs produced during genome assembly. Accurate scaffolding is essential for finishing draft assemblies, as it facilitates the costly and laborious procedures needed to fill in the gaps between contigs. Conventional formulations of the scaffolding problem are intractable, and most scaffolding programs rely on heuristic or approximate solutions, with potentially exponential running time.
+{RESULTS}: We present {SCARPA}, a novel scaffolder, which combines fixed-parameter tractable and bounded algorithms with Linear Programming to produce near-optimal scaffolds. We test {SCARPA} on real datasets in addition to a simulated diploid genome and compare its performance with several state-of-the-art scaffolders. We show that {SCARPA} produces longer or similar length scaffolds that are highly accurate compared with other scaffolders. {SCARPA} is also capable of detecting misassembled contigs and reports them during scaffolding.
+{AVAILABILITY}: {SCARPA} is open source and available from http://compbio.cs.toronto.edu/scarpa.},
+	pages = {428--434},
+	number = {4},
+	journaltitle = {Bioinformatics (Oxford, England)},
+	shortjournal = {Bioinformatics},
+	author = {Donmez, Nilgun and Brudno, Michael},
+	year = {2013-02-15},
+	pmid = {23274213},
+	keywords = {Algorithms, Ascomycota, Contig Mapping, Escherichia coli, Genomics, High-Throughput Nucleotide Sequencing, Programming, Linear, Software}
+}
+
+@article{earl_assemblathon_2011,
+	title = {Assemblathon 1: A competitive assessment of de novo short read assembly methods},
+	volume = {21},
+	issn = {1088-9051},
+	doi = {10.1101/gr.126599.111},
+	shorttitle = {Assemblathon 1},
+	abstract = {Low-cost short read sequencing technology has revolutionized genomics, though it is only just becoming practical for the high-quality de novo assembly of a novel large genome. We describe the Assemblathon 1 competition, which aimed to comprehensively assess the state of the art in de novo assembly methods when applied to current sequencing technologies. In a collaborative effort, teams were asked to assemble a simulated Illumina {HiSeq} data set of an unknown, simulated diploid genome. A total of 41 assemblies from 17 different groups were received. Novel haplotype aware assessments of coverage, contiguity, structure, base calling, and copy number were made. We establish that within this benchmark: (1) It is possible to assemble the genome to a high level of coverage and accuracy, and that (2) large differences exist between the assemblies, suggesting room for further improvements in current methods. The simulated benchmark, including the correct answer, the assemblies, and the code that was used to evaluate the assemblies is now public and freely available from http://www.assemblathon.org/.},
+	pages = {2224--2241},
+	number = {12},
+	journaltitle = {Genome Research},
+	shortjournal = {Genome Res},
+	author = {Earl, Dent and Bradnam, Keith and St. John, John and Darling, Aaron and Lin, Dawei and Fass, Joseph and Yu, Hung On Ken and Buffalo, Vince and Zerbino, Daniel R. and Diekhans, Mark and Nguyen, Ngan and Ariyaratne, Pramila Nuwantha and Sung, Wing-Kin and Ning, Zemin and Haimel, Matthias and Simpson, Jared T. and Fonseca, Nuno A. and Birol, İnanç and Docking, T. Roderick and Ho, Isaac Y. and Rokhsar, Daniel S. and Chikhi, Rayan and Lavenier, Dominique and Chapuis, Guillaume and Naquin, Delphine and Maillet, Nicolas and Schatz, Michael C. and Kelley, David R. and Phillippy, Adam M. and Koren, Sergey and Yang, Shiaw-Pyng and Wu, Wei and Chou, Wen-Chi and Srivastava, Anuj and Shaw, Timothy I. and Ruby, J. Graham and Skewes-Cox, Peter and Betegon, Miguel and Dimon, Michelle T. and Solovyev, Victor and Seledtsov, Igor and Kosarev, Petr and Vorobyev, Denis and Ramirez-Gonzalez, Ricardo and Leggett, Richard and {MacLean}, Dan and Xia, Fangfang and Luo, Ruibang and Li, Zhenyu and Xie, Yinlong and Liu, Binghang and Gnerre, Sante and {MacCallum}, Iain and Przybylski, Dariusz and Ribeiro, Filipe J. and Yin, Shuangye and Sharpe, Ted and Hall, Giles and Kersey, Paul J. and Durbin, Richard and Jackman, Shaun D. and Chapman, Jarrod A. and Huang, Xiaoqiu and {DeRisi}, Joseph L. and Caccamo, Mario and Li, Yingrui and Jaffe, David B. and Green, Richard E. and Haussler, David and Korf, Ian and Paten, Benedict},
+	urldate = {2015-05-28},
+	year = {2011-12},
+	pmid = {21926179},
+	pmcid = {PMC3227110},
+	file = {PubMed Central Full Text PDF:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/FTC6WA3X/Earl et al. - 2011 - Assemblathon 1 A competitive assessment of de nov.pdf:application/pdf}
+}
+
+@article{pop_hierarchical_2004,
+	title = {Hierarchical Scaffolding With Bambus},
+	volume = {14},
+	issn = {1088-9051, 1549-5469},
+	doi = {10.1101/gr.1536204},
+	abstract = {The output of a genome assembler generally comprises a collection of contiguous {DNA} sequences (contigs) whose relative placement along the genome is not defined. A procedure called scaffolding is commonly used to order and orient these contigs using paired read information. This ordering of contigs is an essential step when finishing and analyzing the data from a whole-genome shotgun project. Most recent assemblers include a scaffolding module; however, users have little control over the scaffolding algorithm or the information produced. We thus developed a general-purpose scaffolder, called Bambus, which affords users significant flexibility in controlling the scaffolding parameters. Bambus was used recently to scaffold the low-coverage draft dog genome data. Most significantly, Bambus enables the use of linking data other than that inferred from mate-pair information. For example, the sequence of a completed genome can be used to guide the scaffolding of a related organism. We present several applications of Bambus: support for finishing, comparative genomics, analysis of the haplotype structure of genomes, and scaffolding of a mammalian genome at low coverage. Bambus is available as an open-source package from our Web site.},
+	pages = {149--159},
+	number = {1},
+	journaltitle = {Genome Research},
+	shortjournal = {Genome Res.},
+	author = {Pop, Mihai and Kosack, Daniel S. and Salzberg, Steven L.},
+	urldate = {2015-05-28},
+	year = {2004-01-01},
+	langid = {english},
+	pmid = {14707177},
+	file = {Full Text PDF:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/8KB6M8CD/Pop et al. - 2004 - Hierarchical Scaffolding With Bambus.pdf:application/pdf;Snapshot:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/KHI64CH5/149.html:text/html}
+}
+
+@article{bradnam_assemblathon_2013,
+	title = {Assemblathon 2: evaluating de novo methods of genome assembly in three vertebrate species},
+	volume = {2},
+	issn = {2047-217X},
+	doi = {10.1186/2047-217X-2-10},
+	shorttitle = {Assemblathon 2},
+	abstract = {Background
+The process of generating raw genome sequence data continues to become cheaper, faster, and more accurate. However, assembly of such data into high-quality, finished genome sequences remains challenging. Many genome assembly tools are available, but they differ greatly in terms of their performance (speed, scalability, hardware requirements, acceptance of newer read technologies) and in their final output (composition of assembled sequence). More importantly, it remains largely unclear how to best assess the quality of assembled genome sequences. The Assemblathon competitions are intended to assess current state-of-the-art methods in genome assembly.
+
+Results
+In Assemblathon 2, we provided a variety of sequence data to be assembled for three vertebrate species (a bird, a fish, and snake). This resulted in a total of 43 submitted assemblies from 21 participating teams. We evaluated these assemblies using a combination of optical map data, Fosmid sequences, and several statistical methods. From over 100 different metrics, we chose ten key measures by which to assess the overall quality of the assemblies.
+
+Conclusions
+Many current genome assemblers produced useful assemblies, containing a significant representation of their genes and overall genome structure. However, the high degree of variability between the entries suggests that there is still much room for improvement in the field of genome assembly and that approaches which work well in assembling the genome of one species may not necessarily work well for another.},
+	pages = {10},
+	journaltitle = {{GigaScience}},
+	shortjournal = {Gigascience},
+	author = {Bradnam, Keith R and Fass, Joseph N and Alexandrov, Anton and Baranay, Paul and Bechner, Michael and Birol, Inanç and Boisvert, Sébastien and Chapman, Jarrod A and Chapuis, Guillaume and Chikhi, Rayan and Chitsaz, Hamidreza and Chou, Wen-Chi and Corbeil, Jacques and Del Fabbro, Cristian and Docking, T Roderick and Durbin, Richard and Earl, Dent and Emrich, Scott and Fedotov, Pavel and Fonseca, Nuno A and Ganapathy, Ganeshkumar and Gibbs, Richard A and Gnerre, Sante and Godzaridis, Élénie and Goldstein, Steve and Haimel, Matthias and Hall, Giles and Haussler, David and Hiatt, Joseph B and Ho, Isaac Y and Howard, Jason and Hunt, Martin and Jackman, Shaun D and Jaffe, David B and Jarvis, Erich D and Jiang, Huaiyang and Kazakov, Sergey and Kersey, Paul J and Kitzman, Jacob O and Knight, James R and Koren, Sergey and Lam, Tak-Wah and Lavenier, Dominique and Laviolette, François and Li, Yingrui and Li, Zhenyu and Liu, Binghang and Liu, Yue and Luo, Ruibang and {MacCallum}, Iain and {MacManes}, Matthew D and Maillet, Nicolas and Melnikov, Sergey and Naquin, Delphine and Ning, Zemin and Otto, Thomas D and Paten, Benedict and Paulo, Octávio S and Phillippy, Adam M and Pina-Martins, Francisco and Place, Michael and Przybylski, Dariusz and Qin, Xiang and Qu, Carson and Ribeiro, Filipe J and Richards, Stephen and Rokhsar, Daniel S and Ruby, J Graham and Scalabrin, Simone and Schatz, Michael C and Schwartz, David C and Sergushichev, Alexey and Sharpe, Ted and Shaw, Timothy I and Shendure, Jay and Shi, Yujian and Simpson, Jared T and Song, Henry and Tsarev, Fedor and Vezzi, Francesco and Vicedomini, Riccardo and Vieira, Bruno M and Wang, Jun and Worley, Kim C and Yin, Shuangye and Yiu, Siu-Ming and Yuan, Jianying and Zhang, Guojie and Zhang, Hao and Zhou, Shiguo and Korf, Ian F},
+	urldate = {2015-05-28},
+	year = {2013-07-22},
+	pmid = {23870653},
+	pmcid = {PMC3844414},
+	file = {PubMed Central Full Text PDF:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/UJ33XDSH/Bradnam et al. - 2013 - Assemblathon 2 evaluating de novo methods of geno.pdf:application/pdf}
+}
+
+@article{treangen_metamos:_2013,
+	title = {{MetAMOS}: a modular and open source metagenomic assembly and analysis pipeline},
+	volume = {14},
+	rights = {2013 Treangen et al.; licensee {BioMed} Central Ltd.},
+	issn = {1465-6906},
+	doi = {10.1186/gb-2013-14-1-r2},
+	shorttitle = {{MetAMOS}},
+	abstract = {{PMID}: 23320958},
+	pages = {R2},
+	number = {1},
+	journaltitle = {Genome Biology},
+	author = {Treangen, Todd J. and Koren, Sergey and Sommer, Daniel D. and Liu, Bo and Astrovskaya, Irina and Ondov, Brian and Darling, Aaron E. and Phillippy, Adam M. and Pop, Mihai},
+	urldate = {2015-05-28},
+	year = {2013-01-15},
+	langid = {english},
+	pmid = {23320958},
+	file = {Full Text PDF:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/4AI8Z628/Treangen et al. - 2013 - MetAMOS a modular and open source metagenomic ass.pdf:application/pdf;Snapshot:/udd/abodrug/.zotero/zotero/0xbp7kyd.default/zotero/storage/ID7BK8FI/R2.html:text/html}
+}
