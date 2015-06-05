@@ -107,7 +107,6 @@ Whole genome shotgun assembly is the process which transforms the small fragment
 
     \path (rawdata.west)+(9,-1) node (filtering) [file2] {\footnotesize \textbf{Filtering:} reads containing errors, with unsatisfying coverages, maping with the wrong insert size \textit{etc} can be eliminated during this step.};
     \path (cleanreads.west)+(9,-1) node (contigage) [file2] {\footnotesize \textbf{Building contigs:} a contig is a set of overlapping reads forming a contiguous sequence of DNA. Reads can be single or paired with different insert sizes (distance between two reads). Below is an illustration of read pairs (same color arrows) aligned on a DNA sequence in \textit{Forward - Reverse} (1) and  \textit{Reverse - Forward} (2) order.};
-\node[inner sep=0pt] (whitehead) at (7,-1.25) {\includegraphics[width=0.60\textwidth]{READS2.png}};
     \path (contigs.west)+(9,-1) node (scaffolding) [file2] {\footnotesize \textbf{Scaffolding:} relative orientation and ordering of contigs.};    
 \end{tikzpicture}
 \end{figure}\\

@@ -1,30 +1,81 @@
 \relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{hunt_comprehensive_2014}
 \citation{earl_assemblathon_2011}
 \citation{bradnam_assemblathon_2013}
 \citation{pop_hierarchical_2004}
 \citation{treangen_metamos:_2013}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Backgroud}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Project goal}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Datasets and input data}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Features of the chloroplast genomes}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Chloroplast genome structure\relax }}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Input data}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Input data of \textit  {Agrostis stolonifera} viewed in form of a graph\relax }}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Material and methods}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Inspecting the input data}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Benchmarking}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Data sets compared}{2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}QUAST and comparison function}{2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Visualization}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{2}}
-\bibdata{scaffoldingbiblio}
+\citation{zerbino_velvet:_2008}
+\citation{hunt_comprehensive_2014-1}
+\citation{huson_greedy_2002}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Backgroud}{1}{subsection.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Assembly terminology}{1}{subsection.1.2}}
+\newlabel{sec:assterm}{{1.2}{1}{Assembly terminology}{subsection.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1}Reads, pairing and overlaps}{1}{subsubsection.1.2.1}}
+\newlabel{sec:rpao}{{1.2.1}{1}{Reads, pairing and overlaps}{subsubsection.1.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Alignment of paired reads on fragmented DNA\relax }}{1}{figure.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:reads}{{1}{1}{Alignment of paired reads on fragmented DNA\relax }{figure.1}{}}
+\citation{li_fast_2009}
+\citation{langmead_fast_2012,langmead_ultrafast_2009}
+\citation{huson_greedy_2002}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overlapping induced by repeated sequences\relax }}{2}{figure.2}}
+\newlabel{fig:overlapping}{{2}{2}{Overlapping induced by repeated sequences\relax }{figure.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}Unitigs and Contigs}{2}{subsubsection.1.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The difference between unitigs and contigs\relax }}{2}{figure.3}}
+\newlabel{fig:unitgscontigs}{{3}{2}{The difference between unitigs and contigs\relax }{figure.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3}Scaffolding and obtaining a consensus sequence}{2}{subsubsection.1.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Creating joins between contigs thanks to read-pair information\relax }}{2}{figure.4}}
+\newlabel{fig:mappreads}{{4}{2}{Creating joins between contigs thanks to read-pair information\relax }{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}A history of scaffolding strategies}{3}{subsection.1.3}}
+\newlabel{sec:hiscaf}{{1.3}{3}{A history of scaffolding strategies}{subsection.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Context and goal of the internship project}{3}{subsection.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Material and methods}{3}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Input data for genscale scaffolders}{3}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Format}{3}{subsubsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Methods}{3}{subsubsection.2.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Features of the assembled genomes}{3}{subsection.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Chloroplasts}{3}{subsubsection.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Other genomes}{3}{subsubsection.2.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Chloroplast genome structure\relax }}{3}{figure.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Input data of \textit  {Agrostis stolonifera} viewed in form of a graph\relax }}{3}{figure.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Genscale scaffolding strategy}{3}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Benchmarking}{3}{subsection.2.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Published scaffolders chosen for benchmarking}{3}{subsubsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Benchmarking strategy}{3}{subsubsection.2.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data sets compared}{4}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}QUAST and comparison function}{4}{subsubsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Visualization}{4}{subsubsection.3.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}}
+\bibdata{scaffoldingbiblio, scaffoldingbiblio_non_articles}
 \bibcite{hunt_comprehensive_2014}{{1}{}{{}}{{}}}
 \bibcite{earl_assemblathon_2011}{{2}{}{{}}{{}}}
 \bibcite{bradnam_assemblathon_2013}{{3}{}{{}}{{}}}
 \bibcite{pop_hierarchical_2004}{{4}{}{{}}{{}}}
 \bibcite{treangen_metamos:_2013}{{5}{}{{}}{{}}}
+\bibcite{zerbino_velvet:_2008}{{6}{}{{}}{{}}}
+\bibcite{hunt_comprehensive_2014-1}{{7}{}{{}}{{}}}
+\bibcite{huson_greedy_2002}{{8}{}{{}}{{}}}
+\bibcite{li_fast_2009}{{9}{}{{}}{{}}}
+\bibcite{langmead_fast_2012}{{10}{}{{}}{{}}}
+\bibcite{langmead_ultrafast_2009}{{11}{}{{}}{{}}}
 \bibstyle{naturemag}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers

@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Backgroud}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Assembly terminology}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Reads, pairing and overlaps}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Unitigs and Contigs}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Scaffolding and obtaining a consensus sequence}{subsection.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.3}{A history of scaffolding strategies}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.4}{Context and goal of the internship project}{section.1}% 8
+\BOOKMARK [1][-]{section.2}{Material and methods}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Input data for genscale scaffolders}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Format}{subsection.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Methods}{subsection.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Features of the assembled genomes}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Chloroplasts}{subsection.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Other genomes}{subsection.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.3}{Genscale scaffolding strategy}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.4}{Benchmarking}{section.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Published scaffolders chosen for benchmarking}{subsection.2.4}% 18
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Benchmarking strategy}{subsection.2.4}% 19
+\BOOKMARK [1][-]{section.3}{Results}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Data sets compared}{section.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.1}{QUAST and comparison function}{subsection.3.1}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Visualization}{subsection.3.1}% 23
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 24

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -9,32 +9,76 @@
 \bibinfo{author}{Hunt, M.}, \bibinfo{author}{Newbold, C.},
   \bibinfo{author}{Berriman, M.} \& \bibinfo{author}{Otto, T.~D.}
 \newblock \bibinfo{title}{A comprehensive evaluation of assembly scaffolding
-  tools} \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{R42}
-  (\bibinfo{year}{2014}).
+  tools} \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{R42}.
 
 \bibitem{earl_assemblathon_2011}
 \bibinfo{author}{Earl, D.} \emph{et~al.}
 \newblock \bibinfo{title}{Assemblathon 1: A competitive assessment of de novo
   short read assembly methods} \textbf{\bibinfo{volume}{21}},
-  \bibinfo{pages}{2224--2241} (\bibinfo{year}{2011-12}).
+  \bibinfo{pages}{2224--2241}.
+\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3227110/}.
 
 \bibitem{bradnam_assemblathon_2013}
 \bibinfo{author}{Bradnam, K.~R.} \emph{et~al.}
 \newblock \bibinfo{title}{Assemblathon 2: evaluating de novo methods of genome
   assembly in three vertebrate species} \textbf{\bibinfo{volume}{2}},
-  \bibinfo{pages}{10} (\bibinfo{year}{2013-07-22}).
+  \bibinfo{pages}{10}.
+\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3844414/}.
 
 \bibitem{pop_hierarchical_2004}
 \bibinfo{author}{Pop, M.}, \bibinfo{author}{Kosack, D.~S.} \&
   \bibinfo{author}{Salzberg, S.~L.}
 \newblock \bibinfo{title}{Hierarchical scaffolding with bambus}
-  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{149--159}
-  (\bibinfo{year}{2004-01-01}).
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{149--159}.
+\newblock \urlprefix\url{http://genome.cshlp.org/content/14/1/149}.
 
 \bibitem{treangen_metamos:_2013}
 \bibinfo{author}{Treangen, T.~J.} \emph{et~al.}
 \newblock \bibinfo{title}{{MetAMOS}: a modular and open source metagenomic
   assembly and analysis pipeline} \textbf{\bibinfo{volume}{14}},
-  \bibinfo{pages}{R2} (\bibinfo{year}{2013-01-15}).
+  \bibinfo{pages}{R2}.
+\newblock \urlprefix\url{http://genomebiology.com/2013/14/1/R2/abstract}.
+
+\bibitem{zerbino_velvet:_2008}
+\bibinfo{author}{Zerbino, D.~R.} \& \bibinfo{author}{Birney, E.}
+\newblock \bibinfo{title}{Velvet: Algorithms for de novo short read assembly
+  using de bruijn graphs} \textbf{\bibinfo{volume}{18}},
+  \bibinfo{pages}{821--829}.
+\newblock \urlprefix\url{http://genome.cshlp.org/content/18/5/821}.
+
+\bibitem{hunt_comprehensive_2014-1}
+\bibinfo{author}{Hunt, M.}, \bibinfo{author}{Newbold, C.},
+  \bibinfo{author}{Berriman, M.} \& \bibinfo{author}{Otto, T.~D.}
+\newblock \bibinfo{title}{A comprehensive evaluation of assembly scaffolding
+  tools} \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{R42}.
+\newblock \urlprefix\url{http://genomebiology.com/2014/15/3/R42/abstract}.
+
+\bibitem{huson_greedy_2002}
+\bibinfo{author}{Huson, D.~H.}, \bibinfo{author}{Reinert, K.} \&
+  \bibinfo{author}{Myers, E.~W.}
+\newblock \bibinfo{title}{The greedy path-merging algorithm for contig
+  scaffolding} \textbf{\bibinfo{volume}{49}}, \bibinfo{pages}{603--615}.
+\newblock \urlprefix\url{http://doi.acm.org/10.1145/585265.585267}.
+
+\bibitem{li_fast_2009}
+\bibinfo{author}{Li, H.} \& \bibinfo{author}{Durbin, R.}
+\newblock \bibinfo{title}{Fast and accurate short read alignment with
+  burrows-wheeler transform} \textbf{\bibinfo{volume}{25}},
+  \bibinfo{pages}{1754--1760}.
+
+\bibitem{langmead_fast_2012}
+\bibinfo{author}{Langmead, B.} \& \bibinfo{author}{Salzberg, S.~L.}
+\newblock \bibinfo{title}{Fast gapped-read alignment with bowtie 2}
+  \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{357--359}.
+\newblock
+  \urlprefix\url{http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1923.html}.
+
+\bibitem{langmead_ultrafast_2009}
+\bibinfo{author}{Langmead, B.}, \bibinfo{author}{Trapnell, C.},
+  \bibinfo{author}{Pop, M.} \& \bibinfo{author}{Salzberg, S.~L.}
+\newblock \bibinfo{title}{Ultrafast and memory-efficient alignment of short
+  {DNA} sequences to the human genome} \textbf{\bibinfo{volume}{10}},
+  \bibinfo{pages}{R25}.
+\newblock \urlprefix\url{http://genomebiology.com/2009/10/3/R25/abstract}.
 
 \end{thebibliography}
