@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Testing.aux
-White space in argument---line 67 of file Testing.aux
+White space in argument---line 72 of file Testing.aux
  : \bibdata{scaffoldingbiblio,
  :                             scaffoldingbiblio_non_articles}
 I'm skipping whatever remains of this command
@@ -29,45 +29,49 @@ Warning--empty journal in langmead_fast_2012
 Warning--empty year in langmead_fast_2012
 Warning--empty journal in langmead_ultrafast_2009
 Warning--empty year in langmead_ultrafast_2009
-You've used 11 entries,
+Warning--empty journal in lander_initial_2001
+Warning--empty year in lander_initial_2001
+Warning--empty journal in venter_sequence_2001-1
+Warning--empty year in venter_sequence_2001-1
+You've used 13 entries,
             2348 wiz_defined-function locations,
-            1034 strings with 13869 characters,
-and the built_in function-call counts, 4269 in all, are:
-= -- 274
-> -- 120
+            1046 strings with 22506 characters,
+and the built_in function-call counts, 5037 in all, are:
+= -- 328
+> -- 136
 < -- 0
-+ -- 60
-- -- 30
-* -- 529
-:= -- 465
-add.period$ -- 31
-call.type$ -- 11
-change.case$ -- 11
++ -- 68
+- -- 34
+* -- 619
+:= -- 549
+add.period$ -- 35
+call.type$ -- 13
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 382
-empty$ -- 379
-format.name$ -- 41
-if$ -- 816
+cite$ -- 39
+duplicate$ -- 450
+empty$ -- 453
+format.name$ -- 47
+if$ -- 966
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 96
-newline$ -- 61
-num.names$ -- 11
-pop$ -- 128
+int.to.str$ -- 13
+missing$ -- 112
+newline$ -- 69
+num.names$ -- 13
+pop$ -- 150
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 73
+skip$ -- 85
 stack$ -- 0
-substring$ -- 201
-swap$ -- 329
+substring$ -- 257
+swap$ -- 383
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 22
-while$ -- 28
-width$ -- 13
-write$ -- 113
+warning$ -- 26
+while$ -- 34
+width$ -- 15
+write$ -- 129
 (There was 1 error message)

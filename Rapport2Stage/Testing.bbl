@@ -81,4 +81,14 @@
   \bibinfo{pages}{R25}.
 \newblock \urlprefix\url{http://genomebiology.com/2009/10/3/R25/abstract}.
 
+\bibitem{lander_initial_2001}
+\bibinfo{author}{Lander, E.~S.} \emph{et~al.}
+\newblock \bibinfo{title}{Initial sequencing and analysis of the human genome}
+  \textbf{\bibinfo{volume}{409}}, \bibinfo{pages}{860--921}.
+
+\bibitem{venter_sequence_2001-1}
+\bibinfo{author}{Venter, J.~C.} \emph{et~al.}
+\newblock \bibinfo{title}{The sequence of the human genome}
+  \textbf{\bibinfo{volume}{291}}, \bibinfo{pages}{1304--1351}.
+
 \end{thebibliography}
