@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.3)  11 JUN 2015 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.3)  17 JUN 2015 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,7 +582,16 @@ File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
 .tex
 File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.0 (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -740,7 +749,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+Package hyperref Info: Option `colorlinks' set `true' on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
@@ -812,6 +821,35 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@figure=\toks45
 \@float@every@table=\toks46
 
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count152
+)
+\etb@tempcnta=\count153
+)
+\csq@reset=\count154
+\csq@gtype=\count155
+\csq@glevel=\count156
+\csq@qlevel=\count157
+\csq@maxlvl=\count158
+\csq@tshold=\count159
+\csq@ltx@everypar=\toks47
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box64
@@ -819,32 +857,46 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \aftertitleunit=\skip61
 \ttl@plus=\dimen196
 \ttl@minus=\dimen197
-\ttl@toksa=\toks47
+\ttl@toksa=\toks48
 \titlewidth=\dimen198
 \titlewidthlast=\dimen199
 \titlewidthfirst=\dimen200
-) (./Testing.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks49
+\c@algorithm=\count160
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+ (./Testing.aux)
 \openout1 = `Testing.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 91.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Info: Redefining \Ref on input line 85.
+LaTeX Info: Redefining \Ref on input line 91.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -867,14 +919,14 @@ LaTeX Info: Redefining \Ref on input line 85.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -883,17 +935,17 @@ LaTeX Info: Redefining \Ref on input line 85.
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
+\scratchcounter=\count161
 \scratchdimen=\dimen201
 \scratchbox=\box65
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count155
+\nofMPsegments=\count162
+\nofMParguments=\count163
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count164
 \MPscratchDim=\dimen202
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count165
+\makeMPintoPDFobject=\count166
+\everyMPtoPDFconversion=\toks51
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -901,33 +953,35 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring ON on input line 85.
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+Package hyperref Info: Link coloring ON on input line 91.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
  (./Testing.out) (./Testing.out)
 \@outlinefile=\write4
 \openout4 = `Testing.out'.
 
-LaTeX Info: Redefining \Ref on input line 85.
-\c@lstlisting=\count158
+LaTeX Info: Redefining \Ref on input line 91.
+\c@lstlisting=\count167
 
-<pictures/logos.jpg, id=175, 3089.5425pt x 331.2375pt>
+<pictures/logos.jpg, id=159, 3089.5425pt x 331.2375pt>
 File: pictures/logos.jpg Graphic file (type jpg)
 
 <use pictures/logos.jpg>
-Package pdftex.def Info: pictures/logos.jpg used on input line 87.
+Package pdftex.def Info: pictures/logos.jpg used on input line 93.
 (pdftex.def)             Requested size: 308.97235pt x 33.12569pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 87.
- [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 93.
+ [1
 
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./pictures/
+logos.jpg>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
 
-
- <./pictures/logos.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
@@ -935,42 +989,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 103.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 128.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
- [3
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [3
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 120.
- (./Testing.toc
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+ (./Testing.toc)
 \tf@toc=\write5
 \openout5 = `Testing.toc'.
 
 
 [4
 
-]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 
+l.160 
        [1]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -979,174 +1023,227 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.270 \newpage
-               [2]
-Underfull \hbox (badness 10000) in paragraph at lines 363--368
+l.246 
+       [2]pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 
+       [3]
+Underfull \hbox (badness 10000) in paragraph at lines 389--394
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.370 \newpage
-               [3]pdfTeX warning (ext4): destination with the same identifier (
-name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.384 \subsection{Goal of the internship project}
-                                                  [4] [5]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 398.
+l.400 \newpage
+               [4]
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 402.
+
+Overfull \hbox (13.78183pt too wide) in paragraph at lines 402--402
+[]\OT1/pcr/m/n/10 "The \OT1/pcr/m/sl/10 Contig Scaffolding Problem \OT1/pcr/m/n
+/10 is to order and orientate the given contigs in
+ []
+
+[5]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 412.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-<pictures/agrostis_INPT_txt.png, id=316, 354.32375pt x 659.46375pt>
+LaTeX Warning: Reference `fig:sspace' on page 6 undefined on input line 427.
+
+[6
+
+] [7]
+Overfull \hbox (12.31084pt too wide) in paragraph at lines 456--457
+\OT1/ptm/m/n/12 solvers is showed in fig-ure [][]5[][] along with its graph-i-c
+al rep-re-sen-ta-tion gen-er-ated by the \OT1/pcr/m/n/12 graph[]generator.py
+ []
+
+<pictures/agrostis_INPT_txt.png, id=327, 354.32375pt x 659.46375pt>
 File: pictures/agrostis_INPT_txt.png Graphic file (type png)
 
 <use pictures/agrostis_INPT_txt.png>
-Package pdftex.def Info: pictures/agrostis_INPT_txt.png used on input line 419.
+Package pdftex.def Info: pictures/agrostis_INPT_txt.png used on input line 477.
 
 (pdftex.def)             Requested size: 141.72697pt x 263.78082pt.
 
-<pictures/agrostis_INPT_graph.png, id=318, 568.1225pt x 442.65375pt>
+<pictures/agrostis_INPT_graph.png, id=329, 568.1225pt x 442.65375pt>
 File: pictures/agrostis_INPT_graph.png Graphic file (type png)
 
 <use pictures/agrostis_INPT_graph.png>
-Package pdftex.def Info: pictures/agrostis_INPT_graph.png used on input line 41
-9.
+Package pdftex.def Info: pictures/agrostis_INPT_graph.png used on input line 47
+7.
 (pdftex.def)             Requested size: 227.24496pt x 177.05835pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 426.
- [6 <./pictures/agrostis_INPT_txt.png> <./pictures/agrostis_INPT_graph.png>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 452.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 484.
+ [8 <./pictures/agrostis_INPT_txt.png> <./pictures/agrostis_INPT_graph.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 487.
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--456
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 487.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 514.
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--519
 
  []
 
-<pictures/wolba_vs_ref_1000.png, id=330, 602.25pt x 602.25pt>
-File: pictures/wolba_vs_ref_1000.png Graphic file (type png)
-
-<use pictures/wolba_vs_ref_1000.png>
-Package pdftex.def Info: pictures/wolba_vs_ref_1000.png used on input line 467.
-
-(pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
-
-<pictures/wolba_vs_ref_500.png, id=331, 602.25pt x 602.25pt>
+<pictures/wolba_vs_ref_500.png, id=340, 602.25pt x 602.25pt>
 File: pictures/wolba_vs_ref_500.png Graphic file (type png)
 
 <use pictures/wolba_vs_ref_500.png>
-Package pdftex.def Info: pictures/wolba_vs_ref_500.png used on input line 467.
+Package pdftex.def Info: pictures/wolba_vs_ref_500.png used on input line 529.
 (pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
- [7 <./pictures/wolba_vs_ref_1000.png> <./pictures/wolba_vs_ref_500.png>]
-<pictures/rice_INPT_graph_G1.png, id=344, 532.99126pt x 130.4875pt>
-File: pictures/rice_INPT_graph_G1.png Graphic file (type png)
 
-<use pictures/rice_INPT_graph_G1.png>
-Package pdftex.def Info: pictures/rice_INPT_graph_G1.png used on input line 487
-.
-(pdftex.def)             Requested size: 213.19272pt x 52.19406pt.
+<pictures/wolba_vs_ref_1000.png, id=341, 602.25pt x 602.25pt>
+File: pictures/wolba_vs_ref_1000.png Graphic file (type png)
 
-<pictures/rice_INPT_graph_G2.png, id=345, 645.41125pt x 655.44875pt>
-File: pictures/rice_INPT_graph_G2.png Graphic file (type png)
+<use pictures/wolba_vs_ref_1000.png>
+Package pdftex.def Info: pictures/wolba_vs_ref_1000.png used on input line 529.
 
-<use pictures/rice_INPT_graph_G2.png>
-Package pdftex.def Info: pictures/rice_INPT_graph_G2.png used on input line 487
-.
-(pdftex.def)             Requested size: 258.15993pt x 262.17485pt.
- [8 <./pictures/rice_INPT_graph_G1.png> <./pictures/rice_INPT_graph_G2.png>] [9
-] [10]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 691.
+(pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
+
+Overfull \hbox (27.52911pt too wide) in paragraph at lines 524--530
+ [] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] <pictures/wpm_agrostis_sol1.png, id=370, 714.67pt x 665.48625pt>
+[9]
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 540.
+ <pictures/rice_INPT_graph_G1.png, id=350, 532.99126pt x 130.4875pt>
+File: pictures/rice_INPT_graph_G1.png Graphic file (type png)
+
+<use pictures/rice_INPT_graph_G1.png>
+Package pdftex.def Info: pictures/rice_INPT_graph_G1.png used on input line 550
+.
+(pdftex.def)             Requested size: 213.19272pt x 52.19406pt.
+
+<pictures/rice_INPT_graph_G2.png, id=351, 645.41125pt x 655.44875pt>
+File: pictures/rice_INPT_graph_G2.png Graphic file (type png)
+
+<use pictures/rice_INPT_graph_G2.png>
+Package pdftex.def Info: pictures/rice_INPT_graph_G2.png used on input line 550
+.
+(pdftex.def)             Requested size: 258.15993pt x 262.17485pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./pictures/wolba_vs_ref_500.png> <./pictures/wolba_vs_ref_1000.png>]
+[11 <./pictures/rice_INPT_graph_G1.png> <./pictures/rice_INPT_graph_G2.png>]
+Overfull \hbox (2.22963pt too wide) in paragraph at lines 671--671
+ [][][][]\OT1/ptm/m/sc/12 scaffolds 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13]
+Overfull \hbox (13.97455pt too wide) in paragraph at lines 685--686
+[]\OT1/ptm/m/n/12 Results pre-sented in ta-ble [][]1[][] are those of the com-p
+lete model-like graphs an-a-lyzed by the \OT1/ptm/m/it/12 graph[]inspector.py\O
+T1/ptm/m/n/12 . 
+ []
+
+[14
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 849.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] <pictures/wpm_agrostis_sol1.png, id=390, 714.67pt x 665.48625pt>
 File: pictures/wpm_agrostis_sol1.png Graphic file (type png)
 
 <use pictures/wpm_agrostis_sol1.png>
-Package pdftex.def Info: pictures/wpm_agrostis_sol1.png used on input line 708.
+Package pdftex.def Info: pictures/wpm_agrostis_sol1.png used on input line 866.
 
 (pdftex.def)             Requested size: 178.66705pt x 166.37115pt.
 
-<pictures/wpm_agrosti_sol2.png, id=371, 714.67pt x 665.48625pt>
+<pictures/wpm_agrosti_sol2.png, id=391, 714.67pt x 665.48625pt>
 File: pictures/wpm_agrosti_sol2.png Graphic file (type png)
 
 <use pictures/wpm_agrosti_sol2.png>
-Package pdftex.def Info: pictures/wpm_agrosti_sol2.png used on input line 708.
+Package pdftex.def Info: pictures/wpm_agrosti_sol2.png used on input line 866.
 (pdftex.def)             Requested size: 178.66705pt x 166.37115pt.
 
-<pictures/sspace_scaffolds_agrostis.png, id=372, 878.28125pt x 182.6825pt>
+<pictures/sspace_scaffolds_agrostis.png, id=392, 878.28125pt x 182.6825pt>
 File: pictures/sspace_scaffolds_agrostis.png Graphic file (type png)
 
 <use pictures/sspace_scaffolds_agrostis.png>
 Package pdftex.def Info: pictures/sspace_scaffolds_agrostis.png used on input l
-ine 708.
+ine 866.
 (pdftex.def)             Requested size: 219.56978pt x 45.6705pt.
 
-<pictures/agrostis_GOLD.png, id=373, 866.23625pt x 819.06pt>
+<pictures/agrostis_GOLD.png, id=393, 866.23625pt x 819.06pt>
 File: pictures/agrostis_GOLD.png Graphic file (type png)
 
 <use pictures/agrostis_GOLD.png>
-Package pdftex.def Info: pictures/agrostis_GOLD.png used on input line 708.
+Package pdftex.def Info: pictures/agrostis_GOLD.png used on input line 866.
 (pdftex.def)             Requested size: 216.55853pt x 204.7645pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] <pictures/dotplot_agro_wpm1.png, id=380, 602.25pt x 602.25pt>
+[16] <pictures/dotplot_agro_wpm1.png, id=401, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_wpm1.png Graphic file (type png)
 
 <use pictures/dotplot_agro_wpm1.png>
-Package pdftex.def Info: pictures/dotplot_agro_wpm1.png used on input line 726.
+Package pdftex.def Info: pictures/dotplot_agro_wpm1.png used on input line 884.
 
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/dotplot_agro_wpm2.png, id=381, 602.25pt x 602.25pt>
+<pictures/dotplot_agro_wpm2.png, id=402, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_wpm2.png Graphic file (type png)
 
 <use pictures/dotplot_agro_wpm2.png>
-Package pdftex.def Info: pictures/dotplot_agro_wpm2.png used on input line 726.
+Package pdftex.def Info: pictures/dotplot_agro_wpm2.png used on input line 884.
 
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/dotplot_agro_sspace.png, id=382, 602.25pt x 602.25pt>
+<pictures/dotplot_agro_sspace.png, id=403, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_sspace.png Graphic file (type png)
 
 <use pictures/dotplot_agro_sspace.png>
-Package pdftex.def Info: pictures/dotplot_agro_sspace.png used on input line 72
-6.
+Package pdftex.def Info: pictures/dotplot_agro_sspace.png used on input line 88
+4.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/dotplot_agrostis_agrostis.png, id=383, 602.25pt x 602.25pt>
+<pictures/dotplot_agrostis_agrostis.png, id=404, 602.25pt x 602.25pt>
 File: pictures/dotplot_agrostis_agrostis.png Graphic file (type png)
 
 <use pictures/dotplot_agrostis_agrostis.png>
 Package pdftex.def Info: pictures/dotplot_agrostis_agrostis.png used on input l
-ine 726.
+ine 884.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./pictures/wpm_agrostis_sol1.png> <./pictures/wpm_agrosti_sol2.png> <./pic
-tures/sspace_scaffolds_agrostis.png> <./pictures/agrostis_GOLD.png>] [14 <./pic
+[17 <./pictures/wpm_agrostis_sol1.png> <./pictures/wpm_agrosti_sol2.png> <./pic
+tures/sspace_scaffolds_agrostis.png> <./pictures/agrostis_GOLD.png>] [18 <./pic
 tures/dotplot_agro_wpm1.png> <./pictures/dotplot_agro_wpm2.png> <./pictures/dot
 plot_agro_sspace.png> <./pictures/dotplot_agrostis_agrostis.png>]
-<pictures/alignment_woinserts.png, id=408, 644.006pt x 354.926pt>
+<pictures/alignment_woinserts.png, id=430, 688.171pt x 554.873pt>
 File: pictures/alignment_woinserts.png Graphic file (type png)
 
 <use pictures/alignment_woinserts.png>
-Package pdftex.def Info: pictures/alignment_woinserts.png used on input line 79
-4.
-(pdftex.def)             Requested size: 450.80112pt x 248.4465pt.
+Package pdftex.def Info: pictures/alignment_woinserts.png used on input line 95
+2.
+(pdftex.def)             Requested size: 481.71642pt x 388.40845pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1154,9 +1251,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15
+[19
 
-] [16 <./pictures/alignment_woinserts.png>] [17
+] [20 <./pictures/alignment_woinserts.png>] [21
 
 ] (./Testing.bbl) [1
 
@@ -1164,47 +1261,54 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.873 \end{document}
-                     [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 873.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 873.
+l.1031 \end{document}
+                      [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1031.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1031.
  (./Testing.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 873.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 873.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1031.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1031.
+
 Package rerunfilecheck Info: File `Testing.out' has not changed.
-(rerunfilecheck)             Checksum: 629E860632B0ECA144285FEA99A0E7BB;2873.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 873.
+(rerunfilecheck)             Checksum: 7F8C971BE40872634B64D812EAB247BE;2524.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1031.
  ) 
 Here is how much of TeX's memory you used:
- 23274 strings out of 494996
- 449478 string characters out of 6180247
- 591846 words of memory out of 5000000
- 25942 multiletter control sequences out of 15000+600000
- 47998 words of font info for 97 fonts, out of 8000000 for 9000
+ 24610 strings out of 494996
+ 471271 string characters out of 6180247
+ 623520 words of memory out of 5000000
+ 27241 multiletter control sequences out of 15000+600000
+ 53115 words of font info for 107 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,12n,82p,1768b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,82p,1841b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Testing.pdf (23 pages, 921579 bytes).
+lic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
+er/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Testing.pdf (27 pages, 1009885 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 477 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
