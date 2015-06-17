@@ -79,7 +79,7 @@
       <file>Rapport2Stage.bcf</file>
     </requires>
     <requires type="editable">
-      <file>Rapport2Stage.bib</file>
+      <file>Rapport2Stage_biblio.bib</file>
     </requires>
   </external>
 </requests>
