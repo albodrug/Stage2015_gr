@@ -22,9 +22,9 @@
 \BOOKMARK [1][-]{section.3}{Results}{}% 22
 \BOOKMARK [2][-]{subsection.3.1}{Comparison between the data sets}{section.3}% 23
 \BOOKMARK [2][-]{subsection.3.2}{Comparison of GST solutions with the expected solution}{section.3}% 24
-\BOOKMARK [2][-]{subsection.3.3}{Comparison between best GST solution and SSPACE}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.1}{QUAST and comparison function}{subsection.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Visualization with mummer and graph\137generator.py}{subsection.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3}{Comparison of the best GST solutions and SSPACE to the reference genome}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Quality assessment of genome assemblies of Agrostis stolonifera}{subsection.3.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Quality assessment of genome assemblies of Pinus koraiensis}{subsection.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.4}{Partially solved instances}{section.3}% 28
 \BOOKMARK [1][-]{section.4}{Discussion}{}% 29
 \BOOKMARK [1][-]{section.5}{Conclusion}{}% 30

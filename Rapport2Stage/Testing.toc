@@ -18,17 +18,15 @@
 \contentsline {subsection}{\numberline {2.2}Input data features and complexity inspection}{12}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Benchmarking}{12}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Comparison with the reference solution}{12}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Comparison with published tools: benchmarking strategy}{12}{subsubsection.2.3.2}
-\contentsline {section}{\numberline {3}Results}{14}{section.3}
-\contentsline {subsection}{\numberline {3.1}Comparison between the data sets}{14}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Comparison of GST solutions with the expected solution}{14}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Comparison between best GST solution and SSPACE}{15}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}QUAST and comparison function}{15}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Visualization with mummer and graph\_generator.py}{16}{subsubsection.3.3.2}
-\contentsline {paragraph}{\numberline {3.3.2.1}graph\_generator.py visualization}{16}{paragraph.3.3.2.1}
-\contentsline {paragraph}{\numberline {3.3.2.2}Dotplots with mummer}{17}{paragraph.3.3.2.2}
-\contentsline {subsection}{\numberline {3.4}Partially solved instances}{19}{subsection.3.4}
-\contentsline {section}{\numberline {4}Discussion}{21}{section.4}
-\contentsline {section}{\numberline {5}Conclusion}{21}{section.5}
+\contentsline {subsubsection}{\numberline {2.3.2}Comparison with published tools: benchmarking strategy}{13}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Results}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comparison between the data sets}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Comparison of GST solutions with the expected solution}{16}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Comparison of the best GST solutions and SSPACE to the reference genome}{17}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Quality assessment of genome assemblies of \textit {Agrostis stolonifera}}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Quality assessment of genome assemblies of \textit {Pinus koraiensis}}{18}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Partially solved instances}{22}{subsection.3.4}
+\contentsline {section}{\numberline {4}Discussion}{24}{section.4}
+\contentsline {section}{\numberline {5}Conclusion}{24}{section.5}
 \contentsline {section}{\numberline {6}References}{}{section.6}
 \contentsline {section}{\numberline {7}Annexes}{}{section.7}
