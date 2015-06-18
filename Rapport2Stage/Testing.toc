@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Context}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Background}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Assembly terminology}{2}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Reads, pairing and overlaps}{2}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Unitigs and Contigs}{2}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Obtaining scaffolds}{3}{subsubsection.1.3.3}
+\contentsline {subsection}{\numberline {1.4}A history of scaffolding strategies and modeling}{5}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Examples of scaffolding tools}{5}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Limits of the scaffolding tools}{6}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Goal of the internship project}{7}{subsection.1.5}
+\contentsline {section}{\numberline {2}Material and methods}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Genscale scaffolding methodology}{8}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Format of the input data for genscale scaffolders}{8}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Features of the assembled genomes}{9}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Genscale scaffolding problem modeling}{10}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Differences between Genscale scaffolding tools}{11}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Input data features and complexity inspection}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Benchmarking}{12}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Comparison with the reference solution}{12}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Comparison with published tools: benchmarking strategy}{12}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Results}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comparison between the data sets}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Comparison of GST solutions with the expected solution}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Comparison between best GST solution and SSPACE}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}QUAST and comparison function}{15}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Visualization with mummer and graph\_generator.py}{16}{subsubsection.3.3.2}
+\contentsline {paragraph}{\numberline {3.3.2.1}graph\_generator.py visualization}{16}{paragraph.3.3.2.1}
+\contentsline {paragraph}{\numberline {3.3.2.2}Dotplots with mummer}{17}{paragraph.3.3.2.2}
+\contentsline {subsection}{\numberline {3.4}Partially solved instances}{19}{subsection.3.4}
+\contentsline {section}{\numberline {4}Discussion}{21}{section.4}
+\contentsline {section}{\numberline {5}Conclusion}{21}{section.5}
+\contentsline {section}{\numberline {6}References}{}{section.6}
+\contentsline {section}{\numberline {7}Annexes}{}{section.7}
