@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.1.2}{Background}{section.1}% 3
 \BOOKMARK [2][-]{subsection.1.3}{Assembly terminology}{section.1}% 4
 \BOOKMARK [3][-]{subsubsection.1.3.1}{Reads, pairing and overlaps}{subsection.1.3}% 5
-\BOOKMARK [3][-]{subsubsection.1.3.2}{Unitigs and Contigs}{subsection.1.3}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Unitigs and contigs}{subsection.1.3}% 6
 \BOOKMARK [3][-]{subsubsection.1.3.3}{Obtaining scaffolds}{subsection.1.3}% 7
 \BOOKMARK [2][-]{subsection.1.4}{A history of scaffolding strategies and modeling}{section.1}% 8
 \BOOKMARK [3][-]{subsubsection.1.4.1}{Examples of scaffolding tools}{subsection.1.4}% 9
@@ -17,16 +17,14 @@
 \BOOKMARK [3][-]{subsubsection.2.1.4}{Differences between Genscale scaffolding tools}{subsection.2.1}% 17
 \BOOKMARK [2][-]{subsection.2.2}{Input data features and complexity inspection}{section.2}% 18
 \BOOKMARK [2][-]{subsection.2.3}{Benchmarking}{section.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Comparison with the reference solution}{subsection.2.3}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Comparison with the expected solution}{subsection.2.3}% 20
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Comparison with published tools: benchmarking strategy}{subsection.2.3}% 21
 \BOOKMARK [1][-]{section.3}{Results}{}% 22
 \BOOKMARK [2][-]{subsection.3.1}{Comparison between the data sets}{section.3}% 23
 \BOOKMARK [2][-]{subsection.3.2}{Comparison of GST solutions with the expected solution}{section.3}% 24
 \BOOKMARK [2][-]{subsection.3.3}{Comparison of the best GST solutions and SSPACE to the reference genome}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Quality assessment of genome assemblies of Agrostis stolonifera}{subsection.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Quality assessment of genome assemblies of Pinus koraiensis}{subsection.3.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Quality assessment of genome assemblies of Agrostis stolonifera chloroplastic genome}{subsection.3.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Quality assessment of genome assemblies of Pinus koraiensis chloroplastic genome}{subsection.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.4}{Partially solved instances}{section.3}% 28
-\BOOKMARK [1][-]{section.4}{Discussion}{}% 29
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 30
-\BOOKMARK [1][-]{section.6}{References}{}% 31
-\BOOKMARK [1][-]{section.7}{Annexes}{}% 32
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 29
+\BOOKMARK [1][-]{section.5}{Perspectives}{}% 30
