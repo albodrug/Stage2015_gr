@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.24)  17 JUN 2015 21:11
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.3)  18 JUN 2015 19:58
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.24)  19 JUN 2015 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,19 +910,11 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<<<<<<< HEAD
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring ON on input line 91.
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
-=======
-\AtBeginShipoutBox=\box66
 Package hyperref Info: Link coloring ON on input line 92.
 LaTeX Info: Redefining \ref on input line 92.
 LaTeX Info: Redefining \pageref on input line 92.
 LaTeX Info: Redefining \nameref on input line 92.
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
  (./Testing.out) (./Testing.out)
 \@outlinefile=\write4
 \openout4 = `Testing.out'.
@@ -1032,9 +1020,6 @@ Overfull \hbox (12.31084pt too wide) in paragraph at lines 457--459
 al rep-re-sen-ta-tion gen-er-ated by the \OT1/pcr/m/n/12 graph[]generator.py
  []
 
-<<<<<<< HEAD
-<pictures/agrostis_INPT_txt.png, id=318, 354.32375pt x 659.46375pt>
-=======
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 459.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -1043,8 +1028,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 459.
 
-<pictures/agrostis_INPT_txt.png, id=327, 354.32375pt x 659.46375pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/agrostis_INPT_txt.png, id=318, 354.32375pt x 659.46375pt>
 File: pictures/agrostis_INPT_txt.png Graphic file (type png)
 
 <use pictures/agrostis_INPT_txt.png>
@@ -1065,26 +1049,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 522.
 
-<<<<<<< HEAD
-Underfull \hbox (badness 10000) in paragraph at lines 497--519
-
- []
-
-<pictures/wolba_vs_ref_500.png, id=332, 602.25pt x 602.25pt>
-=======
-<pictures/wolba_vs_ref_500.png, id=343, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/wolba_vs_ref_500.png, id=335, 602.25pt x 602.25pt>
 File: pictures/wolba_vs_ref_500.png Graphic file (type png)
 
 <use pictures/wolba_vs_ref_500.png>
 Package pdftex.def Info: pictures/wolba_vs_ref_500.png used on input line 537.
 (pdftex.def)             Requested size: 150.56212pt x 150.56212pt.
 
-<<<<<<< HEAD
-<pictures/wolba_vs_ref_1000.png, id=333, 602.25pt x 602.25pt>
-=======
-<pictures/wolba_vs_ref_1000.png, id=344, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/wolba_vs_ref_1000.png, id=336, 602.25pt x 602.25pt>
 File: pictures/wolba_vs_ref_1000.png Graphic file (type png)
 
 <use pictures/wolba_vs_ref_1000.png>
@@ -1101,13 +1073,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
-<<<<<<< HEAD
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 540.
- <pictures/rice_INPT_graph_G1.png, id=342, 532.99126pt x 130.4875pt>
-=======
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 548.
- <pictures/rice_INPT_graph_G1.png, id=353, 532.99126pt x 130.4875pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+ <pictures/rice_INPT_graph_G1.png, id=345, 532.99126pt x 130.4875pt>
 File: pictures/rice_INPT_graph_G1.png Graphic file (type png)
 
 <use pictures/rice_INPT_graph_G1.png>
@@ -1115,11 +1082,7 @@ Package pdftex.def Info: pictures/rice_INPT_graph_G1.png used on input line 558
 .
 (pdftex.def)             Requested size: 213.19272pt x 52.19406pt.
 
-<<<<<<< HEAD
-<pictures/rice_INPT_graph_G2.png, id=343, 645.41125pt x 655.44875pt>
-=======
-<pictures/rice_INPT_graph_G2.png, id=354, 645.41125pt x 655.44875pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/rice_INPT_graph_G2.png, id=346, 645.41125pt x 655.44875pt>
 File: pictures/rice_INPT_graph_G2.png Graphic file (type png)
 
 <use pictures/rice_INPT_graph_G2.png>
@@ -1133,10 +1096,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [10 <./pictures/wolba_vs_ref_500.png> <./pictures/wolba_vs_ref_1000.png>]
 [11 <./pictures/rice_INPT_graph_G1.png> <./pictures/rice_INPT_graph_G2.png>]
 [12] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 ) [13]
 Overfull \hbox (14.89146pt too wide) in paragraph at lines 660--661
 []\OT1/pcr/m/n/12 nucmer scaffolding.fasta ref[]genome.fasta -l 500 \OT1/ptm/m/
@@ -1177,11 +1140,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 
 Package natbib Warning: Citation `u' on page 17 undefined on input line 863.
 
-<<<<<<< HEAD
-[15] <pictures/wpm_agrostis_sol1.png, id=382, 714.67pt x 665.48625pt>
-=======
-<pictures/wpm_agrostis_sol1.png, id=415, 714.67pt x 665.48625pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/wpm_agrostis_sol1.png, id=407, 714.67pt x 665.48625pt>
 File: pictures/wpm_agrostis_sol1.png Graphic file (type png)
 
 <use pictures/wpm_agrostis_sol1.png>
@@ -1189,22 +1148,14 @@ Package pdftex.def Info: pictures/wpm_agrostis_sol1.png used on input line 919.
 
 (pdftex.def)             Requested size: 178.66705pt x 166.37115pt.
 
-<<<<<<< HEAD
-<pictures/wpm_agrosti_sol2.png, id=383, 714.67pt x 665.48625pt>
-=======
-<pictures/wpm_agrosti_sol2.png, id=416, 714.67pt x 665.48625pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/wpm_agrosti_sol2.png, id=408, 714.67pt x 665.48625pt>
 File: pictures/wpm_agrosti_sol2.png Graphic file (type png)
 
 <use pictures/wpm_agrosti_sol2.png>
 Package pdftex.def Info: pictures/wpm_agrosti_sol2.png used on input line 919.
 (pdftex.def)             Requested size: 178.66705pt x 166.37115pt.
 
-<<<<<<< HEAD
-<pictures/sspace_scaffolds_agrostis.png, id=384, 878.28125pt x 182.6825pt>
-=======
-<pictures/sspace_scaffolds_agrostis.png, id=417, 878.28125pt x 182.6825pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/sspace_scaffolds_agrostis.png, id=409, 878.28125pt x 182.6825pt>
 File: pictures/sspace_scaffolds_agrostis.png Graphic file (type png)
 
 <use pictures/sspace_scaffolds_agrostis.png>
@@ -1212,11 +1163,7 @@ Package pdftex.def Info: pictures/sspace_scaffolds_agrostis.png used on input l
 ine 919.
 (pdftex.def)             Requested size: 219.56978pt x 45.6705pt.
 
-<<<<<<< HEAD
-<pictures/agrostis_GOLD.png, id=385, 866.23625pt x 819.06pt>
-=======
-<pictures/agrostis_GOLD.png, id=418, 866.23625pt x 819.06pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/agrostis_GOLD.png, id=410, 866.23625pt x 819.06pt>
 File: pictures/agrostis_GOLD.png Graphic file (type png)
 
 <use pictures/agrostis_GOLD.png>
@@ -1226,11 +1173,7 @@ Package pdftex.def Info: pictures/agrostis_GOLD.png used on input line 919.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[16] <pictures/dotplot_agro_wpm1.png, id=393, 602.25pt x 602.25pt>
-=======
-<pictures/dotplot_agro_wpm1.png, id=419, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/dotplot_agro_wpm1.png, id=411, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_wpm1.png Graphic file (type png)
 
 <use pictures/dotplot_agro_wpm1.png>
@@ -1238,11 +1181,7 @@ Package pdftex.def Info: pictures/dotplot_agro_wpm1.png used on input line 935.
 
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<<<<<<< HEAD
-<pictures/dotplot_agro_wpm2.png, id=394, 602.25pt x 602.25pt>
-=======
-<pictures/dotplot_agro_wpm2.png, id=420, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/dotplot_agro_wpm2.png, id=412, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_wpm2.png Graphic file (type png)
 
 <use pictures/dotplot_agro_wpm2.png>
@@ -1250,11 +1189,7 @@ Package pdftex.def Info: pictures/dotplot_agro_wpm2.png used on input line 935.
 
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<<<<<<< HEAD
-<pictures/dotplot_agro_sspace.png, id=395, 602.25pt x 602.25pt>
-=======
-<pictures/dotplot_agro_sspace.png, id=421, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/dotplot_agro_sspace.png, id=413, 602.25pt x 602.25pt>
 File: pictures/dotplot_agro_sspace.png Graphic file (type png)
 
 <use pictures/dotplot_agro_sspace.png>
@@ -1262,11 +1197,7 @@ Package pdftex.def Info: pictures/dotplot_agro_sspace.png used on input line 93
 5.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<<<<<<< HEAD
-<pictures/dotplot_agrostis_agrostis.png, id=396, 602.25pt x 602.25pt>
-=======
-<pictures/dotplot_agrostis_agrostis.png, id=422, 602.25pt x 602.25pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/dotplot_agrostis_agrostis.png, id=414, 602.25pt x 602.25pt>
 File: pictures/dotplot_agrostis_agrostis.png Graphic file (type png)
 
 <use pictures/dotplot_agrostis_agrostis.png>
@@ -1277,34 +1208,27 @@ ine 935.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< HEAD
-[17 <./pictures/wpm_agrostis_sol1.png> <./pictures/wpm_agrosti_sol2.png> <./pic
-tures/sspace_scaffolds_agrostis.png> <./pictures/agrostis_GOLD.png>] [18 <./pic
-tures/dotplot_agro_wpm1.png> <./pictures/dotplot_agro_wpm2.png> <./pictures/dot
-plot_agro_sspace.png> <./pictures/dotplot_agrostis_agrostis.png>]
-<pictures/alignment_woinserts.png, id=422, 688.171pt x 554.873pt>
-=======
 [17]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./pictures/wpm_agrostis_sol1.png> <./pictures/wpm_agrosti_sol2.png> <./pic
 tures/sspace_scaffolds_agrostis.png> <./pictures/agrostis_GOLD.png>]
-<pictures/pinus_vs_wpm.png, id=435, 602.25pt x 602.25pt>
+<pictures/pinus_vs_wpm.png, id=427, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_wpm.png Graphic file (type png)
 
 <use pictures/pinus_vs_wpm.png>
 Package pdftex.def Info: pictures/pinus_vs_wpm.png used on input line 997.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/pinus_vs_flow.png, id=436, 602.25pt x 602.25pt>
+<pictures/pinus_vs_flow.png, id=428, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_flow.png Graphic file (type png)
 
 <use pictures/pinus_vs_flow.png>
 Package pdftex.def Info: pictures/pinus_vs_flow.png used on input line 997.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/pinus_vs_sspace_rev.png, id=437, 602.25pt x 602.25pt>
+<pictures/pinus_vs_sspace_rev.png, id=429, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_sspace_rev.png Graphic file (type png)
 
 <use pictures/pinus_vs_sspace_rev.png>
@@ -1319,8 +1243,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ctures/dotplot_agro_sspace.png> <./pictures/dotplot_agrostis_agrostis.png>]
 [20] [21 <./pictures/pinus_vs_wpm.png> <./pictures/pinus_vs_flow.png> <./pictur
 es/pinus_vs_sspace_rev.png>]
-<pictures/alignment_woinserts.png, id=471, 688.171pt x 554.873pt>
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+<pictures/alignment_woinserts.png, id=462, 688.171pt x 554.873pt>
 File: pictures/alignment_woinserts.png Graphic file (type png)
 
 <use pictures/alignment_woinserts.png>
@@ -1341,25 +1264,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ] (./Testing.bbl) [1
 
 ]
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1031.
-=======
 
 Package natbib Warning: There were undefined citations.
 
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1144.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1144 \end{document}
                       [2]
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1031.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1144.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1144.
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
  (./Testing.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1144.
@@ -1373,23 +1288,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1144.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 22608 strings out of 493304
- 412606 string characters out of 6139871
- 593739 words of memory out of 5000000
- 25489 multiletter control sequences out of 15000+600000
+ 22913 strings out of 493304
+ 417676 string characters out of 6139871
+ 603519 words of memory out of 5000000
+ 25778 multiletter control sequences out of 15000+600000
  53115 words of font info for 107 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,12n,73p,1841b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
-=======
- 24919 strings out of 494996
- 476427 string characters out of 6180247
- 633197 words of memory out of 5000000
- 27534 multiletter control sequences out of 15000+600000
- 53115 words of font info for 107 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 55i,12n,82p,1841b,998s stack positions out of 5000i,500n,10000p,200000b,80000s
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
+ 56i,12n,73p,1841b,998s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
@@ -1401,23 +1306,6 @@ fonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-<<<<<<< HEAD
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
-er/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Testing.pdf (27 pages, 931890 bytes).
-PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 89 named destinations out of 1000 (max. 500000)
- 445 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
@@ -1429,11 +1317,10 @@ ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
 live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Testing.pdf (30 pages, 1133725 bytes).
+Output written on Testing.pdf (30 pages, 1003974 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 493 compressed objects within 5 object streams
+ 596 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
  96 named destinations out of 1000 (max. 500000)
  460 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> e062cc0f5d680063fb332a0fdf5ff1e1d5f4a396
 
