@@ -1,9 +1,11 @@
+\select@language {english}
+\select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Context}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Background}{1}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Assembly terminology}{2}{subsection.1.3}
 \contentsline {subsubsection}{\numberline {1.3.1}Reads, pairing and overlaps}{2}{subsubsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.2}Unitigs and Contigs}{2}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2}Unitigs and contigs}{2}{subsubsection.1.3.2}
 \contentsline {subsubsection}{\numberline {1.3.3}Obtaining scaffolds}{3}{subsubsection.1.3.3}
 \contentsline {subsection}{\numberline {1.4}A history of scaffolding strategies and modeling}{5}{subsection.1.4}
 \contentsline {subsubsection}{\numberline {1.4.1}Examples of scaffolding tools}{5}{subsubsection.1.4.1}
@@ -17,16 +19,14 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Differences between Genscale scaffolding tools}{11}{subsubsection.2.1.4}
 \contentsline {subsection}{\numberline {2.2}Input data features and complexity inspection}{12}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Benchmarking}{12}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Comparison with the reference solution}{12}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1}Comparison with the expected solution}{12}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Comparison with published tools: benchmarking strategy}{13}{subsubsection.2.3.2}
 \contentsline {section}{\numberline {3}Results}{15}{section.3}
 \contentsline {subsection}{\numberline {3.1}Comparison between the data sets}{15}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Comparison of GST solutions with the expected solution}{16}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Comparison of the best GST solutions and SSPACE to the reference genome}{17}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Quality assessment of genome assemblies of \textit {Agrostis stolonifera}}{17}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Quality assessment of genome assemblies of \textit {Pinus koraiensis}}{18}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Partially solved instances}{22}{subsection.3.4}
-\contentsline {section}{\numberline {4}Discussion}{24}{section.4}
-\contentsline {section}{\numberline {5}Conclusion}{24}{section.5}
-\contentsline {section}{\numberline {6}References}{}{section.6}
-\contentsline {section}{\numberline {7}Annexes}{}{section.7}
+\contentsline {subsubsection}{\numberline {3.3.1}Quality assessment of genome assemblies of \textit {Agrostis stolonifera} chloroplastic genome}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Quality assessment of genome assemblies of \textit {Pinus koraiensis} chloroplastic genome}{20}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Partially solved instance - flow model}{21}{subsection.3.4}
+\contentsline {section}{\numberline {4}Conclusion}{23}{section.4}
+\select@language {french}

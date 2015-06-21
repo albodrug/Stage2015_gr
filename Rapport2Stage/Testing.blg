@@ -1,12 +1,18 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Testing.aux
-White space in argument---line 72 of file Testing.aux
+White space in argument---line 143 of file Testing.aux
  : \bibdata{scaffoldingbiblio,
  :                             scaffoldingbiblio_non_articles}
 I'm skipping whatever remains of this command
 The style file: naturemag.bst
 Database file #1: scaffoldingbiblio.bib
+Repeated entry---line 301 of file scaffoldingbiblio.bib
+ : @article{donmez_scarpa:_2013
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "u"
 Warning--empty journal in hunt_comprehensive_2014
 Warning--empty year in hunt_comprehensive_2014
 Warning--empty journal in earl_assemblathon_2011
@@ -23,6 +29,7 @@ Warning--empty journal in hunt_comprehensive_2014-1
 Warning--empty year in hunt_comprehensive_2014-1
 Warning--empty journal in huson_greedy_2002
 Warning--empty year in huson_greedy_2002
+Warning--empty booktitle in ipetrov_2014
 Warning--empty journal in li_fast_2009
 Warning--empty year in li_fast_2009
 Warning--empty journal in langmead_fast_2012
@@ -33,45 +40,45 @@ Warning--empty journal in lander_initial_2001
 Warning--empty year in lander_initial_2001
 Warning--empty journal in venter_sequence_2001-1
 Warning--empty year in venter_sequence_2001-1
-You've used 13 entries,
+You've used 27 entries,
             2348 wiz_defined-function locations,
-            1046 strings with 22506 characters,
-and the built_in function-call counts, 5037 in all, are:
-= -- 328
-> -- 136
-< -- 0
-+ -- 68
-- -- 34
-* -- 619
-:= -- 549
-add.period$ -- 35
-call.type$ -- 13
-change.case$ -- 13
+            1126 strings with 24744 characters,
+and the built_in function-call counts, 11459 in all, are:
+= -- 786
+> -- 304
+< -- 1
++ -- 152
+- -- 76
+* -- 1386
+:= -- 1205
+add.period$ -- 67
+call.type$ -- 27
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 450
-empty$ -- 453
-format.name$ -- 47
-if$ -- 966
+cite$ -- 54
+duplicate$ -- 1007
+empty$ -- 1062
+format.name$ -- 103
+if$ -- 2298
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 112
-newline$ -- 69
-num.names$ -- 13
-pop$ -- 150
+int.to.str$ -- 27
+missing$ -- 243
+newline$ -- 129
+num.names$ -- 27
+pop$ -- 286
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 85
+skip$ -- 231
 stack$ -- 0
-substring$ -- 257
-swap$ -- 383
-text.length$ -- 0
+substring$ -- 612
+swap$ -- 944
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 26
-while$ -- 34
-width$ -- 15
-write$ -- 129
-(There was 1 error message)
+warning$ -- 27
+while$ -- 76
+width$ -- 29
+write$ -- 263
+(There were 2 error messages)

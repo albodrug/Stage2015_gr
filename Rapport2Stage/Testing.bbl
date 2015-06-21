@@ -5,6 +5,14 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{sanger_dna_1977}
+\bibinfo{author}{Sanger, F.}, \bibinfo{author}{Nicklen, S.} \&
+  \bibinfo{author}{Coulson, A.~R.}
+\newblock \bibinfo{title}{{DNA} sequencing with chain-terminating inhibitors}.
+\newblock \emph{\bibinfo{journal}{Proceedings of the National Academy of
+  Sciences of the United States of America}} \textbf{\bibinfo{volume}{74}},
+  \bibinfo{pages}{5463--5467} (\bibinfo{year}{1977}).
+
 \bibitem{hunt_comprehensive_2014}
 \bibinfo{author}{Hunt, M.}, \bibinfo{author}{Newbold, C.},
   \bibinfo{author}{Berriman, M.} \& \bibinfo{author}{Otto, T.~D.}
@@ -16,49 +24,47 @@
 \newblock \bibinfo{title}{Assemblathon 1: A competitive assessment of de novo
   short read assembly methods} \textbf{\bibinfo{volume}{21}},
   \bibinfo{pages}{2224--2241}.
-\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3227110/}.
 
 \bibitem{bradnam_assemblathon_2013}
 \bibinfo{author}{Bradnam, K.~R.} \emph{et~al.}
 \newblock \bibinfo{title}{Assemblathon 2: evaluating de novo methods of genome
   assembly in three vertebrate species} \textbf{\bibinfo{volume}{2}},
   \bibinfo{pages}{10}.
-\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3844414/}.
 
 \bibitem{pop_hierarchical_2004}
 \bibinfo{author}{Pop, M.}, \bibinfo{author}{Kosack, D.~S.} \&
   \bibinfo{author}{Salzberg, S.~L.}
 \newblock \bibinfo{title}{Hierarchical scaffolding with bambus}
   \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{149--159}.
-\newblock \urlprefix\url{http://genome.cshlp.org/content/14/1/149}.
 
 \bibitem{treangen_metamos:_2013}
 \bibinfo{author}{Treangen, T.~J.} \emph{et~al.}
 \newblock \bibinfo{title}{{MetAMOS}: a modular and open source metagenomic
   assembly and analysis pipeline} \textbf{\bibinfo{volume}{14}},
   \bibinfo{pages}{R2}.
-\newblock \urlprefix\url{http://genomebiology.com/2013/14/1/R2/abstract}.
 
 \bibitem{zerbino_velvet:_2008}
 \bibinfo{author}{Zerbino, D.~R.} \& \bibinfo{author}{Birney, E.}
 \newblock \bibinfo{title}{Velvet: Algorithms for de novo short read assembly
   using de bruijn graphs} \textbf{\bibinfo{volume}{18}},
   \bibinfo{pages}{821--829}.
-\newblock \urlprefix\url{http://genome.cshlp.org/content/18/5/821}.
 
 \bibitem{hunt_comprehensive_2014-1}
 \bibinfo{author}{Hunt, M.}, \bibinfo{author}{Newbold, C.},
   \bibinfo{author}{Berriman, M.} \& \bibinfo{author}{Otto, T.~D.}
 \newblock \bibinfo{title}{A comprehensive evaluation of assembly scaffolding
   tools} \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{R42}.
-\newblock \urlprefix\url{http://genomebiology.com/2014/15/3/R42/abstract}.
 
 \bibitem{huson_greedy_2002}
 \bibinfo{author}{Huson, D.~H.}, \bibinfo{author}{Reinert, K.} \&
   \bibinfo{author}{Myers, E.~W.}
 \newblock \bibinfo{title}{The greedy path-merging algorithm for contig
   scaffolding} \textbf{\bibinfo{volume}{49}}, \bibinfo{pages}{603--615}.
-\newblock \urlprefix\url{http://doi.acm.org/10.1145/585265.585267}.
+
+\bibitem{ipetrov_2014}
+\bibinfo{author}{Petrov, I.} \& \bibinfo{author}{Andonov, R.}
+\newblock \bibinfo{title}{New scaffolding methodologies}
+  (\bibinfo{year}{2014}).
 
 \bibitem{li_fast_2009}
 \bibinfo{author}{Li, H.} \& \bibinfo{author}{Durbin, R.}
@@ -70,8 +76,6 @@
 \bibinfo{author}{Langmead, B.} \& \bibinfo{author}{Salzberg, S.~L.}
 \newblock \bibinfo{title}{Fast gapped-read alignment with bowtie 2}
   \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{357--359}.
-\newblock
-  \urlprefix\url{http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1923.html}.
 
 \bibitem{langmead_ultrafast_2009}
 \bibinfo{author}{Langmead, B.}, \bibinfo{author}{Trapnell, C.},
@@ -79,7 +83,6 @@
 \newblock \bibinfo{title}{Ultrafast and memory-efficient alignment of short
   {DNA} sequences to the human genome} \textbf{\bibinfo{volume}{10}},
   \bibinfo{pages}{R25}.
-\newblock \urlprefix\url{http://genomebiology.com/2009/10/3/R25/abstract}.
 
 \bibitem{lander_initial_2001}
 \bibinfo{author}{Lander, E.~S.} \emph{et~al.}
@@ -90,5 +93,108 @@
 \bibinfo{author}{Venter, J.~C.} \emph{et~al.}
 \newblock \bibinfo{title}{The sequence of the human genome}
   \textbf{\bibinfo{volume}{291}}, \bibinfo{pages}{1304--1351}.
+
+\bibitem{boetzer_scaffolding_2011}
+\bibinfo{author}{Boetzer, M.}, \bibinfo{author}{Henkel, C.~V.},
+  \bibinfo{author}{Jansen, H.~J.}, \bibinfo{author}{Butler, D.} \&
+  \bibinfo{author}{Pirovano, W.}
+\newblock \bibinfo{title}{Scaffolding pre-assembled contigs using {SSPACE}}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics (Oxford, England)}}
+  \textbf{\bibinfo{volume}{27}}, \bibinfo{pages}{578--579}
+  (\bibinfo{year}{2011}).
+
+\bibitem{dayarian_sopra:_2010}
+\bibinfo{author}{Dayarian, A.}, \bibinfo{author}{Michael, T.~P.} \&
+  \bibinfo{author}{Sengupta, A.~M.}
+\newblock \bibinfo{title}{{SOPRA}: {Scaffolding} algorithm for paired reads via
+  statistical optimization}.
+\newblock \emph{\bibinfo{journal}{BMC Bioinformatics}}
+  \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{345} (\bibinfo{year}{2010}).
+
+\bibitem{donmez_scarpa:_2013}
+\bibinfo{author}{Donmez, N.} \& \bibinfo{author}{Brudno, M.}
+\newblock \bibinfo{title}{{SCARPA}: scaffolding reads with practical
+  algorithms}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics (Oxford, England)}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{428--434}
+  (\bibinfo{year}{2013}).
+
+\bibitem{cascading}
+\bibinfo{author}{Salikhov, K.}, \bibinfo{author}{Sacomoto, G.} \&
+  \bibinfo{author}{Kucherov, G.}
+\newblock \bibinfo{title}{Using cascading bloom filters to improve the memory
+  usage for de brujin graphs}.
+\newblock In \emph{\bibinfo{booktitle}{Algorithms in Bioinformatics}},
+  \bibinfo{pages}{364--376} (\bibinfo{publisher}{Springer},
+  \bibinfo{year}{2013}).
+
+\bibitem{minia}
+\bibinfo{author}{Chikhi, R.} \& \bibinfo{author}{Rizk, G.}
+\newblock \bibinfo{title}{Space-efficient and exact de bruijn graph
+  representation based on a bloom filter.}
+\newblock In \emph{\bibinfo{booktitle}{WABI}}, vol. \bibinfo{volume}{7534} of
+  \emph{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{pages}{236--248} (\bibinfo{publisher}{Springer},
+  \bibinfo{year}{2012}).
+
+\bibitem{delcher_alignment_1999}
+\bibinfo{author}{Delcher, A.~L.} \emph{et~al.}
+\newblock \bibinfo{title}{Alignment of whole genomes.}
+\newblock \emph{\bibinfo{journal}{Nucleic Acids Research}}
+  \textbf{\bibinfo{volume}{27}}, \bibinfo{pages}{2369--2376}
+  (\bibinfo{year}{1999}).
+
+\bibitem{delcher_fast_2002}
+\bibinfo{author}{Delcher, A.~L.}, \bibinfo{author}{Phillippy, A.},
+  \bibinfo{author}{Carlton, J.} \& \bibinfo{author}{Salzberg, S.~L.}
+\newblock \bibinfo{title}{Fast algorithms for large-scale genome alignment and
+  comparison}.
+\newblock \emph{\bibinfo{journal}{Nucleic Acids Research}}
+  \textbf{\bibinfo{volume}{30}}, \bibinfo{pages}{2478--2483}
+  (\bibinfo{year}{2002}).
+
+\bibitem{gansner_open_2000}
+\bibinfo{author}{Gansner, E.~R.} \& \bibinfo{author}{North, S.~C.}
+\newblock \bibinfo{title}{An open graph visualization system and its
+  applications to software engineering}.
+\newblock \emph{\bibinfo{journal}{SOFTWARE - PRACTICE AND EXPERIENCE}}
+  \textbf{\bibinfo{volume}{30}}, \bibinfo{pages}{1203--1233}
+  (\bibinfo{year}{2000}).
+
+\bibitem{ellson_graphviz_2003}
+\bibinfo{author}{Ellson, J.}, \bibinfo{author}{Gansner, E.~R.},
+  \bibinfo{author}{Koutsofios, E.}, \bibinfo{author}{North, S.~C.} \&
+  \bibinfo{author}{Woodhull, G.}
+\newblock \bibinfo{title}{Graphviz and dynagraph – static and dynamic graph
+  drawing tools}.
+\newblock In \emph{\bibinfo{booktitle}{{GRAPH} {DRAWING} {SOFTWARE}}},
+  \bibinfo{pages}{127--148} (\bibinfo{publisher}{Springer-Verlag},
+  \bibinfo{year}{2003}).
+
+\bibitem{hagberg-2008-exploring}
+\bibinfo{author}{Hagberg, A.~A.}, \bibinfo{author}{Schult, D.~A.} \&
+  \bibinfo{author}{Swart, P.~J.}
+\newblock \bibinfo{title}{Exploring network structure, dynamics, and function
+  using {NetworkX}}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the 7th Python in Science
+  Conference (SciPy2008)}}, \bibinfo{pages}{11--15}
+  (\bibinfo{address}{Pasadena, CA USA}, \bibinfo{year}{2008}).
+
+\bibitem{gurevich_quast:_2013}
+\bibinfo{author}{Gurevich, A.}, \bibinfo{author}{Saveliev, V.},
+  \bibinfo{author}{Vyahhi, N.} \& \bibinfo{author}{Tesler, G.}
+\newblock \bibinfo{title}{{QUAST}: quality assessment tool for genome
+  assemblies}.
+\newblock \emph{\bibinfo{journal}{Bioinformatics (Oxford, England)}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{1072--1075}
+  (\bibinfo{year}{2013}).
+
+\bibitem{ashton_minion_2015}
+\bibinfo{author}{Ashton, P.~M.} \emph{et~al.}
+\newblock \bibinfo{title}{{MinION} nanopore sequencing identifies the position
+  and structure of a bacterial antibiotic resistance island}.
+\newblock \emph{\bibinfo{journal}{Nature Biotechnology}}
+  \textbf{\bibinfo{volume}{33}}, \bibinfo{pages}{296--300}
+  (\bibinfo{year}{2015}).
 
 \end{thebibliography}
