@@ -7,7 +7,7 @@ White space in argument---line 143 of file Testing.aux
 I'm skipping whatever remains of this command
 The style file: naturemag.bst
 Database file #1: scaffoldingbiblio.bib
-Repeated entry---line 301 of file scaffoldingbiblio.bib
+Repeated entry---line 351 of file scaffoldingbiblio.bib
  : @article{donmez_scarpa:_2013
  :                             ,
 I'm skipping whatever remains of this entry
@@ -40,45 +40,45 @@ Warning--empty journal in lander_initial_2001
 Warning--empty year in lander_initial_2001
 Warning--empty journal in venter_sequence_2001-1
 Warning--empty year in venter_sequence_2001-1
-You've used 27 entries,
+You've used 30 entries,
             2348 wiz_defined-function locations,
-            1126 strings with 24744 characters,
-and the built_in function-call counts, 11459 in all, are:
-= -- 786
-> -- 304
+            1146 strings with 25514 characters,
+and the built_in function-call counts, 12690 in all, are:
+= -- 875
+> -- 336
 < -- 1
-+ -- 152
-- -- 76
-* -- 1386
-:= -- 1205
-add.period$ -- 67
-call.type$ -- 27
-change.case$ -- 35
++ -- 168
+- -- 84
+* -- 1545
+:= -- 1342
+add.period$ -- 77
+call.type$ -- 30
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 54
-duplicate$ -- 1007
-empty$ -- 1062
-format.name$ -- 103
-if$ -- 2298
+cite$ -- 57
+duplicate$ -- 1117
+empty$ -- 1172
+format.name$ -- 114
+if$ -- 2540
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 243
-newline$ -- 129
-num.names$ -- 27
-pop$ -- 286
+int.to.str$ -- 30
+missing$ -- 269
+newline$ -- 145
+num.names$ -- 30
+pop$ -- 301
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 231
+skip$ -- 248
 stack$ -- 0
-substring$ -- 612
-swap$ -- 944
+substring$ -- 671
+swap$ -- 1057
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 27
-while$ -- 76
-width$ -- 29
-write$ -- 263
+while$ -- 84
+width$ -- 32
+write$ -- 298
 (There were 2 error messages)

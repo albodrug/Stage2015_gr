@@ -197,4 +197,29 @@
   \textbf{\bibinfo{volume}{33}}, \bibinfo{pages}{296--300}
   (\bibinfo{year}{2015}).
 
+\bibitem{madoui_genome_2015}
+\bibinfo{author}{Madoui, M.-A.} \emph{et~al.}
+\newblock \bibinfo{title}{Genome assembly using {Nanopore}-guided long and
+  error-free {DNA} reads}.
+\newblock \emph{\bibinfo{journal}{BMC genomics}} \textbf{\bibinfo{volume}{16}},
+  \bibinfo{pages}{327} (\bibinfo{year}{2015}).
+
+\bibitem{van_belkum_short-sequence_1998}
+\bibinfo{author}{van Belkum, A.}, \bibinfo{author}{Scherer, S.},
+  \bibinfo{author}{van Alphen, L.} \& \bibinfo{author}{Verbrugh, H.}
+\newblock \bibinfo{title}{Short-{Sequence} {DNA} {Repeats} in {Prokaryotic}
+  {Genomes}}.
+\newblock \emph{\bibinfo{journal}{Microbiology and Molecular Biology Reviews}}
+  \textbf{\bibinfo{volume}{62}}, \bibinfo{pages}{275--293}
+  (\bibinfo{year}{1998}).
+\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC98915/}.
+
+\bibitem{wiedenbeck_origins_2011}
+\bibinfo{author}{Wiedenbeck, J.} \& \bibinfo{author}{Cohan, F.~M.}
+\newblock \bibinfo{title}{Origins of bacterial diversity through horizontal
+  genetic transfer and adaptation to new ecological niches}.
+\newblock \emph{\bibinfo{journal}{FEMS microbiology reviews}}
+  \textbf{\bibinfo{volume}{35}}, \bibinfo{pages}{957--976}
+  (\bibinfo{year}{2011}).
+
 \end{thebibliography}

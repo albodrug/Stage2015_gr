@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.24)  21 JUN 2015 22:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.24)  22 JUN 2015 03:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1480,52 +1480,52 @@ strate-gies tested for wol-bachia to the ref-er-ence genome.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1102 \newpage
+l.1103 \newpage
                 [2]
-<pictures/pinustxt_solnr_0_INPT.png, id=486, 2321.67375pt x 2294.5725pt>
+<pictures/pinustxt_solnr_0_INPT.png, id=493, 2321.67375pt x 2294.5725pt>
 File: pictures/pinustxt_solnr_0_INPT.png Graphic file (type png)
 
 <use pictures/pinustxt_solnr_0_INPT.png>
 Package pdftex.def Info: pictures/pinustxt_solnr_0_INPT.png used on input line 
-1121.
+1122.
 (pdftex.def)             Requested size: 696.5075pt x 688.37708pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1123 \end{figure}
-                    <pictures/pinus_vs_wpm.png, id=487, 602.25pt x 602.25pt>
+l.1124 \end{figure}
+                    <pictures/pinus_vs_wpm.png, id=494, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_wpm.png Graphic file (type png)
 
 <use pictures/pinus_vs_wpm.png>
-Package pdftex.def Info: pictures/pinus_vs_wpm.png used on input line 1136.
+Package pdftex.def Info: pictures/pinus_vs_wpm.png used on input line 1137.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/pinus_vs_flow.png, id=488, 602.25pt x 602.25pt>
+<pictures/pinus_vs_flow.png, id=495, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_flow.png Graphic file (type png)
 
 <use pictures/pinus_vs_flow.png>
-Package pdftex.def Info: pictures/pinus_vs_flow.png used on input line 1136.
+Package pdftex.def Info: pictures/pinus_vs_flow.png used on input line 1137.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
-<pictures/pinus_vs_sspace_rev.png, id=489, 602.25pt x 602.25pt>
+<pictures/pinus_vs_sspace_rev.png, id=496, 602.25pt x 602.25pt>
 File: pictures/pinus_vs_sspace_rev.png Graphic file (type png)
 
 <use pictures/pinus_vs_sspace_rev.png>
 Package pdftex.def Info: pictures/pinus_vs_sspace_rev.png used on input line 11
-36.
+37.
 (pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1138 \end{figure}
+l.1139 \end{figure}
                    
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1142--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1150
 
  []
 
@@ -1533,7 +1533,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1194 \end{figure}
+l.1195 \end{figure}
                    
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1542,21 +1542,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1197 \clearpage
+l.1198 \clearpage
                   [3 <./pictures/pinustxt_solnr_0_INPT.png>]pdfTeX warning (ext
 4): destination with the same identifier (name{page.}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.1197 \clearpage
+l.1198 \clearpage
                   [4 <./pictures/pinus_vs_wpm.png> <./pictures/pinus_vs_flow.pn
 g> <./pictures/pinus_vs_sspace_rev.png>]pdfTeX warning (ext4): destination with
  the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1197 \clearpage
+l.1198 \clearpage
                   [5]
-Overfull \hbox (18.12285pt too wide) in paragraph at lines 1211--1213
+Overfull \hbox (18.12285pt too wide) in paragraph at lines 1212--1214
 [] []\OT1/ptm/b/n/12 R[]esum[]e [fr][] \OT1/ptm/m/it/12 S[]equen[]age Haut D[]e
 bit, strat[]egie d'[]echafaudage, s[]equence r[]ep[]et[]ee, , es-ti-ma-tion de 
 la compl[]exit[]e
@@ -1565,19 +1565,19 @@ la compl[]exit[]e
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1215.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1214 \end{document}
+l.1215 \end{document}
                       [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1215.
  (./Testing.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1215.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1215.
 
 Package rerunfilecheck Info: File `Testing.out' has not changed.
 (rerunfilecheck)             Checksum: 786BD28BEB37F69874E41BCDF257A958;2508.
@@ -1585,13 +1585,13 @@ Package rerunfilecheck Info: File `Testing.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1214.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1215.
  ) 
 Here is how much of TeX's memory you used:
- 24163 strings out of 493304
- 435806 string characters out of 6139871
- 596159 words of memory out of 5000000
- 26988 multiletter control sequences out of 15000+600000
+ 24175 strings out of 493304
+ 436177 string characters out of 6139871
+ 596206 words of memory out of 5000000
+ 26997 multiletter control sequences out of 15000+600000
  60894 words of font info for 116 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,73p,2250b,814s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1617,10 +1617,10 @@ ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
 live/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Testing.pdf (33 pages, 1661042 bytes).
+Output written on Testing.pdf (33 pages, 1663514 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 496 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
