@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.33pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
@@ -8,58 +8,63 @@
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Some definitions}}\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\slideentry {1}{1}{1}{4/4}{Some definitions}{0}}
+\headcommand {\sectionentry {2}{Context}{4}{Context}{0}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {2}{0}{4}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Order and orient}}\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\slideentry {1}{2}{1}{5/5}{Order and orient}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Some definitions}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {2}{1}{1}{5/5}{Some definitions}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\sectionentry {2}{Genscale scaffolding tools features}{6}{Genscale scaffolding tools features}{0}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{Order and orient}}\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {2}{2}{1}{6/6}{Order and orient}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{The raw input data}}\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\slideentry {2}{1}{1}{7/7}{The raw input data}{0}}
+\headcommand {\sectionentry {3}{Genscale scaffolding tools features}{7}{Genscale scaffolding tools features}{0}}
+\headcommand {\beamer@sectionpages {4}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {3}{0}{2}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{GST modeled graph}}\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{2}{1}{8/8}{GST modeled graph}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{The raw input data}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {3}{1}{1}{8/8}{The raw input data}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{9}{Expected solution}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {2}{3}{1}{9/9}{Expected solution}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{9}{GST modeled graph}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {3}{2}{1}{9/9}{GST modeled graph}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {3}{Challenging problem}{10}{Challenging problem}{0}}
-\headcommand {\beamer@sectionpages {6}{9}}
-\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\slideentry {3}{0}{2}{10/10}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{10}{Expected solution}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{3}{1}{10/10}{Expected solution}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\sectionentry {4}{Scripting for the GST}{11}{Scripting for the GST}{0}}
-\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\sectionentry {4}{Challenging problem}{11}{Challenging problem}{0}}
+\headcommand {\beamer@sectionpages {7}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {4}{0}{3}{11/11}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\sectionentry {5}{Benchmarking workflow for tge GST}{12}{Benchmarking workflow for tge GST}{0}}
+\headcommand {\sectionentry {5}{Scripting for the GST}{12}{Scripting for the GST}{0}}
 \headcommand {\beamer@sectionpages {11}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {5}{0}{4}{12/12}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\sectionentry {6}{Results}{13}{Results}{0}}
+\headcommand {\sectionentry {6}{Benchmarking workflow for the GST}{13}{Benchmarking workflow for the GST}{0}}
 \headcommand {\beamer@sectionpages {12}{12}}
 \headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {6}{0}{5}{13/13}{}{0}}
+\headcommand {\slideentry {6}{0}{4}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{14}{Example of Agrostis stolonifera}}\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {6}{1}{1}{14/14}{Example of Agrostis stolonifera}{0}}
+\headcommand {\sectionentry {7}{Results}{14}{Results}{0}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\slideentry {7}{0}{5}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {7}{Perspectives}{15}{Perspectives}{0}}
-\headcommand {\beamer@sectionpages {13}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\slideentry {7}{0}{2}{15/15}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{15}{Scaffolding solutions example: Agrostis stolonifera}}\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {7}{1}{1}{15/15}{Scaffolding solutions example: Agrostis stolonifera}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {7}{0}{3}{16/16}{}{0}}
+\headcommand {\sectionentry {8}{Perspectives}{16}{Perspectives}{0}}
+\headcommand {\beamer@sectionpages {14}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\slideentry {8}{0}{2}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {1}{16}}
-\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\beamer@sectionpages {15}{16}}
-\headcommand {\beamer@documentpages {16}}
-\headcommand {\def \inserttotalframenumber {16}}
+\headcommand {\slideentry {8}{0}{3}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\beamer@sectionpages {16}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\def \inserttotalframenumber {17}}

@@ -38,7 +38,7 @@
 \usepackage{hyperref}
 \hypersetup{
      colorlinks   = true,
-     citecolor    = gray
+     citecolor    = darkgray
 }
 \usepackage{amsthm}
 \usepackage{enumitem}
@@ -100,7 +100,7 @@
 %-------------------------------------------------------------------------------
 
 \textbf{\textsc{Thanks}}\\
-I would like to thank the \textsc{Genscale} team for making me a part of this project. I thank Pr. Rumen Andonov and Dr. Dominique Lavenier for their guidance and supervision as well as Ivaylo Petrov for taking time to discuss the technical aspects of this project with me. Thanks to Sebastian Francois for his enthusiasm in developing a new approach. I would also like to thank my fellow undergraduates research assistants for their pleasant company and good mood every day and the PhD students who took time to welcome and advice us.
+I would like to thank the \textsc{Genscale} team for making me a part of this project. I thank Pr. Rumen Andonov and Dr. Dominique Lavenier for their guidance and supervision as well as Ivaylo Petrov for taking time to discuss the technical aspects of this project with me. Thanks to Sebastian Francois for his enthusiasm in developing a new approach. I would also like to thank my fellow undergraduates research assistants for their pleasant company and daily good and the PhD students who took time to welcome and advice us.
 \thispagestyle{empty}
 \clearpage
 %-------------------------------------------------------------------------------
@@ -157,17 +157,17 @@ Genscale Scaffolding Tools & GST \\
 \section{Introduction}
 \setcounter{page}{1}
 \subsection{Context}
-The nucleic biological molecules of genomes and transcriptomes can be sequenced by many different techniques. Sequencing is the process which determines the nucleic order within DNA and RNA. The first methods involved the extension of location-specific primers, meaning portions of the genome or transcriptome had to be known in advance. An improved and widely known version of this method was developed by Frederick Sanger in 1970. Sanger's sequencing uses radioactive dideoxynucleotide stopping the DNA replication - for each elongated DNA molecule the last nucleic acid is thus determined. These techniques are costly and slow because they involve handling a DNA molecule for each nucleic acid position and genomes can have as many as 150 billion base pairs. With the increasing demand for genomic and transcriptomic sequencing, New Generation Sequencing (NGS) methods were introduced. NGS is faster and sequences the whole genome at once. The Illumina NGS technology does so by fragmenting the genomes into DNA fragments and determining the nucleic order of their extremities thanks to fluorescently-labeled nucleotides. In order to recover the whole genomic sequence the small sequenced parts, called reads, need to be pieced together. The \textsc{Genscale} team at the \textsc{Institute for Research in IT and Random Systems} uses data obtained though the Illumina NGS technique to develop new read assembling strategies.
+Nucleic biological molecules of genomes and transcriptomes can be sequenced by many different techniques. Sequencing is the process which determines the nucleic order within DNA and RNA. The first methods involved the extension of location-specific primers, meaning portions of the genome or transcriptome had to be known in advance. An improved and widely known version of this method was developed by Frederick Sanger in 1970. Sanger's sequencing \citep{sanger_dna_1977} uses radioactive dideoxynucleotide stopping the DNA replication - for each elongated DNA molecule the last nucleic acid is thus determined. These techniques are costly and slow because they involve handling a DNA molecule for each nucleic acid position and genomes can have as many as 150 billion base pairs (bp). With the increasing demand for genomic and transcriptomic sequencing, New Generation Sequencing (NGS) methods were introduced. NGS is faster and sequences the whole genome at once. The Illumina NGS technology does so by fragmenting the genomes into DNA fragments and determining the nucleic order of their extremities thanks to fluorescently-labeled nucleotides. In order to recover the whole genomic sequence, the small sequenced parts called reads need to be pieced together. The \textsc{Genscale} team at the \textsc{Institute for Research in IT and Random Systems} uses data obtained though the Illumina NGS technique to develop new read assembling strategies.
 \subsection{Background}
-\textit{De novo} assembly is the process which pieces together overlapping reads produced by NGS methods into larger sequences. The aim is to obtain complete genomes (or chromosomes) containing gaps of known lengths because the less fragmented the genome is, the easier the downstream analysis are \cite{hunt_comprehensive_2014}. However an incomplete assembly is still sufficient for most of the analysis performed on DNA which explains why databases mainly contain partially assembled genomes. Nonetheless the uninterrupted genome sequence is a precious information and there has been an important effort made to improve the performance of assembly algorithms and the quality of NGS data. The detailed process of assembly is described in \fulleref{sec:assterm}. The two main steps are building large uninterrupted sequences from overlapping reads and scaffolding, the ordering and relative orientation of these large sequences (called contigs or unitigs) . The 2011 and 2013 Assemblathon projects \cite{earl_assemblathon_2011} \cite{bradnam_assemblathon_2013} aimed at  benchmarking existing assembly tools with high coverage diploid genomes. The studies focused mainly on the contig building step, concluding that although many tools found quality assemblies, the tool and quality criteria should be adjusted to the type of genome and the goal of the assembly project. For example a good N50, an extensively used metric which is the contig length such that using equal or longer contigs produces half the bases of the genome, is not essential in a gene detecting assembly project. \\
-The first stand-alone scaffolder named Bambus \cite{pop_hierarchical_2004}, originally part of the MetAMOS \cite{treangen_metamos:_2013} assembly and analysis pipeline, was published in 2004. Previously the scaffolding step was missing or presented as an option within conting builders, for instance the Velvet\cite{zerbino_velvet:_2008} assembler \textit{'scaffolding yes or no'} option. In the 2014 comprehensive evaluation of scaffolding tools \cite{hunt_comprehensive_2014-1}, Hunt \textit{et al} found that no tool identified more than 90\% of joins between real-data Velvet assembled contigs, meaning genomes were still fragmented into many scaffolds as joins were missing for a complete and accurate ordering and orientation. The study also used simulated data highlighting the fact that perfect data doesn't always lead to perfect results. Despite its simply formulated goal - order and orient contigs - scaffolding is a challenging computational problem. It was first described and modeled in 2002 by Hudson \textit{et al.}\cite{huson_greedy_2002} which proposed a greedy path-merging strategy, described in \fulleref{sec:hiscaf} along with other solving methodologies and the distinctive features of the \textsc{Genscale} Scaffolding Tools (GST). Concepts surrounding the Illumina NGS technique are explained in \fulleref{sec:assterm}.
+\textit{De novo} assembly is the process which pieces together overlapping reads produced by NGS methods into larger sequences. The aim is to obtain complete genomes (or chromosomes) containing gaps of known lengths because the less fragmented the genome is, the easier the downstream analysis are \cite{hunt_comprehensive_2014}. However an incomplete assembly is still sufficient for most of the analysis performed on DNA which explains why databases mainly contain partially assembled genomes. Nonetheless the uninterrupted genomic sequence is a precious information. There has been an important effort made to improve the performance of assembly algorithms and the quality of NGS data. The detailed process of assembly is described in \fulleref{sec:assterm}. The two main steps are building large uninterrupted sequences from overlapping reads and scaffolding, the ordering and relative orientation of these large sequences (called contigs or unitigs) . The 2011 and 2013 Assemblathon projects \cite{earl_assemblathon_2011} \cite{bradnam_assemblathon_2013} aimed at  benchmarking existing assembly tools with high coverage diploid genomes. The studies focused mainly on the contig building step, concluding that although many tools found quality assemblies, the tool and quality criteria should be adjusted to the type of genome and the goal of the assembly project. For example a good N50, an extensively used metric which is the contig length such that using equal or longer contigs produces half the bases of the genome, is not essential in a gene detecting assembly project. It is however a good indicator if the goal is to obtain a complete uninterrupted genome.\\
+The first stand-alone scaffolder named Bambus \cite{pop_hierarchical_2004}, originally part of the MetAMOS \cite{treangen_metamos:_2013} assembly and analysis pipeline, was published in 2004. Previously the scaffolding step was missing or presented as an option within conting builders, for instance the Velvet\cite{zerbino_velvet:_2008} assembler \textit{'scaffolding yes or no'} option. In the 2014 comprehensive evaluation of scaffolding tools \cite{hunt_comprehensive_2014-1}, Hunt \textit{et al} found that no tool identified more than 90\% of joins between real-data Velvet assembled contigs, meaning genomes were still fragmented into many scaffolds as joins were missing for a complete and accurate ordering and orientation. The study also used simulated data highlighting the fact that perfect data doesn't always lead to perfect results. Despite its simply formulated goal - order and orient contigs - scaffolding is a challenging computational problem. It was first described and modeled in 2002 by Hudson \textit{et al.}\cite{huson_greedy_2002} which proposed a greedy path-merging strategy, described in \fulleref{sec:hiscaf} along with other solving methodologies and the distinctive features of the \textsc{Genscale} Scaffolding Tools \cite{ipetrov_2014} (GST). Concepts surrounding the Illumina NGS technique are explained in \fulleref{sec:assterm}.
 
 \subsection{Assembly terminology}\label{sec:assterm}
 In this report \textit{assembly} will refer to the whole multi-step process starting from once filtered out-of-the-sequencer data and resulting in a highly uninterrupted sequence of a genome or chromosome, in the best case scenarios. As previously mentioned, the two main steps are contig/unitig building and contig/unitg scaffolding. The difference between contig and unitig is fundamental to understanding the \textsc{Genscale} scaffolding challenges and is explained in \fulleref{sec:conuni}. Another key point is the construction of joins between contigs/unitigs - also referred to as links, edges or bonds according to the way they are modeled.
 
 \subsubsection{Reads, pairing and overlaps} \label{sec:rpao}
 
-A read is a short ($<500pb$) copy of a DNA fragment of known length and nucleic acid sequence. It is produced differently depending on the sequencing technology. Paired reads are copies of the two extremities of the same DNA molecule. The DNA molecule size between two reads of a pair is called an insert. The size of the insert is variable. Reads with small insert sizes ($<500bp$) are called paired-end reads. Mate-paired reads are reads whose insert size is very big (up to tens of kilobases). The pairing information, the read size and the size of the insert are provided by the sequencer. A collection of reads with their associated insert size is called a a genomic library.
+A read is a short ($<500pb$) copy of a DNA fragment of known length and nucleic acid sequence. It is produced differently depending on the sequencing technology. In the Illumina NGS method, paired reads are copies of the two extremities of the same DNA molecule. The DNA molecule size between two reads of a pair is called an insert. The size of the insert is variable. Reads with small insert sizes ($<500bp$) are called paired-end reads. Mated-pair reads are reads whose insert size is very big (up to tens of kilobases). The pairing information, the read size and the size of the insert are provided by the sequencer. A collection of reads with their associated insert size is called a a genomic library.
 \begin{figure}[h!]
 %\resizebox{5in}{!}{
 \hspace*{3cm}
@@ -203,9 +203,9 @@ A read is a short ($<500pb$) copy of a DNA fragment of known length and nucleic 
 %}
 \caption{Alignment of paired reads on fragmented DNA molecules obtained from the genome}
 \label{fig:reads}
-{\footnotesize  Each end of a DNA molecule is cloned to produce paired reads. Here is represented a mate-paired pair (red) with a big insert size \textit{($i_d$)} and two paired-end pairs (blue and magenta) which slightly overlap \textit{(o)}. }
+{\footnotesize  Each end of a DNA molecule is cloned to produce paired reads. Here is represented a mated-pair read pair (red) with a big insert size \textit{($i_d$)} and two paired-end read pairs (blue and magenta) which slightly overlap \textit{(o)}. }
 \end{figure}\\
-Figure \ref{fig:reads} shows three pairs of reads. Within the pairs, reads are facing each other: this configuration is called \textit{Forward-Reverse} read orientation. To be sequenced the genome represented in figure \ref{fig:reads} is first fragmented into numerous DNA molecules by sonication or nebulization then amplified by Polymerase Chain Reaction. Each end of the molecule is then fixed on sequencing wells. Overlapping of reads occurs when two reads sequence a portion of the same genomic region, but not only. The overlapping concept implies a common origin but unfortunately overlapping can occur if two reads sequence two different repeated genomic regions. Figure \ref{fig:overlapping} shows how repeated regions create false positive overlaps. Such reads can be detected and filtered out by ignoring high-frequency overlaps (higher than the coverage at which the genome was sequenced). However this can result in false negatives and makes the task of assembling repeated regions very hard.
+Figure \ref{fig:reads} shows three pairs of reads. Within the pairs, reads are facing each other: this configuration is called \textit{Forward-Reverse} read orientation. To be sequenced the genome represented in figure \ref{fig:reads} is first fragmented into numerous DNA molecules by sonication or nebulization then amplified by Polymerase Chain Reaction. Each end of the molecule is then fixed on sequencing wells. Overlapping of reads occurs when two reads sequence a portion of the same genomic region, but not only. The overlapping concept implies a common origin but unfortunately overlapping can occur if two reads sequence two distinct repeated genomic regions. Figure \ref{fig:overlapping} shows how repeated regions create false positive overlaps. Such reads can be detected and filtered out by ignoring high-frequency overlaps (higher than the coverage at which the genome was sequenced). However this can result in false negatives and makes the task of assembling repeated regions very hard.
 \begin{figure}[h!]
 \hspace*{4cm}
 \begin{tikzpicture}
@@ -248,8 +248,8 @@ Figure \ref{fig:reads} shows three pairs of reads. Within the pairs, reads are f
 \end{figure}
 
 \subsubsection{Unitigs and contigs} \label{sec:conuni}
-Unitigs are an uniquely assemblable subset of overlapping fragments. At the end of an unitig data shows multiple dubious overlaps as seen in \fulleref{sec:rpao} creating joins with multiple other unitigs. Contigs are larger than unitigs, extended through repeat boundaries but are still ungapped sequences. Contigs are interesting to construct because there is a higher chance to detect genes. 
-Taking the example shown in figure \ref{fig:unitgscontigs}, a contig will merge the first three DNA fragments and will then be extended though the ambiguous overlaps, merging the red DNA fragments' sequence. Unitigs however will stop at the end of the third DNA fragment and assemble the red fragments separately. In a sense, unitigs are either an unambiguous contig or a compression of several copies of a repeat. The advantage of working with unitigs is that there are less chances of erroneous merging of two far away genomic regions. This feature is used in the Genscale scaffolding strategy, further discussed in \fulleref{sec:genscafmeth}.
+Unitigs are an uniquely assemblable subset of overlapping fragments. At the end of an unitig data shows multiple dubious overlaps as seen in figure \ref{fig:unitgscontigs}, creating joins with multiple other unitigs. Contigs are larger than unitigs, extended through repeat boundaries but are still ungapped sequences. Contigs are interesting to construct because there is a higher chance to detect genes. 
+Taking the example shown in figure \ref{fig:unitgscontigs}, a contig will merge the first three DNA fragments and will then be extended though the ambiguous overlaps, merging the red DNA fragments' sequence. Unitigs however will stop at the end of the third DNA fragment and assemble the red fragments separately. In a sense, unitigs are either an unambiguous contig or a compression of several copies of a repeat. The advantage of working with unitigs is that there is a lesser risk of erroneous merging of two far away genomic regions. This is the Genscale scaffolding strategy.
 
 \begin{figure}[h!]
 \resizebox{6in}{!}{
@@ -303,7 +303,7 @@ Taking the example shown in figure \ref{fig:unitgscontigs}, a contig will merge 
 
 \subsubsection{Obtaining scaffolds}
 A scaffold is a linear ordering of contigs (or unitigs). The ordering and relative orientation of contigs is possible thanks to paired reads information. The first step of scaffolding is mapping reads on the previously constructed contigs: the two most used mappers are bwa \cite{li_fast_2009} and bowtie\cite{langmead_fast_2012,langmead_ultrafast_2009}. A pair of reads mapping on two different contigs provide a join, which holds the information of distance between the two contigs, and relative orientation (see figure \ref{fig:mappreads}).  A same contig can have joins with multiple  other contigs (see \textsc{conflicting joins} figure \ref{fig:unitgscontigs} and \textsc{created joins} figure \ref{fig:mappreads}). These multiple joins which result in multiple paths when ordering and orienting contigs are solved differently by scaffolders. Most of the time, a choice is made - heuristically - to use one join over another. Another strategy is illustrated in figure \ref{fig:mappreads}, where the contig with the two high-confidence joins is duplicated. This is the strategy of the Genscale scaffolders, further described in \fulleref{sec:genscafmeth}. \\
-The concept of insert size is essential to understand the challenges of scaffolding when dealing with repeated regions in genomes. Take \textsc{contig (1)} and \textsc{contig (2)} in figure \ref{fig:mappreads}: the two contigs are separated by a gap of undefined size. Say this gap is caused by a repeated region where reads mapped multiple times and were thus discarded, or the region wasn't sequenced by the sequencer and is all together absent. If the region is bigger than the insert size, no read pair will span over it. The join between contig (1) and contig (2) will not exist. This explains why mate-pair information is extremely useful. When multiple mate-pair libraries with different big insert size are available, genomically distanced regions can directly be ordered and orientated. The scaffolds will potentially be longer, as missing or ambiguous data doesn't impede its construction.
+The concept of insert size is essential to understand the challenges of scaffolding when dealing with repeated regions in genomes. Take \textsc{contig (1)} and \textsc{contig (2)} in figure \ref{fig:mappreads}: the two contigs are separated by a gap of undefined size. Say this gap is caused by a repeated region where reads map multiple times and are thus discarded, or the region wasn't sequenced by the sequencer and is all together absent. If the region is bigger than the insert size, no read pair will span over it. The join between \textsc{contig (1)} and \textsc{contig (2)} will not exist. This explains why mated-pair information is extremely useful. When multiple mated-pair libraries with different big insert sizes are available, genomically distanced regions can be directly ordered and orientated. The scaffolds will potentially be longer, as missing or ambiguous data doesn't impede its construction.
 
 \begin{figure}[h!]
 \resizebox{6in}{!}{
@@ -394,7 +394,7 @@ The concept of insert size is essential to understand the challenges of scaffold
 \caption{Creating joins between contigs thanks to read pair information}
 \label{fig:mappreads}
 {\footnotesize {\color{magenta}$i_d:$} insert size , {\color{magenta}$D:$} expected insert size , {\color{magenta}$\sigma:$} distance standard deviation , {\color{magenta}$n:$} number of retained correctly mapped paired reads for the join, {\color{magenta}$\delta$} estimated distance.\\
-Paired reads are mapped on previously assembled contigs. Pairs with reads mapping on different contigs provide linking information. The library represented is Forward - Reverse (reads are facing each other, see {\color{red}red pairs}). Additional read pairs with a satisfying $i_d$ but with a different orientation can coexist with the Foward - Reverse pairs (here, {\color{blue}blue pairs}, Forward - Forward). Pairs which map with a big insert size ($\geq D3\sigma$) are usually discarded (here, {\color{gray}gray pairs}). Red and blue pairs are retained to create two conflicting joins between \textsc{contig (1)} and \textsc{contig (2)}. The conflict can be solve with a scaffolder which duplicated \textsc{contig (2)} allowing both joins to coexist, or ignoring one of the joins (not represented).\\
+Paired reads are mapped on previously assembled contigs. Pairs with reads mapping on different contigs provide linking information. The library represented is Forward - Reverse (reads are facing each other, see {\color{red}red pairs}). Additional read pairs with a satisfying $i_d$ but with a different orientation can coexist with the Foward - Reverse pairs (here, {\color{blue}blue pairs}, Forward - Forward). Pairs which map with a big insert size ($\geq D3\sigma$) are usually discarded (here, {\color{gray}gray pairs}). Red and blue pairs are retained to create two conflicting joins between \textsc{contig (1)} and \textsc{contig (2)}. The conflict can be solve with a scaffolder which duplicates \textsc{contig (2)} allowing both joins to coexist, or ignoring one of the joins (not represented).\\
 %Red: contig (1) Forward - contig (2) Reverse \\
 %Blue: contig (2) Forward - contig (1) Forward
 }
@@ -406,13 +406,13 @@ The list of contigs or unitigs and the list of joins between them is the minimal
 
 \newpage
 \subsection{A history of scaffolding strategies and modeling}\label{sec:hiscaf}
-The scaffolding problem was first introduced in 2002 by Hudson \textit{et al.} \cite{huson_greedy_2002} following the challenges which arose during the human genome clone-by-clone sequencing by \textit{Lander et al.} \cite{lander_initial_2001} and the human whole genome shotgun  assembly project by Venter \textit{et al.} \cite{venter_sequence_2001-1}, both published in 2001. The Hudson \textit{et al.} paper defines the problem as follows: \begin{displayquote} \footnotesize \texttt{"The \textit{Contig Scaffolding Problem}  is to order and orientate the given contigs in a manner that is consistent with as many mate-pairs as possible".}\end{displayquote} The most common way in which the problem is modeled is as a graph where nodes represent contigs and links represent bundles of pairs of reads joining two contigs (see figure \ref{fig:mappreads}, red and blue pairs are bundled into two joins which will be represented links in the graph). Strategies to solve it and find the best path are numerous. It is important to note that Hudson \textit{et al.} regard \textbf{the use of mate-pairs as crucial}. There are indeed several scaffolding tools that accept paired-reads libraries with small insert sizes as valid input data - in these cases it is not expected to obtain a quality scaffolding solution. In this section the Hudson \textit{et al.} \cite{huson_greedy_2002} modeling and scaffolding strategy are detailed, and several scaffolding tools roughly described. 
+The scaffolding problem was first introduced in 2002 by Hudson \textit{et al.} \cite{huson_greedy_2002} following the challenges which arose during the human genome clone-by-clone sequencing by \textit{Lander et al.} \cite{lander_initial_2001} and the human whole genome shotgun  assembly project by Venter \textit{et al.} \cite{venter_sequence_2001-1}, both published in 2001. The Hudson \textit{et al.} paper defines the problem as follows: \begin{displayquote} \footnotesize \texttt{"The \textit{Contig Scaffolding Problem}  is to order and orientate the given contigs in a manner that is consistent with as many mate-pairs as possible".}\end{displayquote} The most common way in which the problem is modeled is as a graph where nodes represent contigs and links represent bundles of pairs of reads joining two contigs (see figure \ref{fig:mappreads}, red and blue pairs are bundled into two joins which will be represented links in the graph). Strategies to solve it and find the best path are numerous. It is important to note that Hudson \textit{et al.} regard \textbf{the use of mate-pairs as crucial}. There are indeed several scaffolding tools that accept paired-read libraries with small insert sizes as a valid input data - in these cases it is not expected to obtain a quality scaffolding solution. In this section the Hudson \textit{et al.} \cite{huson_greedy_2002} modeling and scaffolding strategy are detailed, and several scaffolding tools roughly described. 
 
 \subsubsection{Examples of scaffolding tools}
 Hudson \textit{et al.} proposed the first heuristic greedy path-merging algorithm for solving the scaffolding problem. Real data can and will be noisy. Inconsistent data is at the basis of the constraints defined for the problem - joins between contigs can be mutually exclusive, erroneous or absent. These features cause the scaffolding problem to be NP-hard. A heuristic approach is a pertinent approach so that scaffolding tools are prepared to quickly take decisions when faced with inconsistent data. 
 \paragraph*{Greedy path merging approach}
-Hudson \textit{et al.}'s scaffolding graph models each contig as two vertexes \texttt{\footnotesize Contig - start} and \texttt{\footnotesize Contig - end} connected by a \texttt{\footnotesize Contig - EDGE} (actually a link, as it is directed \texttt{\footnotesize start-> end}). This is a strategy to model the two possible orientations of a contig, read from start to end (\textit{Forward}), or from end to start (\textit{Reverse}). The starting and ending point of a contig are arbitrary as contig building does not provide direction. \texttt{\footnotesize Mate - EDGES} are joins between the start (or end) of a contig and the start (or end) of another contig. The weight on these edges is the edge coverage (how many times the created join is supported by data). These edges are undirected. The contig coverage is not taken into account in this model. In fact, suspected repeated regions are removed during the graph solving process. The length between two mate pairs (insert size) is not represented in the final graph either. It is only used to allow edge bundling when several mate-pairs support the same join between contigs. The edge bundling is performed by first greedily choosing a median length of a \texttt{\footnotesize Mate - EDGE}, then gathering all \texttt{\footnotesize Mate - EDGES} that are within $3(standard deviation)(median length)$ to bundle. The weight of \texttt{\footnotesize Mate - EDGES} is 1 if it is a single edge and is the number of mate-pairs participating if the \texttt{\footnotesize Mate - EDGES} is a bundle. The information of length between contigs is lost. Transitive reduction decreases the number of edges and leads to the final form of the graph that will be solved by the greedy path merging algorithm. 
-The algorithm constructs a path though the scaffolding graph. The \texttt{\footnotesize Mate - EDGES} are processed according to their weight (decreasing order) and the found paths are progressively merged until there are no more \texttt{\footnotesize Mate - EDGE} left. As \texttt{\footnotesize Mate - EDGE} are processed one by one in a determined order, this method is may not be optimal or perfect. 
+Hudson \textit{et al.}'s scaffolding graph models each contig as two vertexes \texttt{\footnotesize Contig - start} and \texttt{\footnotesize Contig - end} connected by a \texttt{\footnotesize Contig - EDGE} (actually a link, as it is directed \texttt{\footnotesize start-> end}). This is a strategy to model the two possible orientations of a contig, read from start to end (\textit{Forward}), or from end to start (\textit{Reverse}). The starting and ending point of a contig are arbitrary as contig building does not provide direction. \texttt{\footnotesize Mate - EDGES} are joins between the start (or end) of a contig and the start (or end) of another contig. The weight on these edges is the edge coverage (how many times the created join is supported by data). These edges are undirected. The contig coverage is not taken into account in this model. In fact, suspected repeated regions are removed during the graph solving process. The length between two mated-pairs (insert size) is not represented in the final graph either. It is only used to allow edge bundling when several mated-pairs support the same join between contigs. The edge bundling is performed by first greedily choosing a median length of a \texttt{\footnotesize Mate - EDGE}, then gathering all \texttt{\footnotesize Mate - EDGES} that are within $3(standard deviation)(median length)$ to bundle. The weight of a \texttt{\footnotesize Mate - EDGE} is 1 if it is a single join and is the number of mated-pairs participating if the \texttt{\footnotesize Mate - EDGE} is a bundle. The information of length between contigs is lost. Transitive reduction decreases the number of edges and leads to the final form of the graph that will be solved by the greedy path merging algorithm. 
+The algorithm constructs a path though the scaffolding graph. The \texttt{\footnotesize Mate - EDGES} are processed according to their weight (decreasing order) and the found paths are progressively merged until there are no more \texttt{\footnotesize Mate - EDGES} left. As \texttt{\footnotesize Mate - EDGES} are processed one by one in a determined order, this method may not be optimal or perfect. 
 \clearpage
 
 \begin{algorithm}[h!]
@@ -425,30 +425,26 @@ Select all contig edges \\
 \hspace*{2cm}Let $P1$ be the selected path incident to \textit{v} \\
 \hspace*{2cm}Let $P2$ be the selected path incident to \textit{w} \\
 \hspace*{2cm}\textbf{if} $P1 \neq P2$ and we can merge $P1$ and $P2$ (guided by \textit{e}) to obtain P: \\
-\hspace*{3cm}\textbf{if} $H(P) - (H(P1) + H(P2)) \geq (U(P)+U(P2))$: \\
+\hspace*{3cm}\textbf{if} $H(P) - (H(P1) + H(P2)) \geq U(P) - (U(P1)+U(P2))$: \\
 \hspace*{4cm}Replace $P1$ and $P2$ by $P$ \\
 \textbf{end}
 \end{algorithm}
 
 \paragraph*{SSPACE}
-The SSPACE scaffolding algorithm stores orientation and position of paired contigs by a join during its mapping step. This is list is the starting point of the scaffolding step: SSPACE is one of the few successful scaffolders that does not model the problem as a graph. The scaffolding itself starts with the largest contig and iteratively combines other contigs to it if a minimum number of read pairs exists between them (the default being 5 paired reads joining the two contigs). Alternative connections are dealt with thanks to join coverage as seen in annex \ref{fig:sspace}. Contig coverage is not taken into account. The scaffolding process stops when the last combined contig has no joins.
-
+The SSPACE\cite{boetzer_scaffolding_2011} scaffolding algorithm stores orientation and position of paired contigs by a join during its mapping step. This list is the starting point of the scaffolding step: SSPACE is one of the few successful scaffolders that does not model the problem as a graph. The scaffolding itself starts with the largest contig and iteratively combines other contigs to it if a minimum number of read pairs exists between them (the default being 5 paired reads joining the two contigs). Alternative connections are dealt with thanks to join coverage. Contig coverage is not taken into account. The scaffolding process stops when the last combined contig has no possible joins.
 \paragraph*{Bambus}
 Bambus uses a greedy algorithm to join contigs with the most joins first and ignores subsequent edges that conflict with the formerly used join. This methodology is heavily heuristic as previously accepted joins can be sub-optimal and will cause bias for all the following contig joins.
-
-\paragraph*{SOPRA} SOPRA was the first tool to try solving the problem exactly. It models the problem as an undirected graph. It removes inconsistent edges and nodes that give rise to spurious links (a choice is presented, ambiguity ensues). This is repeated until no more edges or nodes have to be removes - everything is consistent. Any contig containing repeated regions will thus be discarded.
-
-\paragraph*{SCARPA} SGA uses a very conservative approach by disallowing any conflicts in the modeled graph, avoiding heuristics at the expense of missing valid joins. Any contig containing repeated regions will thus be discarded.
-
+\paragraph*{SOPRA} SOPRA\cite{dayarian_sopra:_2010}  was the first tool to try to solve the problem exactly. It models the problem as an undirected graph. It removes inconsistent edges and nodes that give rise to spurious links (a choice is presented, ambiguity ensues). This is repeated until no more edges or nodes have to be removes - everything is consistent. Any contig containing repeated regions will thus be discarded.
+\paragraph*{SGA} SGA\cite{simpson_efficient_2012} uses a very conservative approach by disallowing any conflicts in the modeled graph, avoiding heuristics at the expense of missing valid joins. Any contig containing repeated regions will thus be discarded.
 \paragraph*{GST - Genscale Saffolding Tools}
-GST model the problem as a directed graph and try to solve the problem by finding the optimal path. The GST include several different strategies. Their common feature is the fact that they heavily rely on contig coverage and create a node for each contig occurance and orientation. See further explanations about the modeled graph in \fulleref{sec:gstmodeling}. Conflicting join data will co-exist in the graph and given a choice, the optimal path may be different according to the objective function. Differences between GST are described in \fulleref{sec:gstdiff}. 
+GST model the problem as a directed graph and try to solve the problem by finding the optimal path going through \textbf{all} nodes. The GST include several different strategies. Their common feature is the fact that they heavily rely on contig coverage and create a node for each contig occurance and orientation. See further explanations about the modeled graph in \fulleref{sec:gstmodeling}. Conflicting join data will co-exist in the graph and given a choice, the optimal path may be different according to the objective function. Differences between GST are described in \fulleref{sec:gstdiff}. 
 
 
 \subsubsection{Limits of the scaffolding tools}
- Erroneous data (fake links due to poorly assembled contigs, low quality libraries), missing data (low quality libraries, unfit insert size, low genome coverage) and inherent genome characteristics (repeated regions,  heterozygosity) stand in the way of a perfect and easy scaffolding process.  Scaffolders employ strategies to solve the ambiguities heuristically (trusting mate-pair join occurrences, ignoring conflicting links with the best path constructed from an arbitrary chosen starting contig, starting from the biggest contig). Those tools which try to solve the problem exactly are too strict regarding multiple possible paths. Last but not least, the contig coverage is not their priority. Repeats are not handled, or at best detected and removed. Considering conflicting joins arise mainly from repeated regions, at least in perfect simulated data without sequencing errors, this kind of information ought to be given some importance. Also, scaffolding tools provide a single solution when multiple versions of the same genome can cohabit within the same organism or cell. 
+ Erroneous data (fake links due to poorly assembled contigs, low quality libraries), missing data (low quality libraries, unfit insert size, low genome coverage) and inherent genome characteristics (repeated regions,  heterozygosity) stand in the way of a perfect and easy scaffolding process.  Scaffolders employ strategies to solve the ambiguities heuristically (trusting mated-pair join occurrences, ignoring conflicting links with the best constructed path from an arbitrary chosen starting contig, starting from the biggest contig). Those tools which try to solve the problem exactly are too strict regarding multiple possible paths. Last but not least, the contig coverage is not their priority. Repeats are not handled, or at best detected and removed. Considering conflicting joins arise mainly from repeated regions, at least in perfect simulated data without sequencing errors, this kind of information ought to be given some importance. Also, scaffolding tools provide a single solution when multiple versions of the same genome can cohabit within the same organism or cell. 
  
 \subsection{Goal of the internship project}
-The goal of this report is to present the performance of the GST with reliable simulated data. This is done to study its decision making in case of conflicting joins that will absolutely arise in real life and are allowed to co-exist in the GST problem modeling. The first step is to evaluate the complexity of the scaffolding modeled graph and compare the solutions obtained by GST with the provided genome reference. The methodology is described in \fulleref{sec:genscafmeth}. The second step is to benchmark the GST against published tools. In order to achieve this task, a benchmarking workflow was set up and is described in \fulleref{sec:benchmarking}. Results are presented in \fulleref{sec:res}. Global metrics are presented for all instances and a detailed study is made for the chloroplastic genomes of \textit{Agrostis stolonifera} and \textit{Pinus koraiensis}, and the bacterial genome of \textit{Wolbachia endosymbiont}. The \fulleref{sec:persp} will provide an insight of the context of the \textsc{Genscale} scaffolding project in the light of the genome sequencing technique progress. Finally, the conclusion is on page \pageref{sec:conc}.
+The goal of this report is to present the performance of the GST\cite{ipetrov_2014} with reliable simulated data. This is done to study its decision making in case of conflicting joins that will absolutely arise in real life and are allowed to co-exist in the GST problem modeling. The first step is to evaluate the complexity of the scaffolding modeled graphs and compare the solutions obtained by GST with the known genomic reference. The methodology is described in \fulleref{sec:genscafmeth}. The second step is to benchmark the GST against published tools. In order to achieve this task, a benchmarking workflow was set up and is described in \fulleref{sec:benchmarking}. Results are presented in \fulleref{sec:res}. Global metrics are presented for all instances and a detailed study is made for the chloroplastic genomes of \textit{Agrostis stolonifera} and \textit{Pinus koraiensis}, and the bacterial genome of \textit{Wolbachia endosymbiont}. Finally, the conclusion and the possible future context of the work done sofar is on page \pageref{sec:conc}. 
 
 \iffalse
 Describe all parts, annoncer le plan, détailler l'objectif
@@ -460,10 +456,9 @@ Describe all parts, annoncer le plan, détailler l'objectif
 \section{Material and methods} \label{sec:MatMet}
 \subsection{Genscale scaffolding methodology}\label{sec:genscafmeth}
 \subsubsection{Format of the input data for genscale scaffolders}
-GST model the scaffolding problem as a graph where vertices are unitigs - \textit{not contigs} - and links (directed edges) are previously obtained bundles of read pairs joining two unitigs. An example of file read by solvers is showed in figure \ref{fig:inpagrostis} along with its graphical representation generated by the homemade \texttt{graph\_generator.py} script. The number of links in the \textit{.txt} file is higher than the number of links drawn in the graph because the script merges reverse-equivalent links. The script has an option to indicate the kind of graph to generate. 
-\begin{itemize}
-\item \texttt{graph\_generator.py -g [whpm,dist,inpt,expt] -f file.txt}\\ where whpm is weighted path model graph, dist is distance based model graph, inpt is input graph and expt is expected solution graph if it is provided in the file.
-\end{itemize}
+GST\cite{ipetrov_2014} model the scaffolding problem as a graph where vertices are unitigs - \textit{not contigs} - and links (directed edges) are previously obtained bundles of read pairs joining two unitigs. An example of file read by solvers is showed in figure \ref{fig:inpagrostis} along with its graphical representation generated by the homemade \texttt{graph\_generator.py} script. The number of links in the \textit{.txt} file is higher than the number of links drawn in the graph because the script merges reverse-equivalent links. The script has an option to indicate the kind of graph to generate. \\
+\texttt{graph\_generator.py -g [whpm,dist,inpt,expt] -f file.txt}\\ where whpm is weighted path model graph, dist is distance based model graph, inpt is input graph and expt is expected solution graph if it is provided in the file.
+
 
 \textbf{What is a reverse-equivalent link?}\\ Take unitig 0 and unitig 3 of figure \ref{fig:inpagrostis}. In the \textit{.txt} file link list there are two links: \texttt{(3R -> 0F -69)} and \texttt{(0R -> 3F -69)}, which in fact represent the same link between the two unitigs. \\
 \vspace{-0.7cm}
@@ -487,22 +482,22 @@ GST model the scaffolding problem as a graph where vertices are unitigs - \texti
 }
 \caption{Input data of \textit{Agrostis stolonifera} chloroplast genome in \textit{.txt} format and its graph representation}
 \label{fig:inpagrostis}
-\scriptsize The \textit{.txt} file contains a list of unitigs with their associated length and coverage. When the coverage is $>1$ the unitig is a repeated sequence. The advantage of using unitigs and not contigs is that the associated coverage is easier to determine (for long unitigs) and more trustworthy. For small unitigs, the coverage is an interval (here, the 160 base unitig 0). The joins between unitigs are orientated and contain the contig orientation (\textit{Forward} or \textit{Reverse}) information. The distance of each link is negative when two unitigs overlap or positive when two unitigs are separated by a gap. Positive distances (gaps) are obtained though mate-pair information. In the graph orientations are represented by color: red for \textit{Reverse} and blue for \textit{Forward}.
+\footnotesize The \textit{.txt} file contains a list of unitigs with their associated length and coverage. When the coverage is $>1$ the unitig is a repeated sequence. The advantage of using unitigs and not contigs is that the associated coverage is easier to determine (for long unitigs) and more trustworthy. For small unitigs, the coverage is an interval (here, the 160bp unitig 0). The joins between unitigs are directed and contain the contig orientation (\textit{Forward} or \textit{Reverse}) information. The distance of each link is negative when two unitigs overlap or positive when two unitigs are separated by a gap. Positive distances (gaps) are obtained though mated-pair information. In the graph, orientations are represented by color: red for \textit{Reverse} and blue for \textit{Forward}.
 \end{figure}
 
 \vspace{-0.2cm}
 \textbf{How is the \textit{.txt} file obtained? }\\
-The data used in this report is artificial. It is simulated from \textit{.fasta} files of reference genomes using two different scripts to generate a paired-end read library and a mated-pair read library. The paired-end read library is used to built unitigs with \textsc{minia}, a contig building tool developed at \textsc{Genscale} which supports an unitig building option. The size of the k-mer (minimal number of overlapping bases between two reads for the overlap to be regarded as valid) is chosen so that \textsc{minia} produces the fewest number of unitigs. At this stage published scaffolders can already be used - they require the unitig file and the mated-pair library and perform the read mapping themselves to detect joins. The GST require the mapping process to be separately performed and its input file to roughly resemble the one showed in \ref{fig:inpagrostis}. The GST mapping process has three goals:
+The data used in this report is artificial. It is simulated from \textit{.fasta} files of reference genomes using two different scripts to generate a paired-end read library and a mated-pair read library. The paired-end read library is used to built unitigs with \textsc{minia} \cite{cascading,minia}, a contig building tool developed at \textsc{Genscale} which supports an unitig building option. The size of the k-mer (minimal number of overlapping bases between two reads for the overlap to be regarded as valid) is chosen so that \textsc{minia} produces the fewest number of unitigs. At this stage published scaffolders can already be used - they require the unitig file and the mated-pair library and perform the read mapping themselves to detect joins. The GST require the mapping process to be separately performed and its input file to roughly resemble the one showed in \ref{fig:inpagrostis}. The GST mapping process has three goals:
 \begin{itemize}
-\item mapping mate pairs on large unitigs $\mapsto$ insert size
+\item mapping mated-pairs on large unitigs $\mapsto$ insert size
 \item mapping paired reads on unitigs $\mapsto$ unitig coverage
-\item mapping mate pairs on different unitigs $\mapsto$ links between unitigs
+\item mapping mated-pairs on different unitigs $\mapsto$ links between unitigs
 \end{itemize}
-The bigger the unitig, the more robust the mapping information (homogeneously mapped reads) - hence no exact value for small unitigs.
+The bigger the unitig, the more robust the mapping information (homogeneously mapped reads) - hence no exact value for small unitigs' coverage.
 
 \subsubsection{Features of the assembled genomes}
 \label{sec:genomefeatures}
-As the aim of the Genscale scaffolding project is to produce a complete genome rising to the challenge of repeated sequences. Chloroplastic and bacterial genomes are well suited to test the performances of the GSTools. Moreover, chloroplastic and bacterial genomes are small enough to enable a fast and detailed assessment and benchmarking of found solutions.
+As the aim of the Genscale scaffolding project is to produce a complete genome rising to the challenge of repeated sequences. Chloroplastic and bacterial genomes are well suited to test the performances of the GST. Moreover, chloroplastic and bacterial genomes are small enough to enable a fast and detailed assessment and benchmarking of found solutions.
 
 \paragraph*{Chloroplasts}
 Chloroplasts are small organelles in plant photosynthetic tissues which possess their own DNA. The chloroplast genomes are small ($\approx 150kpb$), circular and have a large inverted repeated sequence of around $25kpb$. Some instances used in this study lack this repetition. This is the case in \textit{Pinus koraiensis} and \textit{Euglena gracilis}. However these two genomes possess significantly more small ($<$ 20bp) repeated sequences. Figure \ref{fig:chlostructure} shows the classic chloroplastic structure, with colored IR extremities to indicate their relative position, \textit{"facing"} each other in the genome.
@@ -532,7 +527,7 @@ Chloroplasts are small organelles in plant photosynthetic tissues which possess 
 \end{figure}
 
 \paragraph*{Bacteria}
-Bacterial genomes are bigger ($>$ 1Mpb) and contain many small repeated sequences between 500pb and 1000pb. These genomes have regions which are very hard to assemble because short tandem repeated  sequences won't permit any unitig to be built. Repeats as small as 100bp are detected with \texttt{nucmer}. 150bp reads covering these regions won't be assembled into any unitig and will not be considered as unitigs on their own. Regions of the reference genome will thus be completely absent when reaching the scaffolding step.
+Bacterial genomes are bigger ($>$ 1Mbb) and contain many small repeated sequences between 500pb and 1000pb. These genomes have regions which are very hard to assemble because short tandem repeated  sequences won't permit any unitig to be built. Repeats as small as 100bp are detected. 150bp reads covering these regions won't be assembled into any unitig and won't result in any trustworthy join. Regions of the reference genome can be completely absent when reaching the scaffolding step, and it will be made difficult by absent valid join information.
 \begin{figure}[h!]
 \begin{center}
 \resizebox{19cm}{!}{
@@ -543,7 +538,7 @@ Bacterial genomes are bigger ($>$ 1Mpb) and contain many small repeated sequence
 }
 \end{center}
 \caption{\textit{Wolbachia endosymbiont} genome dotplotted against itself}
-{\footnotesize The dot-plots were generated by the nucmer script of the MUMmer sequence fast-alignment tool. (x) and (y) axis are both the\textit{Wolbachia endosymbiont} reference genome downloaded on NCBI 
+{\footnotesize The dot-plots were generated by the nucmer script of the MUMmer \cite{delcher_alignment_1999,delcher_fast_2002} sequence fast-alignment tool. (x) and (y) axis are both the \textit{Wolbachia endosymbiont} reference genome downloaded on NCBI 
 (\textit{NC\_010981.1}). The blue dots and lines show repetitions in the genome as the DNA sequence matches in several places. The closer the dot is to the red matching axis, the closer the repeats are. We can say, for instance, that at the 1.3Mbp there are several tandem repeats. On the left alignement, repeats longer than 500bp are represented (\texttt{nucmer -l 500} option). On the right repeats longer than 1200bp are represented.}
 \label{fig:wolbarepeats}
 \end{figure}
@@ -551,7 +546,7 @@ Bacterial genomes are bigger ($>$ 1Mpb) and contain many small repeated sequence
 
 \subsubsection{Genscale scaffolding problem modeling} \label{sec:gstmodeling}
 As seen in figure \ref{fig:inpagrostis}, the input data can be visualized by the \texttt{graph\_generator.py} script as a graph where nodes uniquely represent unitigs regardless of their coverage or orientation. However, this visualization is only useful for a first human assessment of the data. 
-Genscale scaffolding tools model each unitig as many times as it occurs. The \texttt{unitig 3} with coverage 2 is transformed into \texttt{unitig 3 occurance 1} and \texttt{unitig 3 occurance 2}, two distinct nodes in the graph. The total number of contig occurrences is then duplicated to model the \textit{Forward} and \textit{Reverse} orientation. \texttt{unitig 3 occurance 1} is transformed into \texttt{unitig 3 occurance 1 \textit{Forward}} and \texttt{contig 3 occurance 1 \textit{Reverse}}. The number of links increases consequently. When transforming joins into model graph links, no duplicate links are allowed (merged) and for each link its reverse equivalent is created. Link coverage is not taken into account. Weight link is the estimated distance between two nodes, which is the space left between the two joined tips of two unitig. A distance is negative when two unitig overlap and positive when there is a gap. Gaps are obtained thanks to mated-pair reads information: in this case the distance is the estimated length of the pair's insert size minus the remained sequence length of the unitig following the reads' mapping. A simple example of the difference between the raw input graph and the processed model input graph that the GST solve is presented in figure \ref{fig:riceinpt}.
+Genscale scaffolding tools model each unitig as many times as it occurs. The \texttt{unitig 3} with coverage 2 is transformed into \texttt{unitig 3 occurance 1} and \texttt{unitig 3 occurance 2}, two distinct nodes in the graph. The total number of contig occurrences is then duplicated to model the \textit{Forward} and \textit{Reverse} orientation. \texttt{unitig 3 occurance 1} is transformed into \texttt{unitig 3 occurance 1 \textit{Forward}} and \texttt{contig 3 occurance 1 \textit{Reverse}}. The number of links increases consequently. When transforming joins into model graph links, no duplicate links are allowed (merged) and for each link its reverse equivalent is created. Link coverage is not taken into account. Link weight is the estimated distance between two nodes, which is the space left between the two joined tips of two unitigs. A distance is negative when two unitigs overlap and positive when there is a gap. Gaps are obtained thanks to mated-pair read information: in this case the distance is the estimated length of the pair's insert size minus the remained sequence length of the unitigs following the reads' mapping. A simple example of the difference between the raw input graph and the processed modeled input graph that the GST solve is presented in figure \ref{fig:riceinpt}.
 
 \begin{figure}[h!]
 \begin{center}
@@ -564,7 +559,7 @@ Genscale scaffolding tools model each unitig as many times as it occurs. The \te
 }
 \end{center}
 \caption{Input graphs of rice, as observed in the \textit{.txt} file (left) and as modeled by the Genscale scaffolding tools (right)}
-\footnotesize Sum of unitig occurrences is 4 so the final number of nodes in the model graph is $4*2=8$. There are no duplicate links in this example. Flipping the model graph (change the link orientation and node color) produces all the reverse complement links.
+\footnotesize Sum of unitig occurrences is 4 so the final number of nodes in the model graph is $4\times2=8$. There are no duplicate links in this example. Flipping the model graph (change the link orientation and color and node color) produces all the reverse complement links.
 \label{fig:riceinpt}
 \end{figure}
 \newpage
@@ -575,10 +570,10 @@ Genscale scaffolding tools model each unitig as many times as it occurs. The \te
 Although all GST try to solve the problem exactly, different models were developed having different objective functions and input information.
 \paragraph*{Weighted path model} Weighted math model (wpm) does not take link weight into account and only aims at solving the order and relative orientation of unitig. The distance between unitig is not known. This model produces several solutions, among them several can be valid or sub-optimal ones. The objective function of this model maximizes the number of links (bundled read pairs) whose orientation corroborates the suggested orientation of unitigs they are linking. All nodes must be visited once because this model doesn't support intervals as unitig coverage. Visually, it means that each node in a solution has $inDegree=outDegree=1$ and $color(inArrow)=color(outArrow)=color(Node)$.
 
-\paragraph*{Distance based model} Distance based model (dist) gives weight to links which is the sequence size between two extremities of two unitigs: negative weight in case of an overlapping and positive weight in case of a mated-pair estimated insert size. It produces a single solution. On an axis from 0 to $\infty$ it tries to find the best position for a unitigs using linear programming so that there are as few as possible erroneous read pairs. The less conflicting data used, the better. The solution provided can contain two consecutive unitigs for which no join exists in the input data if positioning them so helps reducting the number of errors. 
+\paragraph*{Distance based model} Distance based model (dist) gives weight to links which is the sequence size between two extremities of two unitigs: negative weight in case of an overlapping and positive weight in case of a mated-pair estimated insert size. It produces a single solution. On an axis from 0 to $\infty$ it tries to find the best position for a unitigs using linear programming so that there are as few as possible erroneous read pairs. The less conflicting data used, the better. The solution provided can contain two consecutive unitigs for which no join exists in the input data if positioning them so helps reducting the number of errors. It doesn't support unitig intervals either but can produce solutions with coverages different from what is provided in the \textit{.txt} files. 
 
 
-\paragraph*{Flow model} Flow model is currently being developed. The strategy is divided into two steps and relies on the definition of \textit{large unitigs}. This definition evolved in the \textsc{Genscale} team: currently large unitigs are unitigs with a sequence length superior to the biggest mated-pair distance in the input data. The first step of the flow model strategy is to link these large unitigs and construct a genome frame containing gaps. The second step, yet to be implemented, aims at filling in the gaps with the remaining unitigs. This strategy emerged when the wpm was able to construct a genome frame for large datasets (bacterial genomes) once small unitigs were filtered out. Since then the definition of large contigs evolved and linkage challenges were solved for this first step (see figure \ref{fig:flowlinkage}). Additionally, the flow model supports intervals for contigs coverage and confidence intervals for mated-pair distances.
+\paragraph*{Flow model} Flow model is currently being developed. The strategy is divided into two steps and relies on the definition of \textit{large unitigs}. This definition evolved in the \textsc{Genscale} team: currently large unitigs are unitigs with a sequence length superior to the biggest mated-pair distance in the input data. The first step of the flow model strategy is to link these large unitigs and construct a genome frame containing gaps. The second step, yet to be implemented, aims at filling in the gaps with the remaining unitigs. This strategy emerged when the wpm was able to construct a genome frame for large datasets (bacterial genomes) once smaller unitigs were filtered out (arbitrary size based filtering). Since then the definition of large contigs evolved and linkage challenges were solved for this first step (see figure \ref{fig:flowlinkage}). Additionally, the flow model supports intervals for contigs coverage and confidence intervals for mated-pair distances.
 \iffalse
 \begin{algorithm}[h!]
 \caption{Flow model Genscale Scaffolding Tool first step algorithm  \\ \footnotesize }
@@ -628,53 +623,48 @@ let $H$ be the set of neighbors of a node \\
 % BODEH!
 %-------------------------------------------------------------------------------
 \subsection{Input data features and complexity inspection}
-Transforming the input data file into the graph solved by the GST is carried out by the Python interface to the Graphviz graph layout and visualization package, pygraphviz. Graphviz provides quick methods to access the features of the graph. The Python implementation uses the networkx package. Features and complexity of the input graph was evaluated with the underlying wish to understand why certain instances were wrongly scaffolded. Automated transformation and inspection of the input data was implemented in the \textit{graph\_inspector.py} script. Additionally this script can also provide differences between the expected solution and the input data, detecting missing linkage information in the input data.
+Transforming the input data file into the graph solved by the GST is carried out by the Python interface to the Graphviz \cite{gansner_open_2000,ellson_graphviz_2003} graph layout and visualization package, pygraphviz. Graphviz provides quick methods to access the features of the graph. The Python implementation uses the networkx \cite{hagberg-2008-exploring} package. Features and complexity of the input graph was evaluated with the underlying wish to understand why certain instances were wrongly scaffolded. Automated transformation and inspection of the input data was implemented in the \texttt{graph\_inspector.py} script. Additionally this script can also provide differences between the expected solution and the input data, detecting missing linkage information in the input data.
 
 \subsection{Benchmarking} \label{sec:benchmarking}
-Comparing the performance of the GST can be done on several levels. As the data is artificially generated from an already known genome, the best solution is already known. The GST solutions can be compared between themselves, with the expected solution and with solutions provided by other published tools. The solution formats are not the same and automated methods of comparing were set up to extract and compare scaffoldings. 
+Comparing the performance of the GST can be done on several levels. As the data is artificially generated from an already known genome, there is an expected solution. The GST solutions can be compared between themselves, with the expected solution and with solutions provided by other published tools. The solution formats are not the same and automated methods were set up to extract and compare scaffoldings. 
 
 \subsubsection{Comparison with the expected solution}
-The expected solution provided by the mapping of unitigs of the reference genome is the one GST aim to obtain in the form of an uninterrupted and accurately gapped scaffold. However in some cases the solution is not unique. In real life several versions of the genome can co-exist, so the GST should aim at providing all valid solutions. In our artificial datasets, only one version of the genome is used, however in the case of chloroplastic genomes the multiple valid solution configuration arises. The Small Single Copy and the Long Single Copy have both extremities next to the same extremities of the Inverted Repeat (see figure \ref{fig:chlostructure}). In absence of strong mated-pair information overthrowing the overlapping information of these extremities, the SSC and the LSC can be oriented in a \textit{Forward} or a \textit{Reverse} configuration, creating a total of 4 valid combination. Of course, the genomic structure can be much more complex than that presented in figure \ref{fig:chlostructure}, providing linkage information that would corroborate an orientation over another. The fact is, a valid solution is not an exact copy of the expected solution. Because it is not known in advance which contigs form the IR of the chloroplast genome and because in \textit{de novo} assembly no assumption of the genomic structure shall be made at all, these alternative solutions are very hard to detect automatically. \\
-The detection of exact copies of the expected solution has been implemented in the \textit{graph\_comparator.py} script. It is a simple list comparison after the retrieval of GST solution in the form of an ordered list of oriented unitigs from the GST output files. Distances between unitigs has been ignored for this comparison. Sub-optimal solutions are also detected. This detection effort has been made especially for the distance based model which provides a single solution which sometimes possesses only one or two errors of orientation. However misplacement of a large set of contigs can only be detected visually with the graph provided by the \textit{graph\_generator.py} script. This kind of error did not occur many times in the instances tested as misplacement of one or several contigs often leads to more errors.
+The expected solution provided by the mapping of unitigs on the reference genome is the one GST aim to obtain in the form of an uninterrupted and accurately gapped scaffold. However in some cases the solution is not unique. In real life several versions of the genome can co-exist, so the GST should aim at providing all valid solutions. In our artificial datasets, only one version of the genome is used, however in the case of chloroplastic genomes the multiple valid solution configuration arises. The Small Single Copy and the Long Single Copy have both extremities next to the same extremities of the two Inverted Repeats (see figure \ref{fig:chlostructure}). In absence of strong mated-pair information overthrowing the overlapping information of these extremities, the SSC and the LSC can be oriented in a \textit{Forward} or a \textit{Reverse} configuration, creating a total of 4 valid combinations. Of course, the genomic structure can be much more complex than that presented in figure \ref{fig:chlostructure}, providing linkage information that would corroborate an orientation over another. The fact is, a valid solution is not an exact copy of the expected solution. Because it is not known in advance which contigs form the IR of the chloroplastic genome and because in \textit{de novo} assembly no assumption of the genomic structure shall be made at all, these alternative solutions are very hard to detect automatically. \\
+The detection of exact copies of the expected solution has been implemented in the \texttt{graph\_comparator.py} script. It is a simple list comparison after the retrieval of GST solution in the form of an ordered list of oriented unitigs. Distances between unitigs have been ignored for this comparison. Sub-optimal solutions are also detected. This detection effort has been made especially for the distance based model which provides a single solution sometimes possessing only one or two errors of orientation. However misplacement of a large set of contigs can only be detected visually with the graph provided by the \texttt{graph\_generator.py} script. This kind of error did not occur many times in the instances tested as misplacement of one or several contigs often leads to more errors.
 
 \subsubsection{Comparison with published tools: benchmarking strategy}
-A summary of the benchmarking strategy used is presented in figure \ref{fig:benchwork}. Based on the comprehensive evaluation of assembly scaffolding tools \cite{hunt_comprehensive_2014}, the SSPACE scaffolding tool was chosen to be compared to GST. SSPACE is not a graph based scaffolder and its strategy of handling repeats is not explained. For all the other considered scaffolders, it is explicitly said that repeated regions are detected and discarded in order to avoid ambiguous joins. Before proceeding to the benchmarking, solution files from SSPACE and GST were converted. The two converters are :
+A summary of the benchmarking strategy used is presented in figure \ref{fig:benchwork}. Based on the comprehensive evaluation of assembly scaffolding tools \cite{hunt_comprehensive_2014}, the SSPACE scaffolding tool was chosen to be compared to GST. SSPACE is not a graph based scaffolder and its strategy of handling repeats is not explained. For all the other considered scaffolders, it is explicitly written that repeated regions are detected and discarded in order to avoid ambiguous joins. Before proceeding to the benchmarking, solution files from SSPACE and GST were converted. The two converters are :
 \begin{itemize}
-\item the \textit{sspace\_2\_order.py} script which takes the SSPACE fasta scaffolding soltution and the SSPACE evidence file tracking the scaffold unitig composition, and outputs an ordered list of orientated unitigs for each scaffold
-\item the \textit{gst\_order\_2\_scaf.py} script which takes the GST solution file and the unitig fasta file and constructs the whole uninterrupted GST scaffold, appending N bases when the distance between unitigs is positive.
+\item the \texttt{sspace\_2\_order.py} script which takes the SSPACE \textit{.fasta} scaffolding solution and the SSPACE evidence file tracking the scaffold unitig composition, and outputs an ordered list of orientated (possibly extended) unitigs for each scaffold
+\item the \texttt{gst\_order\_2\_scaf.py} script which takes the GST solution file and the unitig \textit{.fasta} file and constructs the whole uninterrupted GST scaffold, appending N bases when the distance between unitigs is positive.
 \end{itemize}
 
-The fasta files containing the nucleic sequence scaffolding solution are compared with the Quality Assessment Tool for Genome Assemblies (Quast). The reference genomes and the gene file downloaded from ncbi are given to Quast for additional metrics.
-\begin{lstlisting}[language=bash]
-quast.py gst_solution.fasta sspace_solution.fasta unitigs.fasta 
--R ref_genome -G gene_file.txt -o quast_outpur_dir
-\end{lstlisting}
-Quast provides 31 metrics with this command. The ones we are especially interested in and that will be presented in \fulleref{sec:res} are: 
+The \textit{.fasta} files containing the nucleic sequence of scaffolding solution are compared with the Quality Assessment Tool for Genome Assemblies (Quast\cite{gurevich_quast:_2013}). The reference genomes and the gene file downloaded from NCBI are given to Quast for additional metrics.
+
+\texttt{ > quast.py gst\_solution.fasta sspace\_solution.fasta unitigs.fasta \\ -R ref\_genome -G gene\_file.txt -o quast\_output\_dir}
+
+Quast provides 31 metrics with this command, some more pertinent for our study than others. The ones and that will be presented in \fulleref{sec:res} are: 
 \begin{itemize}
-\item \#scaffolds and \#scaffolds $\geq 100bp$ : especially interesting to compare it to the \#unitigs
+\item \#scaffolds and \#scaffolds $\geq 1000bp$ : especially interesting to compare it to the \#unitigs
 \item total length of scaffolds: detect if any unitig was duplicated (GST) or elongated (SSPACE)
 \item largest built scaffold - usually the GST leads to one single large scaffold
-\item N50:  length for which the collection of all contigs of that length or longer covers at least 50\% of assembly length. Extensively used metric, but considering the GST solution aims at large unique solution, this metric is a nice indication for SSPACE. It is also useful for the \textsc{gensclae} flow model, which is not finished yet and produces several discontinuous scaffolds.
-\item \#misassemblies and \#indels, which will occur at the unitig extremities when overlapping or elongations are wrongly executed.
+\item N50:  length for which the collection of all contigs of that length or longer covers at least 50\% of assembly length. Extensively used metric, but considering the GST solution aims at large unique solution, this metric is a nice indication for SSPACE. It is also useful for the \textsc{gensclae} flow model, which is not finished yet and produces several disconnected scaffolds.
+\item \#misassemblies, \#mismatches and \#indels
 \item genome fraction assembled 
-\item Ns per 100kbp
+\item Ns per 100kbp: Ns are added in SSPACE scaffolds, flow and distance based model
 \item \#genes found
 \item largest accurate alignment with the reference genome
 \end{itemize}
-A visualization of the solution is necessary as Quast does not provide information on ordering of unitigs. The presence of misassemblies and indels is an indication of a possible order mistakes, however it can also be small distance between unitigs errors resulting in wrong overlapping or extra Ns. A visual alignment of the scaffolding sequences with the reference genome is a sturdy method to evaluate the scaffolding continuity. Dot plots are generated with \texttt{nucmer}, of the MUMmer software. Two steps are necessary: 
+A visualization of the solution is necessary as Quast does not provide information on ordering of unitigs. The presence of misassemblies is an indication of a possible order mistake however it can also be small distance between unitigs errors resulting in wrong overlapping or extra Ns. A visual alignment of the scaffolding sequences with the reference genome is a sturdy method to evaluate the scaffolding continuity. Dotplots are generated with \texttt{nucmer}, of the MUMmer software. Two steps are necessary: 
 \begin{itemize}
 \item \texttt{nucmer scaffolding.fasta ref\_genome.fasta -l 500} aligns the two nucleic sequences and outputs a \textit{.delta} file. The \texttt{-l} option registers all alignements which are superior to 500bp.
 \item \texttt{mummerplot nucmer\_output.delta -t png} outputs a dotplot in \textit{.png} format.
 \end{itemize}
 The MUMmer software also provides the \texttt{show-coords} tool which detects and outputs the list of coordinates of selected regions of the alignement. For example:
-
 \begin{itemize}
-\item \texttt{show-coords -l -T -L 1200 -q nucmer\_alignement.delta} outputs a tab delimited file (\texttt{-T} containing alignements longer than 1200bp (\texttt{-L}), including the sequence length information (\texttt{-l}).
+\item \texttt{show-coords -l -T -L 1200 -q nucmer\_alignement.delta} outputs a tab delimited file (\texttt{-T}) containing alignements longer than 1200bp (\texttt{-L}), including the sequence length (\texttt{-l}).
 \end{itemize}
-This methodology is informative for the sequence integrity, it does not however show the unitig that boards the misassembly or the continuity rupture. This is done with the graphical output of \texttt{graph\_constructor.py}. Unscaffolded unitigs and wrongly scaffolded unitigs are detected. Their environment in the input data is analyzed in order to understand the reason behind the scaffolding failure.
-
-
-
+Sequence continuity is evaluated thanks to this methodology, it does not however show the unitigs that board the eventual misassemblies or continuity rupture. Unscaffolded unitigs and wrongly scaffolded unitigs are detected with \texttt{graph\_constructor.py}. Their environment in the input data is analyzed in order to understand the reason behind the scaffolding failure.
 
 \begin{figure}[h!]
 \begin{center}
@@ -766,7 +756,7 @@ This methodology is informative for the sequence integrity, it does not however 
 \clearpage
 \section{Results}\label{sec:res}
 \subsection{Comparison between the data sets}
-Results presented in table \ref{tab:graphcomplexity} are obtained with the \textit{graph\_inspector.py} script. The graph is the one generated by the \textit{graph\_generator.py} script as seen by the GST tools (see figure \ref{fig:riceinpt}). 
+Results presented in table \ref{tab:graphcomplexity} are obtained with the \texttt{graph\_inspector.py} script. The analysed graph is the one modeled by the GST and built by the \texttt{graph\_generator.py} script (see rice example figure \ref{fig:riceinpt}). 
 
 \begin{table}[h!]
 \resizebox{18cm}{!}{
@@ -790,24 +780,25 @@ wolbachia & bacter &1482355& 4270 & 616804 & min  5 , max  2582 , avg  288 & 0.0
 \hline
 \end{tabular}
 }
-\caption{GST input graph features}
+\caption{GST modeled graph features}
 \footnotesize \textit{\color{magenta}G.}: genome, \textit{\color{magenta}n.}: nodes, \textit{\color{magenta}chpl.}: chloroplast, \textit{\color{magenta}bacter.}:bacterial, \textit{\color{magenta}chr3}: chromosome 3, \textit{\color{magenta}gnc:ipl}: "graph not connected: infinite path length".\\
-{\color{magenta} node degree}: the number of edges incident to the vertex. Loops are not allowed in this graph.\\
-{\color{magenta} graph density}: $D(G)=\frac{\lvert L \lvert}{\lvert N \lvert(\lvert N \lvert-1)}$ with $\lvert L \lvert$ is the link cardinal and $\lvert E \lvert$ the node cardinal. A dense graph has a  number of link is close to the maximal number of link, and a density value close to $1$. \\
+{\color{magenta} node degree}: the number of edges incident to the vertex. Self-loops are not allowed in this graph.\\
+{\color{magenta} graph density}: $D(G)=\frac{\lvert L \lvert}{\lvert N \lvert(\lvert N \lvert-1)}$ with $\lvert L \lvert$ the link cardinal and $\lvert N \lvert$ the node cardinal. A dense graph has a  number of links close to the maximal number of link, and a density value close to $1$. \\
 {\color{magenta} graph diameter}: greatest geodesic distance (shortest path between two nodes) for any node in the graph. \\
-{\color{magenta} graph periphery}: nodes whose geodesic distance $=$ diameter.\\
+{\color{magenta} graph periphery}: nodes with maximal eccentricity (geodesic distance $=$ diameter).\\
 {\color{magenta} graph radius}: lowest geodesic distance for any node in the graph.\\
-{\color{magenta} graph center}: nodes whose geodesic distance $=$ radius.\\
+{\color{magenta} graph center}: nodes with minimal eccentricity (geodesic distance $=$ radius).\\
 \label{tab:graphcomplexity}
 \end{table}
 
-The minimal degree for a node in the graphs should be 4 because a node have at least an in-going link and an outgoing link ($indegree=outdegree=1$). The graph also models their reverse equivalents. Acineto has a node degree equal to 0. It means an unitig lacks any link. This explains the "graph not connected" error. Furthermore the density of the graph is very low. Euglena however has a minimum node degree of 12. There are no nodes with indegree or outdegree equals to 0 (or 12). This indicates that the euglena graph holds two disconnected sub-graphs. \\
-The higher the density is, the more node linked to multiple other nodes exists - which translates into repeats or large nodes with multiple mate pairs.  The two smallest graphs have the highest density: the graphs have 8 nodes with $indegree=outdegree=1$, ($\times 2$ because of the reverse equivalent links). All links are overlaps. The degrees are all equal to 4. For other graphs, degrees as high as 2582 exist.\\
+The minimal degree for a node in the graphs should be 4 because a node has at least an in-going link and an outgoing link ($indegree=outdegree=1$). The graph also models their reverse equivalents. Acineto has a node degree equal to 0. It means an unitig is completly disconnected from the rest of the genome. This explains the "graph not connected" error and why it is unsolvable. Furthermore the density of the graph is very low. Euglena however has a minimum node degree of 12. There are no nodes with indegree or outdegree equal to 0. This could indicate that the euglena graph holds two disconnected sub-graphs. \\
+The two smallest graphs have the highest graph density: the graphs have 8 nodes with $indegree=outdegree=1$, ($\times 2$ because of the reverse equivalent links). All links are overlaps. All degrees are all equal to 4. Lower densities indicate that not all consecutive unitigs have joins between them and their consecutive ordering need to be deduced from mated-pair information with other non consecutive unitigs. The three solved instances with the most nodes (cucumis, oenothera and pinus) have low graph density and also have the highest diameter and radius. Distance between nodes are big. Graph periphery in these instances contains mainly short repeat nodes which lack mated-pairs. These nodes are poorly connected to the rest of the graph despite the need for them to be used multiple times.
 
-At the beginning of the project the idea of detecting inconsistencies in the input data by comparing input links with the expected solution links was tested. These results are presented for the chloroplastic instances in table \ref{tab:compgsi}. Links in the input solution and the one between consecutive unitigs (no mate pairs). The high number of links in the input absent in the expected solution comes from the fact that mate pairs link non consecutive contigs. This strategy has  lead to an explanation for GST' difficulties in scaffolding pinus. A link in the expected solution (link between two consecutive unitigs) was absent in the input data. It was actually the contig 14 and 15 whose \texttt{14 Forward -> 15 Reverse} link was present solely in the  \texttt{14 Reverse -> 15 Forward} configuration. The pinus data was eventually re-simulated and solved with the flow model. 
+At the beginning of the project the idea of detecting inconsistencies in the input data by comparing input links with the expected solution links was tested. These results are presented for the chloroplastic instances in table \ref{tab:compgsi}. Links in the input solution are links between consecutive unitigs (no mated-pair reads obviously). The high number of links in the input absent from the expected solution comes from the fact that mated-pairs usually link non consecutive unitigs. This strategy has  lead to some explanations for GST' difficulties in scaffolding pinus. A link in the expected solution (link between two consecutive unitigs) was absent in the input data. As previously seen, consecutive unitigs are not always joined in the input data. However in pinus, the unitigs 14 and 15 were linked in the \texttt{14 Forward -> 15 Reverse} order when the expected order was \texttt{14 Reverse -> 15 Forward} (these two links are not reverse equivalent). This lead to a wrong graph model. The pinus data was eventually re-simulated and solved with the flow model. 
 
 \begin{table}[h!]
 \centering
+\resizebox{7cm}{!}{
 \begin{tabular}{|l||c| c|}
 \hline
 organism & links in I and not in ES & links in ES and not in I \\
@@ -821,7 +812,8 @@ pinus & 23 ($60.5\%$)& 2 \\
 euglena & 79 ($73.1\%$) & 0 \\
 \hline
 \end{tabular}
-\caption{Comparison of the input arcs data with the expected solution}
+}
+\caption{Comparison between the input linking data and the expected solution's links}
 \footnotesize {\color{magenta}I}:input data, {\color{magenta}ES}:expected solution
 \label{tab:compgsi}
 \end{table}
@@ -830,7 +822,7 @@ euglena & 79 ($73.1\%$) & 0 \\
 
 \subsection{Comparison of GST solutions with the expected solution}
 
-Exact valid solutions were detected with the \texttt{graph\_comparator.py} script. Other valid solutions were looked for manually. The GST performance are presented in table \ref{tab:solutions}. 
+Valid solutions were detected with the \texttt{graph\_comparator.py} script. Other sub-optimal solutions were looked for manually. The GST performance are presented in table \ref{tab:solutions}. 
 
 \begin{table}[h!]
 \begin{center}
@@ -860,23 +852,25 @@ wolbachia &-&-&flow&0.4s& built frame with large unitigs resulting in 11 disconn
 \label{tab:solutions}
 \end{table}
 
-Pinus and euglena are the two chloroplastic genomes which were not fully solved by first generation GST tools. They are incidentally the two chloroplast not to possess an inverted repeat. Pinus is partially solved by the first step of the flow model (92.1\% of the genome assembled). Bacterial genomes are very challenging to scaffolds for reasons described in section \fulleref{sec:genomefeatures}. Building a genomic framework is now possible with the flow model, but the full genome has yet to be scaffolded. Results for wolbachia are further discussed in section \fulleref{sec:wolbachia}. \\
+Pinus and euglena are the two chloroplastic genomes which were not fully solved by first generation GST tools. They are incidentally the two chloroplasts not to possess an inverted repeat. Pinus has a significantly shorter genomic length. As noticeable in table \ref{tab:graphcomplexity}, the number of nodes is not linked to the genome size but rather to the amount of repeated sequences assembled into separate unitigs. Pinus is partially solved by the first step of the flow model (92.1\% of the genome assembled). Bacterial genomes are very challenging to scaffolds for reasons described in section \fulleref{sec:genomefeatures}. Building a genomic framework is now possible with the flow model, but the full genome has yet to be scaffolded. Results for wolbachia are further discussed in section \fulleref{sec:wolbachia}. \\
+\centerline { $ * \quad * \quad * $ }
+\vspace{0.5cm}
 
-Next sections present results obtained with the benchmarking workflow. Promising results are detailed using the agrostis example, but the excellent performance of GST for agrostis is also valid for other chloropastic genomes (except pinus and euglena). The improvement in scaffolding made with the flow model will be detailed for pinus.
+Next sections present results obtained with the benchmarking workflow. Promising results are detailed using the agrostis example, but the excellent performance of GST for agrostis is also valid for other chloropastic genomes (except pinus and euglena). The improvement in scaffolding made with the flow model will be detailed for pinus. But one must keep in mind that for now only the first frame building step of the flow model was benchmarked, consequently the fraction of the assembled genome will often be quite low.
 
 \newpage
 \subsection{Comparison of the best GST solutions and SSPACE to the reference genome}
-As a reminder, the reason why SSPACE was chosen is because it performs very well according to the comparative scaffolding study \cite{u} and it does not explicitly discard repetitive regions.
+As a reminder, the reason why SSPACE was chosen is because it performs very well according to the comparative scaffolding study \cite{hunt_comprehensive_2014-1} and it does not explicitly discard repetitive regions.
 \subsubsection{Quality assessment of genome assemblies of \textit{Agrostis stolonifera} chloroplastic genome}
 
 \paragraph*{QUAST} 
-\textit{Agrostis stolonifera}  chloroplastic genome was successfully assembled with the Weighted path model. The wpm provided 4 solution, among them two are valid ones (1est and 2nd) and one (1st) is the exact copy of the expected solution (the reference genome). The wpm scaffold solution was rebuilt by using the size of the k-mer used during the unitig building step (60bp), each unitig overlapping its neighbors for 59bp. This method resulted in an exact solution (100\% of the genome was assembled, same size). The distance solution is also a satisfying solution however the sizes of the distances between contigs are false and cause the scaffold to be wrongly gapped. The added Ns in the found false gaps increases the size of the genome by 561bp. This is a negligible amount and is not detected by the \textit{N's per 100kpb} metric. The largest alignment is quite low for the distance based model (102364bp before making a misassembly). This length comprises the LSC and an IR, meaning that distance based fails to find the correct distance between the SSC and the IRs. \\ All of the GSTs performed better than the SSPACE scaffolder. Among the 6 unitigs of the agrostis input data, SSPACE did not scaffold the small 160bp unitig and the big 12928bp extended unitig. The three SSPACE scaffolds are:
+\textit{Agrostis stolonifera}  chloroplastic genome was successfully assembled with the Weighted path model. The wpm provides 4 solution, among them two are valid ones ($1^{st}$ and $2^{nd}$) and one ($1^{st}$) is the exact copy of the expected solution (the reference genome). The wpm scaffold solution was rebuilt using the size of the k-mer used during the unitig building step (60bp) in place of unitig distance information. Each unitig overlaps its unitig neighbors for 59bp. This method leads to an exact built solution (100\% of the genome is assembled, same size as the reference). The distance solution is also a satisfying solution however the sizes of the distances between contigs are false and cause the scaffold to be wrongly gapped. The added Ns in the found false gaps increases the size of the genome by 561bp. This is a negligible amount and is not detected by the \textit{N's per 100kpb} metric. The largest alignment is quite low for the distance based model (102364bp before making a misassembly). This length comprises the LSC and an IR, meaning that distance based fails to find the correct distance between the SSC and the IRs. \\ All of the GSTs perform better than the SSPACE scaffolder. Among the 6 unitigs of the agrostis input data, SSPACE does not scaffold the small 160bp unitig and the big 12928bp extended unitig. The three SSPACE scaffolds are:
 \begin{itemize}
 \item the 160bp contig (0) which is part of the IR ($IR=c3+c0+c1$)
 \item the LSC ($LSC=c4+c0+c2$) and an incomplete IR copy lacking the 160bp contig
 \item the SSC ($SSC=c5$)
 \end{itemize}
-The 160bp contig and the SSC possess conflicting links, and SSPACE is not able to take a decision so it does not take the risk of scaffolding them. It does not find the whole genome: only 84.5\% is assembled, which is a 0.3\% more than the sum of all unitig sizes. This slight increase occurs because the extension though unused reads was permitted ($-x=1$ option). However SSPACE can not go much beyond this percentage as it does not compute unitig coverage and is not meant to duplicate any given unitig. 
+The 160bp contig and the SSC possess conflicting links, and SSPACE is not able to take a decision so it does not take the risk of scaffolding them. It does not find the whole genome: only 84.5\% is assembled, which is a 0.3\% more than the sum of all unitig sizes. This slight increase occurs because the extension though unused reads was permitted ($-x=1$ option). However SSPACE can not go much beyond this percentage as it does not compute unitig coverage and is not meant to duplicate any given sequence. 
 
 %AGROSTIS TABLE DAWG
 \begin{table}[h!]
@@ -913,12 +907,12 @@ NA50 & 24519 & {\bf 136584} & 81612 & 82913 & 134750 & 102364 & 81140 & {\bf 136
 }
 \end{center}
 \footnotesize All statistics are based on contigs of size $\geq$ 50 bp. {\color{magenta}wpm}: weighted path model, {\color{magenta}dist}: distance based model.
-\caption{QUAST metrics for several unitig scaffoldings of \textit{Agrostis stolonifera} with GST (wpm and dist) and SSPACE}
+\caption{QUAST metrics for the unitig set and several scaffolding solutions of \textit{Agrostis stolonifera} with GST (wpm and dist) and SSPACE}
 \label{tab:agro}
 \end{table}
 
 \paragraph*{graph\_generator.py}
-Figure \ref{fig:scafsols} is a \textit{graph\_generator.py} visualization of the scaffolding solutions compared with Quast in table \ref{tab:agro}. The circled or lined unitigs are those forming the IR of the agrostis. This technique visually confirms that the unitigs that SSPACE found challenging to scaffold are the repeated ones. The difference between the two valid solutions found by wpm is also highlighted. The LSC (\textit{c2-c4-c4}) regions is reversed but the SSC (\textit{c5}) has the same orientation in both solutions. 
+Figure \ref{fig:scafsols} is a \texttt{graph\_generator.py} visualization of scaffolding solutions compared with Quast in table \ref{tab:agro}. The circled or lined unitigs are those forming the IR of agrostis. This technique visually confirms that the unitigs that SSPACE found challenging to scaffold are the repeated ones. The difference between the two valid solutions found by wpm is also highlighted. The LSC (\textit{c2-c4-c4}) region is reversed but the SSC (\textit{c5}) has the same orientation in both solutions. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -930,14 +924,17 @@ Figure \ref{fig:scafsols} is a \textit{graph\_generator.py} visualization of the
 \node (gold) at (0,7) {\includegraphics[scale=0.25]{agrostis_GOLD}};
 
 \draw [blue!30,ultra thick,domain=-30:40] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
-\draw [blue!30,ultra thick,domain=175:255] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
+\draw [blue!30,ultra thick,domain=175:235] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
+\draw [blue!30,ultra thick,domain=240:255] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
 \begin{scope}[shift={(8,0)}]
 \draw [blue!30,ultra thick,domain=-30:40] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
-\draw [blue!30,ultra thick,domain=175:255] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
+\draw [blue!30,ultra thick,domain=175:235] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
+\draw [blue!30,ultra thick,domain=240:255] plot ({3.3*cos(\x)}, {3.3*sin(\x)});
 \end{scope}
 \begin{scope}[shift={(0,7.1)}]
 \draw [blue!30,ultra thick,domain=70:150] plot ({3.9*cos(\x)}, {3.9*sin(\x)});
-\draw [blue!30,ultra thick,domain=210:290] plot ({3.9*cos(\x)}, {3.9*sin(\x)});
+\draw [blue!30,ultra thick,domain=210:245] plot ({3.9*cos(\x)}, {3.9*sin(\x)});
+\draw [blue!30,ultra thick,domain=250:290] plot ({3.9*cos(\x)}, {3.9*sin(\x)});
 \end{scope}
 \begin{scope}[shift={(11,7.5)}]
 \draw [blue!30,ultra thick,domain=0:360] plot ({2*cos(\x)}, {1*sin(\x)});
@@ -949,18 +946,18 @@ Figure \ref{fig:scafsols} is a \textit{graph\_generator.py} visualization of the
 \end{tikzpicture}
 }
 \end{center}
-\caption{Expected solution and scaffolding solutions of weighted-path model and SSPACE scaffolders}
-\footnotesize The expected solution (top left) has the contigs correctly ordered, displays their length and their mapping score. The expected solution is obtained by mapping unitigs on the reference genome. The two bottom graphs are two valid wpm solutions and the top right graph is the SSPACE scaffolder solution. \\ \texttt{> graph\_constructor.py -g [expt,whpm,sspace] -f solution\_file.txt}
+\caption{Expected solution and scaffolding solutions of the weighted-path model and SSPACE scaffolders}
+\footnotesize The expected solution graph (top left) has the contigs correctly ordered, displays their length and their mapping score. The expected solution is obtained by mapping unitigs on the reference genome. The two bottom graphs are two valid wpm solutions and the top right graph is the SSPACE scaffolder solution. \\ \texttt{> graph\_constructor.py -g [expt,whpm,sspace] -f solution\_file.txt}
 
 \label{fig:scafsols}
 \end{figure}
 
 \paragraph*{MUMer}
-The dotplots further illustrates the differences between scaffolding solution. Dotplots do not visualize unitigs but rather the whole scaffolding sequence. If the sequence on the $x$ axis matches the sequence of the $y$ axis in the $right$ order, a red matching line is drawn. For the control dotplot, where the reference genome is dotplotted against itself a perfect match can be seen. Additionally the inverted repeats are seen as an additional match in the $wrong$ order (as they are inverted) and appear as blue lines. Additional little inverted regions are detected. Comparing the control dotplot to the first solution of the wpm, it is obvious that it is an exact copy (just shifted, as the fasta file does not at the same position). In the second solution, a reversed match exists but the small single copy is reversed: the reverse match is interrupted. \\ The SSPACE solution has three scaffolds (3 scaffold names on the side of the graph) and only one occurrence of the IR. Additionally the LSC and IR are scaffolder in the wrong relative orientation which indicates the location of the misassembly detected bu Quast.
+The dotplots further illustrate the differences between the scaffolding solutions. Dotplots do not visualize unitigs but rather the whole scaffolding sequence. If the sequence on the $x$ axis matches the sequence of the $y$ axis in the "$right$" order (both same orientation), a red matching line is drawn. For the control dotplot, where the reference genome is dotplotted against itself a perfect match can be seen. Additionally the inverted repeats are seen as an additional match in the "$wrong$" order (as they are inverted and the orientation is different) and appear as blue lines - little inverted regions are detected. The control dotplot and the first solution of the wpm display the exact same dotplot profile (just shifted, as the \textit{.fasta} files do not start at the same genomic position). In the second solution, a reversed match exists but the small single copy is reversed between the two IRs: the reverse match is interrupted. \\ The SSPACE solution has three scaffolds (3 scaffold names on the side of the graph) and only one occurrence of the IR. Additionally the LSC and IR are scaffolder in the wrong relative orientation which indicates the coordinate of the misassembly detected by Quast (around the 81000bp).
 
 \begin{figure}[h!]
 \begin{center}
-\resizebox{18cm}{!}{
+\resizebox{17cm}{!}{
 \begin{tikzpicture}
 \node (wpm1) at (0,-7) {\includegraphics[scale=0.3]{dotplot_agro_wpm1}};
 \node (wmp2) at (8,-7) {\includegraphics[scale=0.3]{dotplot_agro_wpm2}};
@@ -969,7 +966,7 @@ The dotplots further illustrates the differences between scaffolding solution. D
 \end{tikzpicture}
 }
 \end{center}
-\caption{Control dotplot and dotplots of weighted path model and SSPACE scaffolding solution with the reference genome}
+\caption{Control dotplot and dotplots of weighted path model and SSPACE scaffolding solutions with the reference genome on the $x$ axis}
 \footnotesize Control (top left), sspace (top right), wpm solutions (bottom). The control is the reference aligned to itself.\\ \texttt{> nucmer ref\_genome.fasta [solution, reference, unitigs] > align.delta} \\ \texttt{> mummerplot align.delta}
 \label{dotplotsols}
 \end{figure}
@@ -978,7 +975,8 @@ The dotplots further illustrates the differences between scaffolding solution. D
 \subsubsection{Quality assessment of genome assemblies of \textit{Pinus koraiensis} chloroplastic genome}
 
 \paragraph*{QUAST}
-As a reminder, \textit{Pinus koraiensis} chloroplastic genome does not possess an inverted repeat. The genome is smaller than the average size for a chloroplatic genome. The pinus instance has 33 unitigs, among them only 10 are bigger than 1000bp. The input graph is shown in Annexe \fulleref{fig:graphpinus}. This instance possesses many small repeats ans is difficult to assemble. It is never correctly solved by first generation GST (wpm and dist) and only partially solved by the first step of the flow model. Quast results suggests that the best assembly is obtained with SSPACE as there are only 2 misassemblies for a 99.254\% of assembled genome. However SSPACE assembled 12 large unitigs into a single scaffold then ignores all other unitigs (the remaining 21 which appear alone). SSPACE extends the unitigs through reads and uses 886 N to achieve this scaffold. It also contains a mismatches. Only 1\% of the genome are repeats (unitig genome fraction $=99.079$). Wpm duplicates some contigs and achieves a 99.4\% score however has 11 misassemblies which is extremely disappointing. Hopes for the flow model are high despite it assembling only 92\% of the genome: there is only one misassembly and has the highest NA50, meaning that for 96535 nucleotides the assembly is perfect. Nucmer alignements for these scaffolding solutions are shown in Annexe \fulleref{fig:dotpinus}.
+As a reminder, \textit{Pinus koraiensis} chloroplastic genome does not possess an inverted repeat. The genome is smaller than the average size for a chloroplatic genome. The pinus instance has 33 unitigs, among them only 10 are bigger than 1000bp. The input graph is shown in annexe \ref{fig:graphpinus}. This instance possesses many small repeats and is difficult to assemble. Some unitigs are as small as 76bp. Knowing that the contig builder \textsc{minia} built pinus unitigs with a k-mer size of 60, this is dissapointingly small, and smaller than the read size (150bp). These unitigs are solely linked by overlaps (as the chance of having a mated-pair on them is low, or null for unitigs smaller than the read size). Knowing these unitigs are repeats, their overlaps are hard to trust. \\
+Pinus is never correctly solved by first generation GST (wpm and dist) and only partially solved by the first step of the flow model. Quast results suggests that the best assembly is obtained with SSPACE as there are only 2 misassemblies for a 99.254\% of assembled genome. However SSPACE assembles 12 large unitigs into a single scaffold then ignores all other unitigs (the remaining 21 which appear alone). SSPACE extends the unitigs through reads and uses 886 N to achieve the 99.254\% assembled genome score. This scaffold also contains two missassemblies, indels and mismatches. All these metrics are worse than those for the $1^{st}$ flow model step. \\ Only 1\% of the genome are repeats (unitig genome fraction $=99.079$). Wpm duplicates some contigs and achieves a 99.4\% score however has 11 misassemblies which is extremely disappointing. Hopes for the flow model are high despite it assembling only 92\% of the genome: it has the high NA50, meaning that for 96535 nucleotides the assembly is perfect. SSPACE's first missassembly occurs at the 86569bp. Nucmer alignements for these scaffolding solutions are shown in annexe \ref{fig:dotpinus}.
 % PINUS TABLE MANNNN
 \begin{table}[h!]
 \scriptsize
@@ -1023,8 +1021,8 @@ NA50 & 14862 & 96535 & 20762 & 86569 & {\bf 116866} \\ \hline
 
 
 \clearpage
-\subsection{Partially solved instances}\label{sec:wolbachia}
-Wolbachia is partially assembled by the first step of the flow model. Table \ref{tab:insert} highlights the importance of correctly choosing the mate pairs' insert size. Results show a drastic improvement of the total assembled length when changing the mate paired insert size from 1000bp to 2000bp. This length gradually decreases as the insert size increases (same with the genome size metric). The largest scaffold is also assembled with the 2000bp library (over 2000bp whereas all other libraries lead to scaffolds $<$ 500kb). One proposed explanation is the repeats' sequence size of \textit{Wolbachia Endosymbiont}. As previously seen in figure \ref{fig:wolbarepeats}, the bacterial genome has repeats with sizes mainly between 500bp and 1kbp. These repeats are partially solved during the unitig building step. The issue comes from genomically close repeats bigger than 1.2kbp. There are 25 repeats of this type, among them 3 bigger than 5kbp. The location of these repeats coincide with regions of major scaffolding problems, where unitigs are not scaffolded or so badly scaffolded that they do not map on the reference genome. To see the exact coordinates of those location see Annexe \ref{tab:repeatcoord}. The insert size must be big enough to overlap all repeats however increasing the insert size too much impacts on the scaffolders' ability to precisely join regions containing smaller overlaps. Using multiple libraries would be a solution however this strategy didn't result in encouraging scaffoldings with SSPACE (lib i2000 and i5000 used simultaneously). Another interesting metric to notice is the genome fraction covered by unitigs, which is very low (90.3\%). This is also noticeable in figure \ref{fig:alignwoinsert}, where rather larger portions of the reference genome are not covered by unitigs. The unitig building step failed to produce large sequences covering these areas because they contain many very small ($\leq read-size$) repeats. Unless filled with Ns, these areas will never be scaffolded. Obtaining a whole circular genomes appears to be a very difficult task, but obtaining larger scaffolds should be possible.
+\subsection{Partially solved instance - flow model}\label{sec:wolbachia}
+Wolbachia is partially assembled by the first step of the flow model. Table \ref{tab:insert} highlights the importance of correctly choosing the mated-pair reads' insert size. Results show a drastic improvement of the total assembled length when changing the mate paired insert size from 1000bp to 2000bp. This length gradually decreases as the insert size increases (same with the genome size metric). One proposed explanation is the repeats' sequence size of \textit{Wolbachia Endosymbiont}. As previously seen in figure \ref{fig:wolbarepeats}, the bacterial genome has repeats with sizes mainly between 500bp and 1.2Kbp. These repeats are partially solved during the unitig building step. The issue comes from genomically close repeats bigger than 1.2Kbp. There are 25 repeats of this type, among them 3 bigger than 5kbp. The location of these repeats coincide with regions of major scaffolding problems, where unitigs are not scaffolded or so badly scaffolded that they do not map on the reference genome. To see the exact coordinates of those location see annexe \ref{tab:repeatcoord}. The insert size must be big enough to overlap all repeats however increasing the insert size too much impacts on the scaffolders' ability to precisely join regions containing smaller repeats. Using multiple libraries would be a solution however this strategy didn't result in encouraging scaffolding solutions with SSPACE (library i2000 and i5000 used simultaneously). Another interesting metric to notice is the genome fraction covered by unitigs, which is very low (90.3\%) considering that the genome is 1.4Mbp and repeats rarely exceed 1.2Kb . This is also noticeable in figure \ref{fig:alignwoinsert}, where rather large portions of the reference genome are not covered by unitigs. The unitig building step failed to produce large sequences covering these areas because they contain many very small ($\leq$ read size) tandem repeats. Unless filled with Ns, these areas will never be scaffolded. Obtaining a whole circular genomes appears to be a very difficult task, but obtaining larger scaffolds should be possible.
 
 \begin{table}[ht]
 \begin{center}
@@ -1044,12 +1042,6 @@ GC (\%) & 34.01 & 33.92 & 33.94 & 34.08 & 33.89 & 33.95 & 33.96 & 33.96 & 33.91 
 Reference GC (\%) & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 & 34.19 \\ \hline
 N50 & 17458 & 142935 & 143187 & 21300 & 68630 & 75831 & 142496 & 122998 & 116953 & 189499 & 189823 & 189972 & {\bf 1482355} \\ \hline
 NG50 & 14993 & 68085 & 68090 & - & 59359 & 69791 & 122971 & 77779 & 93415 & 122899 & 45001 & 57433 & {\bf 1482355} \\ \hline
-N75 & 7665 & 79427 & 79468 & 12604 & 44181 & 48864 & 75838 & 58047 & 77742 & 62360 & 75545 & 68114 & {\bf 1482355} \\ \hline
-NG75 & 5696 & - & - & - & 14316 & 22037 & 15579 & - & - & - & - & - & {\bf 1482355} \\ \hline
-L50 & 22 & 2 & 2 & 7 & 6 & 4 & 3 & 2 & 4 & 2 & 2 & 2 & {\bf 1} \\ \hline
-LG50 & 25 & 5 & 5 & {\bf -} & 9 & 6 & 4 & 4 & 6 & 4 & 6 & 6 & 1 \\ \hline
-L75 & 52 & 4 & 4 & 17 & 12 & 8 & 5 & 5 & 7 & 5 & 4 & 5 & {\bf 1} \\ \hline
-LG75 & 65 & {\bf -} & {\bf -} & {\bf -} & 19 & 14 & 13 & {\bf -} & {\bf -} & {\bf -} & {\bf -} & {\bf -} & 1 \\ \hline
 \# misassemblies & {\bf 0} & 1 & {\bf 0} & 12 & 3 & 1 & 1 & {\bf 0} & {\bf 0} & {\bf 0} & 1 & {\bf 0} & {\bf 0} \\ \hline
 \# misassembled scaffolds & {\bf 0} & 1 & {\bf 0} & 7 & 3 & 1 & 1 & {\bf 0} & {\bf 0} & {\bf 0} & 1 & {\bf 0} & {\bf 0} \\ \hline
 Misassembled scaffolds length & {\bf 0} & 142935 & {\bf 0} & 139698 & 143728 & 22037 & 35610 & {\bf 0} & {\bf 0} & {\bf 0} & 142540 & {\bf 0} & {\bf 0} \\ \hline
@@ -1064,61 +1056,77 @@ Duplication ratio & 1.019 & 1.094 & 1.109 & 1.040 & 1.042 & 1.052 & 1.051 & 1.05
 Largest alignment & 87315 & 356813 & 356813 & 62424 & 219709 & 359164 & 359164 & 459850 & 205359 & 319611 & 237693 & 237693 & {\bf 1482355} \\ \hline
 NA50 & 17458 & 89651 & 115294 & 16288 & 59479 & 71508 & 134513 & 111512 & 111512 & 116821 & 99293 & 119120 & {\bf 1482355} \\ \hline
 NGA50 & 14993 & 23733 & 29168 & - & 51212 & 64638 & 71508 & 56028 & 74077 & 56028 & 33486 & 44273 & {\bf 1482355} \\ \hline
-NA75 & 7665 & 65191 & 65191 & 10269 & 35490 & 42401 & 47594 & 49146 & 56028 & 55817 & 44360 & 65191 & {\bf 1482355} \\ \hline
-NGA75 & 5696 & - & - & - & 10269 & 10269 & - & - & - & - & - & - & {\bf 1482355} \\ \hline
-LA50 & 22 & 2 & 2 & 9 & 7 & 4 & 3 & 2 & 4 & 3 & 3 & 3 & {\bf 1} \\ \hline
-LGA50 & 25 & 8 & 7 & {\bf -} & 9 & 6 & 5 & 5 & 7 & 5 & 8 & 7 & 1 \\ \hline
-LA75 & 52 & 5 & 5 & 20 & 13 & 9 & 6 & 6 & 8 & 6 & 6 & 5 & {\bf 1} \\ \hline
-LGA75 & 65 & {\bf -} & {\bf -} & {\bf -} & 24 & 18 & {\bf -} & {\bf -} & {\bf -} & {\bf -} & {\bf -} & {\bf -} & 1 \\ \hline
 \end{tabular}
 }
-\caption{Scaffolding solutions of the flow model step 1 with mate-pair libraries of different insert sizes compared to the reference genome and the initial unitig sample.}
-\footnotesize All statistics are based on contigs of size $\geq$ 50 bp, unless otherwise noted (all scaffolds are).
-\label{tab:insert}
 \end{center}
+\caption{Scaffolding solutions of the flow model step 1 with mated-pair reads libraries of different insert sizes compared to the reference genome and the initial unitig set.}
+\footnotesize All statistics are based on contigs of size $\geq$ 50 bp. \\
+Wolbachia has 444 unitigs, among them 306 are smaller than 1000bp. In this comparison, the higher the number of scaffolds the better because it indirectly depicts the number of unitigs the $1^{st}$ step of the flow model considers as big unitigs. It impacts the total length of the assembled genome which is the largest with an insert size of 2000bp (1.2Mbp). The largest perfect alignement found is with an insert size of 5000bp (459Kb) indicating this insert size is the upper limit to use for wolbachia. For all solutions the number of missassemblies is very high due to the fact that they are heavily gapped and the gap size not exact or unknown. 
+\label{tab:insert}
 \end{table}
 
-
+Figure \ref{fig:alignwoinsert} shows the alignement of all scaffolding strategies tested for wolbachia to the reference genome. Additionally the unitigs were also aligned to the reference genome to highligh the uncovered 350Kbp - 500Kbp and 1380Kpb - 1440Kpb regions. SSPACE solution with the 2Kbp insert size library shows the less misassembled regions with the most reference coverage however this scaffolder still has more misassembled regions than the worst of the flow model solutions. At the end of the SSPACE scaffolding process, there are 338 separate scaffolds left (not shown). This means small unitigs were not used and SSPACE mainly extended big existing unitigs with reads. SSPACE also fails to produce any valid scaffold for the genomic regions containing the large ($>$Kbp) repeats (see their exact coordinates in annexe \ref{tab:repeatcoord}).
 \begin{figure}[h!]
 \begin{center}
-\resizebox{13cm}{!}{
+\resizebox{18cm}{!}{
 \includegraphics[scale=0.7]{alignment_woinserts}
 }
 \end{center}
-\caption{Alignment of scaffolding solutions on the reference genome of Wolbachia endosymbiont}
-\scriptsize This plot shows alignment of contigs to the reference genome and positions of misassemblies in these scaffolds. Correctly aligned big ($>$ 10kb) scaffolds are blue if the boundaries agree, and green if the boundaries don't agree. Scaffolds containing an important amount of misassemblies are red. Here, SSPACE solution with the 2kbp insert size library shows the less misassembled regions with the most reference coverage. However the solution is broken up in an enormous amount of scaffolds (336), most of them being just the unsucessfully attached small unitigs. SSPACE also fails to produce any valid scaffold for the genomic regions containing the large $>$5000 repeats (see their exact coordinates in table \ref{tab:repeatcoord}).
+\caption{Alignment of scaffolding solutions on the reference genome of \textit{Wolbachia endosymbiont}}
+\scriptsize This plot shows alignment of unitigs or scaffolds to the reference genome and positions of misassemblies in the scaffolds. Correctly aligned big ($>$ 10kb) scaffolds are blue if the boundaries are exact, and green if the boundaries are different from the reference genome region it was mapped to. Scaffolds containing an important amount of misassemblies are red.
 \label{fig:alignwoinsert}
 \end{figure}
 
-
+The repeated unitigs should be introduced in the $2^{nd}$ step of the flow model. The fraction of the assembled genome should be at least as good as SSPACE. The strategy used for this second step will decide if the order and orientation will be satisfactory. As of now, two strategies are considered. The first is an interative gap by gap approach, which is faster but whose solution depends heavily of the order in which the gaps are treated. The second approach is filling all gaps at once. This approach seems more sensible but will result in a combinatorial problem with many possible solutions, especially since gaps are distance intervals. 
 
 \clearpage
 %-------------------------------------------------------------------------------
 % BODEH!
 %-------------------------------------------------------------------------------
 \section{Conclusion} \label{sec:conc}
-The \textsc{Genscale} scaffolding methodology basis is the computing and pre-processing of unitig coverage. Different modeling strategies are tested and evaluated to solve the scaffolding problem. Adding weight on arcs to model the distance between unitigs does not lead to better results. These additional constraints are too demanding. An evaluation strategy was set up to understand why some data sets are especially challenging. The repeat content impacting on the unitig number rather than the size of the genome is the cause of complex input data. Some explanations are provided for problematic data sets (disconnected graph or missing link) however the main source of difficulties is the size of the modeled graph. A new two step scaffolding modeling strategy is in development to try and break the graph complexity by solving a graph containing only large unitigs at first - building something that can be compared to a trustworthy genomic frame. The benchmarking workflow brings together several sequence comparing tools: a tool for assessing assembly quality (Quast), a sequence aligner (MUMmer) and homemade visualization and comparison scripts (graph\_generator.py and graph\_comparato.py). Although compared to a single published scaffolder (SSPACE), this methodology can be applied for any scaffolding solution obtained with other tools. Comparing the GST to recent publications such as the ScaffMatch scaffolder or the Integer Linear Programming approach developed at the Montpellier Laboratory of Informatics, Robotics and Microelectronics (LIRMM) which explicitly discusses its repeated sequence processing will be insightful. Their study was the motivation behind the study on \textit{Wolbachia Endosymbiont}. The benchmarking of the GST highlights the major advantage of processing unitig coverage but also the limitation of the models which have difficulties with bigger graphs with high degree nodes. 
+The \textsc{Genscale} scaffolding methodology basis is the computing and pre-processing of unitig coverage. Different modeling strategies are tested and evaluated to solve the scaffolding problem. Adding weight on links to model the distance between unitigs does not lead to better results. These additional constraints are too demanding. An evaluation strategy was set up to understand why some data sets are especially challenging. The repeat content impacting on the unitig number rather than the size of the genome is the cause of complex input data. Some explanations are provided for problematic data sets (disconnected graph or missing link) however the main source of difficulties is the size of the modeled graph. A new two step scaffolding modeling strategy is in development. It tries to break the graph complexity by first solving a graph containing only large unitigs - building something that can be compared to a trustworthy genomic frame. The benchmarking workflow brings together several sequence comparing tools: a tool for assessing assembly quality (Quast), a sequence aligner (MUMmer) and homemade visualization and comparison scripts (\texttt{graph\_generator.py} and \texttt{graph\_comparato.py}). Although compared to a single published scaffolder (SSPACE), this methodology can be applied for any scaffolding solution obtained with other tools. Comparing the GST to recent publications such as the ScaffMatch\cite{mandric_scaffmatch:_2015} scaffolder or the Integer Linear Programming approach\cite{ilp_montpellier} developed at the Montpellier Laboratory of Informatics, Robotics and Microelectronics (LIRMM) which explicitly discusses its repeated sequence processing will be insightful. Their article was the motivation behind the study on \textit{Wolbachia Endosymbiont}, one of their tested organism. The benchmarking of the GST highlights the major advantage of processing unitig coverage but also the limitation of the models which have difficulties with bigger graphs with high degree nodes. Overall the project succeeded more in the standardisation of evalution and benchmarking strategies than on providing precise explanations for unsuccessful scaffoldings. The immediate perspective is to help guide the development of the flow model.
 
-\section{Perspectives}\label{sec:persp}
+\section*{Future applications}\label{sec:persp}
+Genome sequencing is currently undergoing another transition from Illumina type short-read NGS to long-read sequencing technologies. Sometimes called "Third Generation Sequencing", long-read sequencing technologies were launched a few years ago. One of these technologies is the Oxford Nanopore sequencer MinION \cite{ashton_minion_2015, madoui_genome_2015}. It can directly read a single DNA molecule and provide a more precise view of complex genomic organization and content - this should solve the assembly problems caused by short reads supposed to uniquely represent a portion of the genome. As shown in this report, this is rarely the case, and despite attempting to bypass the repeat issue by using unitigs and computing their coverage, the unreliable contradictory linking information persists. Regions containing short repeats are close to impossible to assemble and scaffold using short-read technologies. Yet repeated regions are often biologically very relevant. In microbes, short-sequence DNA repeats enable genetic flexibility \cite{van_belkum_short-sequence_1998}, often contain host-interacting genes and horizontally aquired coding regions \cite{wiedenbeck_origins_2011}. Long-read technologies do not have a great accuracy however, sometimes containing up to 30\% of sequencing errors. Correcting long MinION reads with high confidence Illumina short-reads is a proposed strategy to obtain quality longer reads, providing larger contigs and solving the repeat challege faced by scaffolding. Conducting a study on such data is an interesting prospect for scaffolders developed at \textsc{Genscale}.
+
 \clearpage
 
 %-------------------------------------------------------------------------------
 %BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
 \pagenumbering{gobble}
-\section*{References}
-\bibliography{scaffoldingbiblio, scaffoldingbiblio_non_articles}
+\bibliography{scaffoldingbiblio}
 \bibliographystyle{naturemag}
 %\printbibliography
+
 \newpage
 \section*{Annexes}
 \label{sec:anx}
 \setcounter{figure}{0}
 \renewcommand{\thefigure}{\Alph{figure}}
+\floatstyle{plaintop}
+\restylefloat{figure}
+\restylefloat{table}
 %\renewcommand{\thetable}{\Alph{table}}
 
 \begin{figure}[h!]
+\caption{Input graph of pinus}
+\footnotesize This graph is a graphical transcription of the \textit{.txt} input file of pinus. The graph as modeled by GST is by far bigger. Here we see several self-loops and multiple equivalent links (see 3 identical links between unitig 30 and unitig 7). These will be merged once the GST models the problem. A strategy would be to keep the link coverage as additional constrains to hopefully help find the optimal path. Most of the contigs are shorter than 1000bp (22) and some as small as 76bp. Knowing that the contig builder \textsc{minia} built pinus unitigs with a k-mer size of 60, this is dissapointingly small, and smaller than the read size (150bp). These unitigs are solely linked by overlaps (as the chance of having a mated-pair on them is low, or null for unitigs smaller than the read size). Knowing these unitigs are repeats, their overlaps are hard to trust \ldots
+\label{fig:graphpinus}
 \begin{center}
+\resizebox{18cm}{!}{
+\begin{tikzpicture}
+\node (ref) at (0,0) {\includegraphics[scale=0.3]{pinustxt_solnr_0_INPT}};
+\end{tikzpicture}
+}
+\end{center}
+\end{figure}
+
+\begin{figure}[h!]
+\caption{Dotplots of weighted path model, $1^{st}$ flow model step and SSPACE scaffolding solutions with the reference genome on the $x$ axis}
+\footnotesize Top left graph is the SSPACE solution, top right the flow model solution and bottom left the weighted path solution. The weighted path solution single scaffold contains many misassemblies - a lot of unitigs are scaffolded in the wrong order and orientation. The SSPACE solution contains many scaffolds because it did not scaffold small unitigs (overlapping unitig names on the left top of the graph). SSPACE extended the big unitigs and introduced Ns to be able to built the big scaffold matching the reference genome - though it contains misassemblies, mismatches and indels visualized as buldges (or little circles) on the main red matching line. The flow model dotplot also shows an almost perfect match, with gaps to be filled in with the second step of the model. The aim is to obtain a scaffold with less N and errors than SSPACE, as well as a better genome assembled fraction. 
+\begin{center}
+\label{fig:dotpinus}
 \resizebox{18cm}{!}{
 \begin{tikzpicture}
 \node (wpm1) at (0,-7) {\includegraphics[scale=0.3]{pinus_vs_wpm}};
@@ -1127,25 +1135,22 @@ The \textsc{Genscale} scaffolding methodology basis is the computing and pre-pro
 \end{tikzpicture}
 }
 \end{center}
-\caption{Dotplots of weighted path model, flow model 1st step and SSPACE scaffolding solution with the reference genome}
-\label{fig:dotpinus}
 \end{figure}
 
 \begin{figure}[h!]
-\begin{center}
-\resizebox{18cm}{!}{
-\begin{tikzpicture}
-\node (ref) at (0,0) {\includegraphics[scale=0.3]{pinustxt_solnr_0_INPT}};
-\end{tikzpicture}
-}
-\end{center}
-\caption{Input graph of pinus as seen in the \textit{.txt} file}
-\label{fig:graphpinus}
-\end{figure}
+\caption{Coordinates and length of repeats longer than 1.2Kbp in the \textit{Wolbachia endosymbiont} genome}
+\footnotesize Obtained with the \texttt{show-coord} tool of the MUMmer software after the \texttt{nucmer} alignement of the reference genome to itself. Colored rows are coordinates of repeats longer than 2Kbp.\\
+\textit{\color{magenta} S1}: start coordinate of sequence of $x$ axis \\
+\textit{\color{magenta} E1}: end coordinate of sequence of $x$ axis \\
+\textit{\color{magenta} S2}: start coordinate of sequence of $y$ axis (here, same sequence, the reference genome)\\
+\textit{\color{magenta} E2}: end coordinate of sequence of $y$ axis (here, same sequence, the reference genome)\\
+\textit{\color{magenta} LEN}: length of the matched region \\
+\textit{\color{magenta} IDY}: indentity percentage of the matched region \\
 
-\begin{figure}[h!]
+\label{tab:repeatcoord}
+
 \centering
-\resizebox{8cm}{!}{
+\resizebox{12cm}{!}{
 \begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
 {[}S1{]} & {[}E1{]} & {[}S2{]} & {[}E2{]} & {[}LEN 1{]} & {[}LEN 2{]} & {[}\% IDY{]}  \\ \hline
@@ -1170,6 +1175,7 @@ The \textsc{Genscale} scaffolding methodology basis is the computing and pre-pro
 \rowcolor{red!10}
 250682   & 259128   & 354494   & 346054   & 8447        & 8441        & 99.56          \\
 295130   & 296467   & 426552   & 425215   & 1338        & 1338        & 100.00         \\
+\rowcolor{red!10}
 353564   & 355681   & 449855   & 447738   & 2118        & 2118        & 97.54          \\
 951661   & 953011   & 506502   & 505152   & 1351        & 1351        & 99.93          \\
 1305338  & 1306686  & 553913   & 552565   & 1349        & 1349        & 99.93          \\
@@ -1184,9 +1190,6 @@ The \textsc{Genscale} scaffolding methodology basis is the computing and pre-pro
 \rowcolor{red!10}
 294476   & 296650   & 1461421  & 1459215  & 2175        & 2207        & 98.50         \\ \hline
 \end{tabular}
-%\footnotesize{Notes}
-\caption{Coordinates and length of repeats in the \textit{Wolbachia endosymbiont} genome}
-\label{tab:repeatcoord}
 }
 \end{figure}
 
@@ -1194,14 +1197,18 @@ The \textsc{Genscale} scaffolding methodology basis is the computing and pre-pro
 \clearpage
 \begin{center}
 \textsc{\Large Bioinformatics and Genomics Master's Degree\\ University Rennes 1}\\
-\textsc{Alexandrina Bodrug - June 22, 2015}
+\vspace*{0.1cm}
+\textsc{Alexandrina Bodrug - June 22, 2015} \\
+\vspace*{0.5cm}
+\textsc{Genscale - Irisa}
 \end{center}
 \vspace*{2cm}
-\paragraph*{Abstract [eng]} \textit{Genome, Next Generation Séquencing, scaffolding strategy, repeated sequence, data complexity assessment, benchmarking} \\
-Text
+\paragraph*{Abstract [eng]} \textit{Next Generation Sequencing, scaffolding strategy, repeated sequence, data complexity assessment, benchmarking} \\
+The last step of the NGS data assembling process is scaffolding - the ordering and relative orientation of large genomic sequences called contigs. The scaffolding process remains a challenging computational work because of the possible errors of NGS data and the intrinsic characteristics of genomes, such as repeated regions. The \textsc{Genscale} team develops new scaffolding methodologies which rely on contig coverage to solve the scaffolding problem of highly repeated genomes. The detection, processing and integration of repeated sequences in the scaffolding solution is a defining feature of these methodologies. This report describes the strategies used for benchmarking these tools with published scaffolders and the evaluation of the solutions found given the known input data and the expected solution. The data used for this project is simulated from small genomes containing many repeats - namely chloroplastic genomes and bacterial genomes. Limits and ways to optimise the \textsc{Genscale} scaffolders are outlined.
+
 \vspace*{0.5cm}
 \selectlanguage{french}
-\paragraph*{Résumé [fr]} \textit{Génome, Séquençage Haut Débit, stratégie d'échafaudage, séquence répétée, , estimation de la compléxité des données, analyse comparative}\\
-Text
+\paragraph*{Résumé [fr]} \textit{Séquençage Haut Débit, stratégie d'échafaudage, séquence répétée, estimation de la compléxité des données, analyse comparative}\\
+La dernière étape du processus d'assemblage de données NGS est le scaffolding - l'ordonnancement et l'orientation relative de longues séquences génomiques appelées contigs. Le scaffolding est un processus difficile à cause d'erreurs possible dans les données NGS et des caractéristiques intrinsèques des génomes, telle que les régions répétées. L’équipe \textsc{Genscale} développe de nouvelles méthodologies de scaffolding qui se basent sur la couverture des contigs pour résoudre les problèmes de scaffolding posées par les génomes hautement répétés. La détection, le traitement et l'intégration des régions répétées dans la solution de scaffolding est une particularité de ces méthodologies. Ce rapport décrit les stratégies utilisées pour l'analyse comparative de ces outils avec des scaffoldeurs publiés et l'évaluation des solutions obtenues en connaissance de la nature des données en entrée et de la solution attendue. Les données utilisées dans ce projet sont simulées à partir de petits génomes contenant beaucoup de répétitions - à savoir des génomes chloroplastiques et des génomes bactériens. Sont également exposées dans ce rapport les limites et les possibilités d'optimisation des scaffoldeurs \textsc{Genscale}.
 
 \end{document}

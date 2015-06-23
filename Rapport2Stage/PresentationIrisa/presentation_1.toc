@@ -1,14 +1,15 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.33pt}
 \beamer@sectionintoc {1}{Context}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Some definitions}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Order and orient}{5}{0}{1}
-\beamer@sectionintoc {2}{Genscale scaffolding tools features}{6}{0}{2}
-\beamer@subsectionintoc {2}{1}{The raw input data}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{GST modeled graph}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{Expected solution}{9}{0}{2}
-\beamer@sectionintoc {3}{Challenging problem}{10}{0}{3}
-\beamer@sectionintoc {4}{Scripting for the GST}{11}{0}{4}
-\beamer@sectionintoc {5}{Benchmarking workflow for tge GST}{12}{0}{5}
-\beamer@sectionintoc {6}{Results}{13}{0}{6}
-\beamer@subsectionintoc {6}{1}{Example of Agrostis stolonifera}{14}{0}{6}
-\beamer@sectionintoc {7}{Perspectives}{15}{0}{7}
+\beamer@sectionintoc {2}{Context}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Some definitions}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Order and orient}{6}{0}{2}
+\beamer@sectionintoc {3}{Genscale scaffolding tools features}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{The raw input data}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{GST modeled graph}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Expected solution}{10}{0}{3}
+\beamer@sectionintoc {4}{Challenging problem}{11}{0}{4}
+\beamer@sectionintoc {5}{Scripting for the GST}{12}{0}{5}
+\beamer@sectionintoc {6}{Benchmarking workflow for the GST}{13}{0}{6}
+\beamer@sectionintoc {7}{Results}{14}{0}{7}
+\beamer@subsectionintoc {7}{1}{Scaffolding solutions example: Agrostis stolonifera}{15}{0}{7}
+\beamer@sectionintoc {8}{Perspectives}{16}{0}{8}

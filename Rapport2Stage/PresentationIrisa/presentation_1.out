@@ -1,13 +1,14 @@
 \BOOKMARK [2][]{Outline0.1}{Context}{}% 1
-\BOOKMARK [3][]{Outline0.1.1.4}{Some definitions}{Outline0.1}% 2
-\BOOKMARK [3][]{Outline0.1.2.5}{Order and orient}{Outline0.1}% 3
-\BOOKMARK [2][]{Outline0.2}{Genscale scaffolding tools features}{}% 4
-\BOOKMARK [3][]{Outline0.2.1.7}{The raw input data}{Outline0.2}% 5
-\BOOKMARK [3][]{Outline0.2.2.8}{GST modeled graph}{Outline0.2}% 6
-\BOOKMARK [3][]{Outline0.2.3.9}{Expected solution}{Outline0.2}% 7
-\BOOKMARK [2][]{Outline0.3}{Challenging problem}{}% 8
-\BOOKMARK [2][]{Outline0.4}{Scripting for the GST}{}% 9
-\BOOKMARK [2][]{Outline0.5}{Benchmarking workflow for tge GST}{}% 10
-\BOOKMARK [2][]{Outline0.6}{Results}{}% 11
-\BOOKMARK [3][]{Outline0.6.1.14}{Example of Agrostis stolonifera}{Outline0.6}% 12
-\BOOKMARK [2][]{Outline0.7}{Perspectives}{}% 13
+\BOOKMARK [2][]{Outline0.2}{Context}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.5}{Some definitions}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.6}{Order and orient}{Outline0.2}% 4
+\BOOKMARK [2][]{Outline0.3}{Genscale scaffolding tools features}{}% 5
+\BOOKMARK [3][]{Outline0.3.1.8}{The raw input data}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.2.9}{GST modeled graph}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.3.10}{Expected solution}{Outline0.3}% 8
+\BOOKMARK [2][]{Outline0.4}{Challenging problem}{}% 9
+\BOOKMARK [2][]{Outline0.5}{Scripting for the GST}{}% 10
+\BOOKMARK [2][]{Outline0.6}{Benchmarking workflow for the GST}{}% 11
+\BOOKMARK [2][]{Outline0.7}{Results}{}% 12
+\BOOKMARK [3][]{Outline0.7.1.15}{Scaffolding solutions example: Agrostis stolonifera}{Outline0.7}% 13
+\BOOKMARK [2][]{Outline0.8}{Perspectives}{}% 14

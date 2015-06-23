@@ -62,8 +62,9 @@
   scaffolding} \textbf{\bibinfo{volume}{49}}, \bibinfo{pages}{603--615}.
 
 \bibitem{ipetrov_2014}
-\bibinfo{author}{Petrov, I.} \& \bibinfo{author}{Andonov, R.}
-\newblock \bibinfo{title}{New scaffolding methodologies}
+\bibinfo{author}{Petrov, I.}, \bibinfo{author}{Andonov, R.} \&
+  \bibinfo{author}{Mucherino, A.}
+\newblock \bibinfo{title}{Combinatorial optimization for fast scaffolding}
   (\bibinfo{year}{2014}).
 
 \bibitem{li_fast_2009}
@@ -111,13 +112,11 @@
 \newblock \emph{\bibinfo{journal}{BMC Bioinformatics}}
   \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{345} (\bibinfo{year}{2010}).
 
-\bibitem{donmez_scarpa:_2013}
-\bibinfo{author}{Donmez, N.} \& \bibinfo{author}{Brudno, M.}
-\newblock \bibinfo{title}{{SCARPA}: scaffolding reads with practical
-  algorithms}.
-\newblock \emph{\bibinfo{journal}{Bioinformatics (Oxford, England)}}
-  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{428--434}
-  (\bibinfo{year}{2013}).
+\bibitem{simpson_efficient_2012}
+\bibinfo{author}{Simpson, J.~T.} \& \bibinfo{author}{Durbin, R.}
+\newblock \bibinfo{title}{Efficient de novo assembly of large genomes using
+  compressed data structures} \textbf{\bibinfo{volume}{22}},
+  \bibinfo{pages}{549--556}.
 
 \bibitem{cascading}
 \bibinfo{author}{Salikhov, K.}, \bibinfo{author}{Sacomoto, G.} \&
@@ -188,6 +187,19 @@
 \newblock \emph{\bibinfo{journal}{Bioinformatics (Oxford, England)}}
   \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{1072--1075}
   (\bibinfo{year}{2013}).
+
+\bibitem{mandric_scaffmatch:_2015}
+\bibinfo{author}{Mandric, I.} \& \bibinfo{author}{Zelikovsky, A.}
+\newblock \bibinfo{title}{{ScaffMatch} scaffolding algorithm based on maximum
+  weight matching}  (\bibinfo{year}{2015}).
+
+\bibitem{ilp_montpellier}
+\bibinfo{author}{Briot, N.}, \bibinfo{author}{Chateau, A.} \&
+  \bibinfo{author}{Schiex, T.}
+\newblock \bibinfo{title}{An integer linear programming approach for genome
+  scaffolding}.
+\newblock In \emph{\bibinfo{booktitle}{Workshop on Constraint based Methods for
+  Bioinformatics}} (\bibinfo{year}{2015}).
 
 \bibitem{ashton_minion_2015}
 \bibinfo{author}{Ashton, P.~M.} \emph{et~al.}
