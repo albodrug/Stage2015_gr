@@ -1,0 +1,66 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Context}{3}{Context}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Some definitions}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Some definitions}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{2}{5/5}{Some definitions}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Order and orient}}\headcommand {\beamer@subsectionpages {4}{5}}
+\headcommand {\slideentry {1}{2}{1}{6/6}{Order and orient}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Challenging problem}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {1}{3}{1}{7/7}{Challenging problem}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\sectionentry {2}{GST features}{8}{GST features}{0}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Scripting for the GST}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{Scripting for the GST}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{GST modeled graph}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {2}{2}{1}{10/10}{GST modeled graph}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{11}{Expected solution}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {2}{3}{1}{11/11}{Expected solution}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{12}{Scaffolding solutions}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {2}{4}{1}{12/12}{Scaffolding solutions}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\sectionentry {3}{Benchmarking workflow for the GST}{13}{Benchmarking workflow for the GST}{0}}
+\headcommand {\beamer@sectionpages {8}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {3}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\sectionentry {4}{Results}{14}{Results}{0}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\slideentry {4}{0}{3}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{15}{Large repeats}}\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {4}{1}{1}{15/15}{Large repeats}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{16}{Short repeats}}\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\slideentry {4}{2}{1}{16/16}{Short repeats}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\sectionentry {5}{Perspectives}{17}{Perspectives}{0}}
+\headcommand {\beamer@sectionpages {14}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\slideentry {5}{0}{2}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {6}{0}{3}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@partpages {1}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\beamer@sectionpages {18}{18}}
+\headcommand {\beamer@documentpages {18}}
+\headcommand {\def \inserttotalframenumber {18}}

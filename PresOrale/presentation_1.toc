@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Context}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Some definitions}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Order and orient}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Challenging problem}{7}{0}{1}
+\beamer@sectionintoc {2}{GST features}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Scripting for the GST}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{GST modeled graph}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Expected solution}{11}{0}{2}
+\beamer@subsectionintoc {2}{4}{Scaffolding solutions}{12}{0}{2}
+\beamer@sectionintoc {3}{Benchmarking workflow for the GST}{13}{0}{3}
+\beamer@sectionintoc {4}{Results}{14}{0}{4}
+\beamer@subsectionintoc {4}{1}{Large repeats}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Short repeats}{16}{0}{4}
+\beamer@sectionintoc {5}{Perspectives}{17}{0}{5}
