@@ -97,7 +97,7 @@
 \textsc{University Rennes 1} \\ % Your institution for the title page
 \textit{\textsc{\tiny Bioinformatics and Genomics Master}} % Your email address
 }
-\date{\tiny \textsc{\today}} % Date, can be changed to a custom date
+\date{\tiny \textsc{June 25, 2015}} % Date, can be changed to a custom date
 
 \begin{document}
 
@@ -211,7 +211,7 @@
     \node (f) at (3,-6.4) {};
     \draw[very thick, ->] (e.south) -- node[right] {\footnotesize \textsc{scaffolder}}  (f.north);
 
-\node[text width = 10cm] (scaf) at (3.5, -7.1) {\textsc{\textcolor{magenta}{In the context of high thoughput sequencing, the scaffolding process is a difficult task for which no widely accepted methodology exists}}};
+\node[text width = 10cm] (scaf) at (3.5, -7.1) {\textsc{\textcolor{magenta}{In the context of high thoughput sequencing, the scaffolding process is a difficult task for which no widely accepted methodology exists.}}};
 
 
 \end{tikzpicture}
@@ -256,7 +256,7 @@ Hudson \textit{et al.} 2002
 \draw[magenta, thick, ->] (-1.8,-2.1) -- (-1.3,-2.1);
 
 \node[draw=none, color=green] at (-1.65, -2.4) {\textit{o}};
-\draw[green, dashed, thick] (0.8, -2.1) -- (0.8, -1.7); 
+\draw[green, dashed, thick] (-1.8, -2.1) -- (-1.8, -1.7); 
 \draw[green, dashed, thick] (-1.6, -2.1) -- (-1.6, -1.7);
 \end{tikzpicture}
 }\\
@@ -375,10 +375,10 @@ What would you do in these situations?
 \footnotesize
 $\to$ common features: 
 \begin{itemize}
-\item model the scaffolding problem as a \textcolor{magenta}{graph}
-\item use unitigs instead of contigs to better compute coverage
-\item use \textcolor{magenta}{unitig coverages to duplicate nodes} representing unitigs
-\item unitig orientations are represented by separate nodes
+\item modeling of the scaffolding problem as a \textcolor{magenta}{graph}
+\item use of unitigs instead of contigs to better compute coverage
+\item use of \textcolor{magenta}{unitig coverages to duplicate nodes} representing unitigs
+\item unitig orientations represented by separate nodes
 \end{itemize}
 $\to$ differences: 
 \begin{itemize}
@@ -579,7 +579,7 @@ unitig & orient. & occ. \\\hline
 Using the benchmark workflow the following conclusions were drawn: 
 \begin{itemize}
 \item Genomes with big repeated regions are solved a lot better with GSTs than with SSPACE
-\item Small repeats are very challenging to assemble because too many conflicting links exists and GST can not take a decision or is too slow
+\item Small repeats are very challenging to scaffold because too many conflicting links exist and GST can not take a decision or is too slow
 \item The GST models processing the link sequence length information perform worse than those focusing only on ordering and orientating
 \end{itemize}
 \end{frame}
